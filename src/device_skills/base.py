@@ -11,6 +11,40 @@ from typing import Any
 from device_skills.schema import ControlMode
 
 
+class BaseDriver(ABC):
+    """Async device driver base — labclaw HardwareManager contract.
+
+    Every device driver consumed by labclaw's HardwareManager must implement
+    this interface.  The methods are async because hardware I/O is inherently
+    non-blocking in the labclaw event loop.
+    """
+
+    @abstractmethod
+    async def connect(self, config: dict[str, Any] | None = None) -> bool:
+        """Attempt to connect to the device. Returns True on success."""
+        ...
+
+    @abstractmethod
+    async def disconnect(self) -> None:
+        """Disconnect from the device."""
+        ...
+
+    @abstractmethod
+    async def read(self, query: dict[str, Any] | None = None) -> dict[str, Any]:
+        """Read data from the device."""
+        ...
+
+    @abstractmethod
+    async def write(self, command: dict[str, Any]) -> bool:
+        """Send a command to the device. Returns True if accepted."""
+        ...
+
+    @abstractmethod
+    def info(self) -> dict[str, Any]:
+        """Return device metadata (id, type, status, etc.)."""
+        ...
+
+
 class BaseAdapter(ABC):
     """Instrument adapter — how to connect, acquire, and process data.
 

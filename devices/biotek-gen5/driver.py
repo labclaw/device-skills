@@ -12,12 +12,14 @@ import logging
 from pathlib import Path
 from typing import Any
 
+from device_skills.base import BaseDriver
+
 from .processor import Gen5Processor
 
 logger = logging.getLogger(__name__)
 
 
-class Gen5Driver:
+class Gen5Driver(BaseDriver):
     """DeviceDriver for BioTek Gen5 CSV exports.
 
     Implements the labclaw DeviceDriver protocol:
@@ -63,7 +65,16 @@ class Gen5Driver:
     def device_type(self) -> str:
         return "biotek-gen5"
 
-    async def connect(self) -> bool:
+    def info(self) -> dict[str, Any]:
+        """Return device metadata."""
+        return {
+            "device_id": self._device_id,
+            "device_type": self.device_type,
+            "connected": self._connected,
+            "watch_path": str(self._watch_path),
+        }
+
+    async def connect(self, config: dict[str, Any] | None = None) -> bool:
         """Mark driver as connected (file-based — no network connection needed)."""
         self._connected = True
         logger.info("Gen5Driver connected (file-based mode, watch_path=%s)", self._watch_path)
@@ -74,7 +85,7 @@ class Gen5Driver:
         self._connected = False
         logger.info("Gen5Driver disconnected")
 
-    async def read(self) -> dict[str, Any]:
+    async def read(self, query: dict[str, Any] | None = None) -> dict[str, Any]:
         """Read the most recently modified CSV file from watch_path.
 
         Returns:
