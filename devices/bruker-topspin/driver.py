@@ -7,23 +7,24 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any
 
+from device_skills.base import BaseDriver
 from device_skills.schema import ControlMode
 
 if TYPE_CHECKING:
     from .adapter import TopSpinAdapter
 
 
-class TopSpinDriver:
+class TopSpinDriver(BaseDriver):
     """labclaw DeviceDriver for Bruker TopSpin NMR.
 
-    Required labclaw interface:
+    Implements the BaseDriver ABC contract:
         device_id: str (property)
         device_type: str (property)
         async connect() -> bool
         async disconnect() -> None
         async read() -> dict[str, Any]
         async write(command) -> bool
-        async status() -> dict[str, Any]
+        info() -> dict[str, Any]
 
     In offline mode the driver succeeds immediately without any
     network connection.  In API mode it delegates to the TopSpin
@@ -53,7 +54,16 @@ class TopSpinDriver:
     def device_type(self) -> str:
         return "nmr-spectrometer"
 
-    async def connect(self) -> bool:
+    def info(self) -> dict[str, Any]:
+        """Return instrument metadata."""
+        return {
+            "device_id": self._device_id,
+            "device_type": self.device_type,
+            "mode": self._mode.value,
+            "connected": self._connected,
+        }
+
+    async def connect(self, config: dict[str, Any] | None = None) -> bool:
         """Connect to TopSpin.  Uses mode from config."""
         if self._mode == ControlMode.OFFLINE:
             self._connected = True
@@ -97,7 +107,7 @@ class TopSpinDriver:
             self._adapter = None
         self._connected = False
 
-    async def read(self) -> dict[str, Any]:
+    async def read(self, query: dict[str, Any] | None = None) -> dict[str, Any]:
         """Read the most recently processed spectrum data.
 
         Returns a dict with spectrum metadata and peak list, or an

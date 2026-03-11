@@ -6,7 +6,7 @@ from typing import Any
 from device_skills.base import BaseProcessor
 
 
-class DeviceProcessor(BaseProcessor):
+class TemplateProcessor(BaseProcessor):
     """Data processor. TODO: Rename to match your device."""
 
     def load(self, path: str) -> Any:

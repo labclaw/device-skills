@@ -48,6 +48,7 @@ def discover_skills(devices_dir: Path | None = None) -> list[SkillManifest]:
             continue
         try:
             manifest = load_manifest(skill_yaml)
+            manifest.skill_dir = child.resolve()
             manifests.append(manifest)
         except Exception:
             logger.warning("Skipping invalid device skill: %s", child.name, exc_info=True)

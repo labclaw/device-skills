@@ -1,0 +1,5905 @@
+version: 5.0.0
+software: Bruker TopSpin
+pages:
+- path: commands/.1d.md
+  title: .1d, .2d, .3d, .4d, .5d, .real, .imag, .dot, .co, .im, .st, .ov, .pr
+  tags:
+  - .1d
+  - .2d
+  - .3d
+  - .4d
+  - .5d
+  - .real
+  - .imag
+  - .dot
+  - .co
+  - .im
+  - .st
+  - .ov
+  - .pr
+  - miscellaneous
+  - graphical user interface
+  summary: Read Last 1D Dataset to Current Data Window
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.2d.md
+  title: .1d, .2d, .3d, .4d, .5d, .real, .imag, .dot, .co, .im, .st, .ov, .pr
+  tags:
+  - .1d
+  - .2d
+  - .3d
+  - .4d
+  - .5d
+  - .real
+  - .imag
+  - .dot
+  - .co
+  - .im
+  - .st
+  - .ov
+  - .pr
+  - miscellaneous
+  - graphical user interface
+  summary: Read Last 1D Dataset to Current Data Window
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.3d.md
+  title: .1d, .2d, .3d, .4d, .5d, .real, .imag, .dot, .co, .im, .st, .ov, .pr
+  tags:
+  - .1d
+  - .2d
+  - .3d
+  - .4d
+  - .5d
+  - .real
+  - .imag
+  - .dot
+  - .co
+  - .im
+  - .st
+  - .ov
+  - .pr
+  - miscellaneous
+  - graphical user interface
+  summary: Read Last 1D Dataset to Current Data Window
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.4d.md
+  title: .1d, .2d, .3d, .4d, .5d, .real, .imag, .dot, .co, .im, .st, .ov, .pr
+  tags:
+  - .1d
+  - .2d
+  - .3d
+  - .4d
+  - .5d
+  - .real
+  - .imag
+  - .dot
+  - .co
+  - .im
+  - .st
+  - .ov
+  - .pr
+  - miscellaneous
+  - graphical user interface
+  summary: Read Last 1D Dataset to Current Data Window
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.5d.md
+  title: .1d, .2d, .3d, .4d, .5d, .real, .imag, .dot, .co, .im, .st, .ov, .pr
+  tags:
+  - .1d
+  - .2d
+  - .3d
+  - .4d
+  - .5d
+  - .real
+  - .imag
+  - .dot
+  - .co
+  - .im
+  - .st
+  - .ov
+  - .pr
+  - miscellaneous
+  - graphical user interface
+  summary: Read Last 1D Dataset to Current Data Window
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.all.md
+  title: '*2, *8, /2, /8, .vr, .all'
+  tags:
+  - '*2'
+  - '*8'
+  - /2
+  - /8
+  - .vr
+  - .all
+  - miscellaneous
+  - graphical user interface
+  summary: Increase the Intensity by a Factor of 2 (1D, 2D, 3D)
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.basl.md
+  title: .winf, .ph, .basl, .cal, .pp, .int, mana, .md, .seto123
+  tags:
+  - .winf
+  - .ph
+  - .basl
+  - .cal
+  - .pp
+  - .int
+  - mana
+  - .md
+  - .seto123
+  - miscellaneous
+  - graphical user interface
+  summary: Switch to Interactive Window Multiplication (1D)
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.cal.md
+  title: .winf, .ph, .basl, .cal, .pp, .int, mana, .md, .seto123
+  tags:
+  - .winf
+  - .ph
+  - .basl
+  - .cal
+  - .pp
+  - .int
+  - mana
+  - .md
+  - .seto123
+  - miscellaneous
+  - graphical user interface
+  summary: Switch to Interactive Window Multiplication (1D)
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.co.md
+  title: .1d, .2d, .3d, .4d, .5d, .real, .imag, .dot, .co, .im, .st, .ov, .pr
+  tags:
+  - .1d
+  - .2d
+  - .3d
+  - .4d
+  - .5d
+  - .real
+  - .imag
+  - .dot
+  - .co
+  - .im
+  - .st
+  - .ov
+  - .pr
+  - miscellaneous
+  - graphical user interface
+  summary: Read Last 1D Dataset to Current Data Window
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.dist.md
+  title: .dist, .f1f2region, .gr, .hz, .keep, .ls, .lt, .lv, .setsw, .sync, .y, .zoommode
+  tags:
+  - .dist
+  - .f1f2region
+  - .gr
+  - .hz
+  - .keep
+  - .ls
+  - .lt
+  - .lv
+  - .setsw
+  - .sync
+  - .y
+  - .zoommode
+  - miscellaneous
+  - graphical user interface
+  summary: Start Distance Measurement
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.dot.md
+  title: .1d, .2d, .3d, .4d, .5d, .real, .imag, .dot, .co, .im, .st, .ov, .pr
+  tags:
+  - .1d
+  - .2d
+  - .3d
+  - .4d
+  - .5d
+  - .real
+  - .imag
+  - .dot
+  - .co
+  - .im
+  - .st
+  - .ov
+  - .pr
+  - miscellaneous
+  - graphical user interface
+  summary: Read Last 1D Dataset to Current Data Window
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.f1f2region.md
+  title: .dist, .f1f2region, .gr, .hz, .keep, .ls, .lt, .lv, .setsw, .sync, .y, .zoommode
+  tags:
+  - .dist
+  - .f1f2region
+  - .gr
+  - .hz
+  - .keep
+  - .ls
+  - .lt
+  - .lv
+  - .setsw
+  - .sync
+  - .y
+  - .zoommode
+  - miscellaneous
+  - graphical user interface
+  summary: Start Distance Measurement
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.f1r.md
+  title: .f1r, .f2r, .hr, .zi, .zo, .zl, .zx
+  tags:
+  - .f1r
+  - .f2r
+  - .hr
+  - .zi
+  - .zo
+  - .zl
+  - .zx
+  - miscellaneous
+  - graphical user interface
+  summary: Reset F1 Zooming to Full Spectrum (2D, 3D)
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.f2r.md
+  title: .f1r, .f2r, .hr, .zi, .zo, .zl, .zx
+  tags:
+  - .f1r
+  - .f2r
+  - .hr
+  - .zi
+  - .zo
+  - .zl
+  - .zx
+  - miscellaneous
+  - graphical user interface
+  summary: Reset F1 Zooming to Full Spectrum (2D, 3D)
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.gr.md
+  title: .dist, .f1f2region, .gr, .hz, .keep, .ls, .lt, .lv, .setsw, .sync, .y, .zoommode
+  tags:
+  - .dist
+  - .f1f2region
+  - .gr
+  - .hz
+  - .keep
+  - .ls
+  - .lt
+  - .lv
+  - .setsw
+  - .sync
+  - .y
+  - .zoommode
+  - miscellaneous
+  - graphical user interface
+  summary: Start Distance Measurement
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.hr.md
+  title: .f1r, .f2r, .hr, .zi, .zo, .zl, .zx
+  tags:
+  - .f1r
+  - .f2r
+  - .hr
+  - .zi
+  - .zo
+  - .zl
+  - .zx
+  - miscellaneous
+  - graphical user interface
+  summary: Reset F1 Zooming to Full Spectrum (2D, 3D)
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.hz.md
+  title: .dist, .f1f2region, .gr, .hz, .keep, .ls, .lt, .lv, .setsw, .sync, .y, .zoommode
+  tags:
+  - .dist
+  - .f1f2region
+  - .gr
+  - .hz
+  - .keep
+  - .ls
+  - .lt
+  - .lv
+  - .setsw
+  - .sync
+  - .y
+  - .zoommode
+  - miscellaneous
+  - graphical user interface
+  summary: Start Distance Measurement
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.im.md
+  title: .1d, .2d, .3d, .4d, .5d, .real, .imag, .dot, .co, .im, .st, .ov, .pr
+  tags:
+  - .1d
+  - .2d
+  - .3d
+  - .4d
+  - .5d
+  - .real
+  - .imag
+  - .dot
+  - .co
+  - .im
+  - .st
+  - .ov
+  - .pr
+  - miscellaneous
+  - graphical user interface
+  summary: Read Last 1D Dataset to Current Data Window
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.imag.md
+  title: .1d, .2d, .3d, .4d, .5d, .real, .imag, .dot, .co, .im, .st, .ov, .pr
+  tags:
+  - .1d
+  - .2d
+  - .3d
+  - .4d
+  - .5d
+  - .real
+  - .imag
+  - .dot
+  - .co
+  - .im
+  - .st
+  - .ov
+  - .pr
+  - miscellaneous
+  - graphical user interface
+  summary: Read Last 1D Dataset to Current Data Window
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.int.md
+  title: .winf, .ph, .basl, .cal, .pp, .int, mana, .md, .seto123
+  tags:
+  - .winf
+  - .ph
+  - .basl
+  - .cal
+  - .pp
+  - .int
+  - mana
+  - .md
+  - .seto123
+  - miscellaneous
+  - graphical user interface
+  summary: Switch to Interactive Window Multiplication (1D)
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.keep.md
+  title: .dist, .f1f2region, .gr, .hz, .keep, .ls, .lt, .lv, .setsw, .sync, .y, .zoommode
+  tags:
+  - .dist
+  - .f1f2region
+  - .gr
+  - .hz
+  - .keep
+  - .ls
+  - .lt
+  - .lv
+  - .setsw
+  - .sync
+  - .y
+  - .zoommode
+  - miscellaneous
+  - graphical user interface
+  summary: Start Distance Measurement
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.ls.md
+  title: .dist, .f1f2region, .gr, .hz, .keep, .ls, .lt, .lv, .setsw, .sync, .y, .zoommode
+  tags:
+  - .dist
+  - .f1f2region
+  - .gr
+  - .hz
+  - .keep
+  - .ls
+  - .lt
+  - .lv
+  - .setsw
+  - .sync
+  - .y
+  - .zoommode
+  - miscellaneous
+  - graphical user interface
+  summary: Start Distance Measurement
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.lt.md
+  title: .dist, .f1f2region, .gr, .hz, .keep, .ls, .lt, .lv, .setsw, .sync, .y, .zoommode
+  tags:
+  - .dist
+  - .f1f2region
+  - .gr
+  - .hz
+  - .keep
+  - .ls
+  - .lt
+  - .lv
+  - .setsw
+  - .sync
+  - .y
+  - .zoommode
+  - miscellaneous
+  - graphical user interface
+  summary: Start Distance Measurement
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.lv.md
+  title: .dist, .f1f2region, .gr, .hz, .keep, .ls, .lt, .lv, .setsw, .sync, .y, .zoommode
+  tags:
+  - .dist
+  - .f1f2region
+  - .gr
+  - .hz
+  - .keep
+  - .ls
+  - .lt
+  - .lv
+  - .setsw
+  - .sync
+  - .y
+  - .zoommode
+  - miscellaneous
+  - graphical user interface
+  summary: Start Distance Measurement
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.md.md
+  title: .winf, .ph, .basl, .cal, .pp, .int, mana, .md, .seto123
+  tags:
+  - .winf
+  - .ph
+  - .basl
+  - .cal
+  - .pp
+  - .int
+  - mana
+  - .md
+  - .seto123
+  - miscellaneous
+  - graphical user interface
+  summary: Switch to Interactive Window Multiplication (1D)
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.ov.md
+  title: .1d, .2d, .3d, .4d, .5d, .real, .imag, .dot, .co, .im, .st, .ov, .pr
+  tags:
+  - .1d
+  - .2d
+  - .3d
+  - .4d
+  - .5d
+  - .real
+  - .imag
+  - .dot
+  - .co
+  - .im
+  - .st
+  - .ov
+  - .pr
+  - miscellaneous
+  - graphical user interface
+  summary: Read Last 1D Dataset to Current Data Window
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.ph.md
+  title: .winf, .ph, .basl, .cal, .pp, .int, mana, .md, .seto123
+  tags:
+  - .winf
+  - .ph
+  - .basl
+  - .cal
+  - .pp
+  - .int
+  - mana
+  - .md
+  - .seto123
+  - miscellaneous
+  - graphical user interface
+  summary: Switch to Interactive Window Multiplication (1D)
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.pp.md
+  title: .winf, .ph, .basl, .cal, .pp, .int, mana, .md, .seto123
+  tags:
+  - .winf
+  - .ph
+  - .basl
+  - .cal
+  - .pp
+  - .int
+  - mana
+  - .md
+  - .seto123
+  - miscellaneous
+  - graphical user interface
+  summary: Switch to Interactive Window Multiplication (1D)
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.pr.md
+  title: .1d, .2d, .3d, .4d, .5d, .real, .imag, .dot, .co, .im, .st, .ov, .pr
+  tags:
+  - .1d
+  - .2d
+  - .3d
+  - .4d
+  - .5d
+  - .real
+  - .imag
+  - .dot
+  - .co
+  - .im
+  - .st
+  - .ov
+  - .pr
+  - miscellaneous
+  - graphical user interface
+  summary: Read Last 1D Dataset to Current Data Window
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.real.md
+  title: .1d, .2d, .3d, .4d, .5d, .real, .imag, .dot, .co, .im, .st, .ov, .pr
+  tags:
+  - .1d
+  - .2d
+  - .3d
+  - .4d
+  - .5d
+  - .real
+  - .imag
+  - .dot
+  - .co
+  - .im
+  - .st
+  - .ov
+  - .pr
+  - miscellaneous
+  - graphical user interface
+  summary: Read Last 1D Dataset to Current Data Window
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.refdcon.md
+  title: refdcon, .refdcon
+  tags:
+  - refdcon
+  - .refdcon
+  - process
+  - advanced
+  summary: Reference deconvolution (1D)
+  category: Commands > Process > Advanced
+- path: commands/.sd.md
+  title: .sl, .sl0, .sr, .sr0, .sd, .su
+  tags:
+  - .sl
+  - .sl0
+  - .sr
+  - .sr0
+  - .sd
+  - .su
+  - miscellaneous
+  - graphical user interface
+  summary: Shift to Left by Half of the Displayed Region (1D, 2D, 3D)
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.seto123.md
+  title: .winf, .ph, .basl, .cal, .pp, .int, mana, .md, .seto123
+  tags:
+  - .winf
+  - .ph
+  - .basl
+  - .cal
+  - .pp
+  - .int
+  - mana
+  - .md
+  - .seto123
+  - miscellaneous
+  - graphical user interface
+  summary: Switch to Interactive Window Multiplication (1D)
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.setsw.md
+  title: .dist, .f1f2region, .gr, .hz, .keep, .ls, .lt, .lv, .setsw, .sync, .y, .zoommode
+  tags:
+  - .dist
+  - .f1f2region
+  - .gr
+  - .hz
+  - .keep
+  - .ls
+  - .lt
+  - .lv
+  - .setsw
+  - .sync
+  - .y
+  - .zoommode
+  - miscellaneous
+  - graphical user interface
+  summary: Start Distance Measurement
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.sl.md
+  title: .sl, .sl0, .sr, .sr0, .sd, .su
+  tags:
+  - .sl
+  - .sl0
+  - .sr
+  - .sr0
+  - .sd
+  - .su
+  - miscellaneous
+  - graphical user interface
+  summary: Shift to Left by Half of the Displayed Region (1D, 2D, 3D)
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.sl0.md
+  title: .sl, .sl0, .sr, .sr0, .sd, .su
+  tags:
+  - .sl
+  - .sl0
+  - .sr
+  - .sr0
+  - .sd
+  - .su
+  - miscellaneous
+  - graphical user interface
+  summary: Shift to Left by Half of the Displayed Region (1D, 2D, 3D)
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.sr.md
+  title: .sl, .sl0, .sr, .sr0, .sd, .su
+  tags:
+  - .sl
+  - .sl0
+  - .sr
+  - .sr0
+  - .sd
+  - .su
+  - miscellaneous
+  - graphical user interface
+  summary: Shift to Left by Half of the Displayed Region (1D, 2D, 3D)
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.sr0.md
+  title: .sl, .sl0, .sr, .sr0, .sd, .su
+  tags:
+  - .sl
+  - .sl0
+  - .sr
+  - .sr0
+  - .sd
+  - .su
+  - miscellaneous
+  - graphical user interface
+  summary: Shift to Left by Half of the Displayed Region (1D, 2D, 3D)
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.st.md
+  title: .1d, .2d, .3d, .4d, .5d, .real, .imag, .dot, .co, .im, .st, .ov, .pr
+  tags:
+  - .1d
+  - .2d
+  - .3d
+  - .4d
+  - .5d
+  - .real
+  - .imag
+  - .dot
+  - .co
+  - .im
+  - .st
+  - .ov
+  - .pr
+  - miscellaneous
+  - graphical user interface
+  summary: Read Last 1D Dataset to Current Data Window
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.su.md
+  title: .sl, .sl0, .sr, .sr0, .sd, .su
+  tags:
+  - .sl
+  - .sl0
+  - .sr
+  - .sr0
+  - .sd
+  - .su
+  - miscellaneous
+  - graphical user interface
+  summary: Shift to Left by Half of the Displayed Region (1D, 2D, 3D)
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.sync.md
+  title: .dist, .f1f2region, .gr, .hz, .keep, .ls, .lt, .lv, .setsw, .sync, .y, .zoommode
+  tags:
+  - .dist
+  - .f1f2region
+  - .gr
+  - .hz
+  - .keep
+  - .ls
+  - .lt
+  - .lv
+  - .setsw
+  - .sync
+  - .y
+  - .zoommode
+  - miscellaneous
+  - graphical user interface
+  summary: Start Distance Measurement
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.vr.md
+  title: '*2, *8, /2, /8, .vr, .all'
+  tags:
+  - '*2'
+  - '*8'
+  - /2
+  - /8
+  - .vr
+  - .all
+  - miscellaneous
+  - graphical user interface
+  summary: Increase the Intensity by a Factor of 2 (1D, 2D, 3D)
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.winf.md
+  title: .winf, .ph, .basl, .cal, .pp, .int, mana, .md, .seto123
+  tags:
+  - .winf
+  - .ph
+  - .basl
+  - .cal
+  - .pp
+  - .int
+  - mana
+  - .md
+  - .seto123
+  - miscellaneous
+  - graphical user interface
+  summary: Switch to Interactive Window Multiplication (1D)
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.y.md
+  title: .dist, .f1f2region, .gr, .hz, .keep, .ls, .lt, .lv, .setsw, .sync, .y, .zoommode
+  tags:
+  - .dist
+  - .f1f2region
+  - .gr
+  - .hz
+  - .keep
+  - .ls
+  - .lt
+  - .lv
+  - .setsw
+  - .sync
+  - .y
+  - .zoommode
+  - miscellaneous
+  - graphical user interface
+  summary: Start Distance Measurement
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.zi.md
+  title: .f1r, .f2r, .hr, .zi, .zo, .zl, .zx
+  tags:
+  - .f1r
+  - .f2r
+  - .hr
+  - .zi
+  - .zo
+  - .zl
+  - .zx
+  - miscellaneous
+  - graphical user interface
+  summary: Reset F1 Zooming to Full Spectrum (2D, 3D)
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.zl.md
+  title: .f1r, .f2r, .hr, .zi, .zo, .zl, .zx
+  tags:
+  - .f1r
+  - .f2r
+  - .hr
+  - .zi
+  - .zo
+  - .zl
+  - .zx
+  - miscellaneous
+  - graphical user interface
+  summary: Reset F1 Zooming to Full Spectrum (2D, 3D)
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.zo.md
+  title: .f1r, .f2r, .hr, .zi, .zo, .zl, .zx
+  tags:
+  - .f1r
+  - .f2r
+  - .hr
+  - .zi
+  - .zo
+  - .zl
+  - .zx
+  - miscellaneous
+  - graphical user interface
+  summary: Reset F1 Zooming to Full Spectrum (2D, 3D)
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.zoommode.md
+  title: .dist, .f1f2region, .gr, .hz, .keep, .ls, .lt, .lv, .setsw, .sync, .y, .zoommode
+  tags:
+  - .dist
+  - .f1f2region
+  - .gr
+  - .hz
+  - .keep
+  - .ls
+  - .lt
+  - .lv
+  - .setsw
+  - .sync
+  - .y
+  - .zoommode
+  - miscellaneous
+  - graphical user interface
+  summary: Start Distance Measurement
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/.zx.md
+  title: .f1r, .f2r, .hr, .zi, .zo, .zl, .zx
+  tags:
+  - .f1r
+  - .f2r
+  - .hr
+  - .zi
+  - .zo
+  - .zl
+  - .zx
+  - miscellaneous
+  - graphical user interface
+  summary: Reset F1 Zooming to Full Spectrum (2D, 3D)
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/about.md
+  title: about
+  tags:
+  - about
+  - miscellaneous
+  - topspin interface
+  summary: Displays the TopSpin version and configuration information
+  category: Commands > Miscellaneous > TopSpin Interface
+- path: commands/abs.md
+  title: abs, absf, absd, absn, bas
+  tags:
+  - abs
+  - absf
+  - absd
+  - absn
+  - bas
+  - process
+  - baseline
+  summary: Automatic baseline correction (1D)
+  category: Commands > Process > Baseline
+- path: commands/abs1.md
+  title: abs1, abst1, absd1, absot1, bas
+  tags:
+  - abs1
+  - abst1
+  - absd1
+  - absot1
+  - bas
+  - process
+  - baseline
+  summary: Automatic baseline correction in F1 (2D)
+  category: Commands > Process > Baseline
+- path: commands/abs2.md
+  title: abs2, abst2, absd2, absot2
+  tags:
+  - abs2
+  - abst2
+  - absd2
+  - absot2
+  - bas
+  - process
+  - baseline
+  summary: Automatic baseline correction in F2 (2D)
+  category: Commands > Process > Baseline
+- path: commands/absd.md
+  title: abs, absf, absd, absn, bas
+  tags:
+  - abs
+  - absf
+  - absd
+  - absn
+  - bas
+  - process
+  - baseline
+  summary: Automatic baseline correction (1D)
+  category: Commands > Process > Baseline
+- path: commands/absd1.md
+  title: abs1, abst1, absd1, absot1, bas
+  tags:
+  - abs1
+  - abst1
+  - absd1
+  - absot1
+  - bas
+  - process
+  - baseline
+  summary: Automatic baseline correction in F1 (2D)
+  category: Commands > Process > Baseline
+- path: commands/absd2.md
+  title: abs2, abst2, absd2, absot2
+  tags:
+  - abs2
+  - abst2
+  - absd2
+  - absot2
+  - bas
+  - process
+  - baseline
+  summary: Automatic baseline correction in F2 (2D)
+  category: Commands > Process > Baseline
+- path: commands/absf.md
+  title: abs, absf, absd, absn, bas
+  tags:
+  - abs
+  - absf
+  - absd
+  - absn
+  - bas
+  - process
+  - baseline
+  summary: Automatic baseline correction (1D)
+  category: Commands > Process > Baseline
+- path: commands/absn.md
+  title: abs, absf, absd, absn, bas
+  tags:
+  - abs
+  - absf
+  - absd
+  - absn
+  - bas
+  - process
+  - baseline
+  summary: Automatic baseline correction (1D)
+  category: Commands > Process > Baseline
+- path: commands/absnd.md
+  title: absnd
+  tags:
+  - absnd
+  - process
+  - baseline
+  summary: nD automatic baseline correction (≥3D)
+  category: Commands > Process > Baseline
+- path: commands/absot1.md
+  title: abs1, abst1, absd1, absot1, bas
+  tags:
+  - abs1
+  - abst1
+  - absd1
+  - absot1
+  - bas
+  - process
+  - baseline
+  summary: Automatic baseline correction in F1 (2D)
+  category: Commands > Process > Baseline
+- path: commands/absot2.md
+  title: abs2, abst2, absd2, absot2
+  tags:
+  - abs2
+  - abst2
+  - absd2
+  - absot2
+  - bas
+  - process
+  - baseline
+  summary: Automatic baseline correction in F2 (2D)
+  category: Commands > Process > Baseline
+- path: commands/abst1.md
+  title: abs1, abst1, absd1, absot1, bas
+  tags:
+  - abs1
+  - abst1
+  - absd1
+  - absot1
+  - bas
+  - process
+  - baseline
+  summary: Automatic baseline correction in F1 (2D)
+  category: Commands > Process > Baseline
+- path: commands/abst2.md
+  title: abs2, abst2, absd2, absot2
+  tags:
+  - abs2
+  - abst2
+  - absd2
+  - absot2
+  - bas
+  - process
+  - baseline
+  summary: Automatic baseline correction in F2 (2D)
+  category: Commands > Process > Baseline
+- path: commands/account.md
+  title: account
+  tags:
+  - account
+  - manage
+  - spectrometer
+  - save/restore installation
+  summary: Show acquisition accounting statistics
+  category: Commands > Manage > Spectrometer > Save/Restore Installation
+- path: commands/accumulate.md
+  title: accumulate
+  tags:
+  - accumulate
+  - process
+  - advanced
+  summary: Accumulate 1D datasets ppm/Hz-wise (1D)
+  category: Commands > Process > Advanced
+- path: commands/acqu.md
+  title: acqu
+  tags:
+  - acqu
+  - acquire
+  summary: Switch to Acquisition Display
+  category: Commands > Acquire
+- path: commands/add.md
+  title: add, duadd, addfid, addc, adsu
+  tags:
+  - add
+  - duadd
+  - addfid
+  - addc
+  - adsu
+  - process
+  - advanced
+  summary: Add two data sets point-wise, multiply 2nd with DC (1D)
+  category: Commands > Process > Advanced
+- path: commands/add2d.md
+  title: add2d, mul2d, addser
+  tags:
+  - add2d
+  - mul2d
+  - addser
+  - adsu
+  - process
+  - advanced
+  summary: Add or subtract two datasets (2D)
+  category: Commands > Process > Advanced
+- path: commands/addc.md
+  title: add, duadd, addfid, addc, adsu
+  tags:
+  - add
+  - duadd
+  - addfid
+  - addc
+  - adsu
+  - process
+  - advanced
+  summary: Add two data sets point-wise, multiply 2nd with DC (1D)
+  category: Commands > Process > Advanced
+- path: commands/addfid.md
+  title: add, duadd, addfid, addc, adsu
+  tags:
+  - add
+  - duadd
+  - addfid
+  - addc
+  - adsu
+  - process
+  - advanced
+  summary: Add two data sets point-wise, multiply 2nd with DC (1D)
+  category: Commands > Process > Advanced
+- path: commands/addser.md
+  title: add2d, mul2d, addser
+  tags:
+  - add2d
+  - mul2d
+  - addser
+  - adsu
+  - process
+  - advanced
+  summary: Add or subtract two datasets (2D)
+  category: Commands > Process > Advanced
+- path: commands/adiag.md
+  title: adiag
+  tags:
+  - adiag
+  - manage
+  - spectrometer
+  summary: Setup and running of the automatic diagnosis program (remote monitoring)
+  category: Commands > Manage > Spectrometer
+- path: commands/adsu.md
+  title: add, duadd, addfid, addc, adsu
+  tags:
+  - add
+  - duadd
+  - addfid
+  - addc
+  - adsu
+  - process
+  - advanced
+  summary: Add two data sets point-wise, multiply 2nd with DC (1D)
+  category: Commands > Process > Advanced
+- path: commands/apbk.md
+  title: apbk
+  tags:
+  - process
+  - adjust phase
+  - automatic phasing options
+  summary: The command apbk provides simultaneous linear phase and baseline correction
+    of 1D spectra. The apbk algorithm was developed and tested for 1H, 11B, 13C, 15N,
+    19F, 29Si, and 31P spectra in solution sta
+  category: Commands > Process > Adjust Phase > Automatic Phasing Options
+- path: commands/apk.md
+  title: apk, apks, apkm, apkf, ph
+  tags:
+  - apk
+  - apks
+  - apkm
+  - apkf
+  - ph
+  - process
+  - adjust phase
+  - automatic phasing options
+  summary: Automatic phase correction (1D)
+  category: Commands > Process > Adjust Phase > Automatic Phasing Options
+- path: commands/apk0.md
+  title: apk0, apk1, apk0f, ph
+  tags:
+  - apk0
+  - apk1
+  - apk0f
+  - ph
+  - process
+  - adjust phase
+  - automatic phasing options
+  summary: Zero-order automatic phase correction (1D)
+  category: Commands > Process > Adjust Phase > Automatic Phasing Options
+- path: commands/apk0f.md
+  title: apk0, apk1, apk0f, ph
+  tags:
+  - apk0
+  - apk1
+  - apk0f
+  - ph
+  - process
+  - adjust phase
+  - automatic phasing options
+  summary: Zero-order automatic phase correction (1D)
+  category: Commands > Process > Adjust Phase > Automatic Phasing Options
+- path: commands/apk1.md
+  title: apk0, apk1, apk0f, ph
+  tags:
+  - apk0
+  - apk1
+  - apk0f
+  - ph
+  - process
+  - adjust phase
+  - automatic phasing options
+  summary: Zero-order automatic phase correction (1D)
+  category: Commands > Process > Adjust Phase > Automatic Phasing Options
+- path: commands/apk2d.md
+  title: apk2d
+  tags:
+  - apk2d
+  - process
+  - adjust phase
+  - automatic phasing options
+  summary: Automatic Phase Correction
+  category: Commands > Process > Adjust Phase > Automatic Phasing Options
+- path: commands/apkf.md
+  title: apk, apks, apkm, apkf, ph
+  tags:
+  - apk
+  - apks
+  - apkm
+  - apkf
+  - ph
+  - process
+  - adjust phase
+  - automatic phasing options
+  summary: Automatic phase correction (1D)
+  category: Commands > Process > Adjust Phase > Automatic Phasing Options
+- path: commands/apkm.md
+  title: apk, apks, apkm, apkf, ph
+  tags:
+  - apk
+  - apks
+  - apkm
+  - apkf
+  - ph
+  - process
+  - adjust phase
+  - automatic phasing options
+  summary: Automatic phase correction (1D)
+  category: Commands > Process > Adjust Phase > Automatic Phasing Options
+- path: commands/apks.md
+  title: apk, apks, apkm, apkf, ph
+  tags:
+  - apk
+  - apks
+  - apkm
+  - apkf
+  - ph
+  - process
+  - adjust phase
+  - automatic phasing options
+  summary: Automatic phase correction (1D)
+  category: Commands > Process > Adjust Phase > Automatic Phasing Options
+- path: commands/apsy.md
+  title: apsy
+  tags:
+  - apsy
+  - acquire
+  - more
+  summary: APSY
+  category: Commands > Acquire > More
+- path: commands/aqguide.md
+  title: aqguide
+  tags:
+  - aqguide
+  - acquire
+  - more
+  summary: Open the Acquisition Guide
+  category: Commands > Acquire > More
+- path: commands/arrange.md
+  title: arrange
+  tags:
+  - arrange
+  - miscellaneous
+  - graphical user interface
+  summary: Arrange Data Windows as a Grid
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/ased.md
+  title: ased
+  tags:
+  - ased
+  - miscellaneous
+  - graphical user interface
+  summary: Edit acquisition parameters used in pulse program
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/at.md
+  title: at
+  tags:
+  - at
+  - miscellaneous
+  - run a program
+  summary: Schedule a TopSpin command for execution
+  category: Commands > Miscellaneous > Run a Program
+- path: commands/atma.md
+  title: atma
+  tags:
+  - atma
+  - acquire
+  - tune
+  summary: Automatic tuning and matching of ATM probes
+  category: Commands > Acquire > Tune
+- path: commands/atmm.md
+  title: atmm
+  tags:
+  - atmm
+  - acquire
+  - tune
+  summary: Manual tuning and matching of ATM probes
+  category: Commands > Acquire > Tune
+- path: commands/atmulti.md
+  title: atmulti
+  tags:
+  - atmulti
+  - miscellaneous
+  - run a program
+  summary: Schedule a TopSpin command for execution on multiple expnos
+  category: Commands > Miscellaneous > Run a Program
+- path: commands/audit.md
+  title: audit, auditcheck
+  tags:
+  - audit
+  - auditcheck
+  - manage
+  - security
+  summary: Open audit trail commands dialog box (nD)
+  category: Commands > Manage > Security
+- path: commands/auditc.md
+  title: gdcheck, auditc
+  tags:
+  - gdcheck
+  - auditc
+  - manage
+  - security
+  summary: Ensure that the processing audit trail is consistent
+  category: Commands > Manage > Security
+- path: commands/auditcheck.md
+  title: audit, auditcheck
+  tags:
+  - audit
+  - auditcheck
+  - manage
+  - security
+  summary: Open audit trail commands dialog box (nD)
+  category: Commands > Manage > Security
+- path: commands/autocalib.md
+  title: autocalib
+  tags:
+  - autocalib
+  - process
+  - calibrate axis
+  summary: Automatic calibration to align 2D and 1D datasets relative to a 2D reference
+    dataset
+  category: Commands > Process > Calibrate Axis
+- path: commands/autogain.md
+  title: loopadj, autogain, autophase
+  tags:
+  - loopadj
+  - autogain
+  - autophase
+  - acquire
+  - lock
+  summary: AU program for optimization of LGAIN (loop gain), LTIME (loop time) and
+    LFILTER (loop filter)
+  category: Commands > Acquire > Lock
+- path: commands/autophase.md
+  title: loopadj, autogain, autophase
+  tags:
+  - loopadj
+  - autogain
+  - autophase
+  - acquire
+  - lock
+  summary: AU program for optimization of LGAIN (loop gain), LTIME (loop time) and
+    LFILTER (loop filter)
+  category: Commands > Acquire > Lock
+- path: commands/autoplot.md
+  title: autoplot
+  tags:
+  - autoplot
+  - miscellaneous
+  - print/export
+  summary: Print with layout, print directly
+  category: Commands > Miscellaneous > Print/Export
+- path: commands/autoshim.md
+  title: autoshim
+  tags:
+  - autoshim
+  - manage
+  - spectrometer
+  - bsms control
+  summary: Turn autoshim on/off
+  category: Commands > Manage > Spectrometer > BSMS Control
+- path: commands/bas.md
+  title: abs, absf, absd, absn, bas
+  tags:
+  - abs
+  - absf
+  - absd
+  - absn
+  - bas
+  - process
+  - baseline
+  summary: Automatic baseline correction (1D)
+  category: Commands > Process > Baseline
+- path: commands/bc.md
+  title: bc
+  tags:
+  - bc
+  - process
+  - baseline
+  summary: Baseline correction of the FID (1D)
+  category: Commands > Process > Baseline
+- path: commands/bcm.md
+  title: bcm
+  tags:
+  - bcm
+  - process
+  - baseline
+  summary: User-defined spectrum baseline correction (1D)
+  category: Commands > Process > Baseline
+- path: commands/bcm1.md
+  title: bcm2, bcm1
+  tags:
+  - bcm2
+  - bcm1
+  - process
+  - baseline
+  summary: User-defined baseline correction in F2 (2D)
+  category: Commands > Process > Baseline
+- path: commands/bcm2.md
+  title: bcm2, bcm1
+  tags:
+  - bcm2
+  - bcm1
+  - process
+  - baseline
+  summary: User-defined baseline correction in F2 (2D)
+  category: Commands > Process > Baseline
+- path: commands/bnmr.md
+  title: bnmr, bpan, buttonnmr, butselnmr
+  tags:
+  - bnmr
+  - buttonnmr
+  - butselnmr
+  - bpan
+  - acquire
+  - more
+  summary: Start Workflow for Setting up Some Basic 1D and 2D Experiments
+  category: Commands > Acquire > More
+- path: commands/bpan.md
+  title: bnmr, bpan, buttonnmr, butselnmr
+  tags:
+  - bnmr
+  - buttonnmr
+  - butselnmr
+  - bpan
+  - acquire
+  - more
+  summary: Start Workflow for Setting up Some Basic 1D and 2D Experiments
+  category: Commands > Acquire > More
+- path: commands/browse.md
+  title: dir, dira, dirp, dirdat, browse
+  tags:
+  - dir
+  - dira
+  - dirp
+  - dirdat
+  - browse
+  - miscellaneous
+  - dataset handling
+  summary: List all dataset names from current data directory (nD)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/bsmsdisp.md
+  title: bsmsdisp
+  tags:
+  - bsmsdisp
+  - acquire
+  - shim
+  summary: Open the BSMS (Bruker Smart Magnet control System) control panel
+  category: Commands > Acquire > Shim
+- path: commands/butselnmr.md
+  title: bnmr, bpan, buttonnmr, butselnmr
+  tags:
+  - bnmr
+  - buttonnmr
+  - butselnmr
+  - bpan
+  - acquire
+  - more
+  summary: Start Workflow for Setting up Some Basic 1D and 2D Experiments
+  category: Commands > Acquire > More
+- path: commands/buttonnmr.md
+  title: bnmr, bpan, buttonnmr, butselnmr
+  tags:
+  - bnmr
+  - buttonnmr
+  - butselnmr
+  - bpan
+  - acquire
+  - more
+  summary: Start Workflow for Setting up Some Basic 1D and 2D Experiments
+  category: Commands > Acquire > More
+- path: commands/cal.md
+  title: sref, cal
+  tags:
+  - sref
+  - cal
+  - process
+  - calibrate axis
+  summary: Calibrate the spectrum; set the TMS signal to 0 ppm (1D, 2D)
+  category: Commands > Process > Calibrate Axis
+- path: commands/cascade.md
+  title: cascade
+  tags:
+  - cascade
+  - miscellaneous
+  - graphical user interface
+  summary: Cascade Data Windows
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/cf.md
+  title: cf
+  tags:
+  - cf
+  - manage
+  - spectrometer
+  - hardware detections
+  summary: Configure the spectrometer
+  category: Commands > Manage > Spectrometer > Hardware Detections
+- path: commands/close.md
+  title: newwin, nextwin, close, closeall
+  tags:
+  - newwin
+  - nextwin
+  - close
+  - closeall
+  - miscellaneous
+  - topspin interface
+  summary: Open a new (empty) data window
+  category: Commands > Miscellaneous > TopSpin Interface
+- path: commands/closeall.md
+  title: newwin, nextwin, close, closeall
+  tags:
+  - newwin
+  - nextwin
+  - close
+  - closeall
+  - miscellaneous
+  - topspin interface
+  summary: Open a new (empty) data window
+  category: Commands > Miscellaneous > TopSpin Interface
+- path: commands/cmcq.md
+  title: cmcq
+  tags:
+  - cmcq
+  - applications
+  - small molecules
+  summary: Structure/Spectra Consistency Package
+  category: Commands > Applications > Small Molecules
+- path: commands/cmcse.md
+  title: cmcse
+  tags:
+  - cmcse
+  - applications
+  - small molecules
+  summary: Structure Elucidation
+  category: Commands > Applications > Small Molecules
+- path: commands/cmdhist.md
+  title: cmdhist
+  tags:
+  - cmdhist
+  - manage
+  summary: Open command history
+  category: Commands > Manage > Commands
+- path: commands/cmdindex.md
+  title: cmdindex
+  tags:
+  - cmdindex
+  - miscellaneous
+  - topspin interface
+  summary: Open the command index
+  category: Commands > Miscellaneous > TopSpin Interface
+- path: commands/compileall.md
+  title: compileall, cplbruk, cpluser
+  tags:
+  - compileall
+  - cplbruk
+  - cpluser
+  - miscellaneous
+  - run a program
+  summary: Compile all Bruker and User AU programs
+  category: Commands > Miscellaneous > Run a Program
+- path: commands/conv.md
+  title: conv
+  tags:
+  - conv
+  - miscellaneous
+  - dataset handling
+  summary: Convert Aspect 2000/3000 data to TopSpin format (1D, 2D, 3D)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/convdta.md
+  title: convdta
+  tags:
+  - convdta
+  - miscellaneous
+  - dataset handling
+  summary: Convert Avance type raw data to AMX type (1D, 2D, 3D)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/convertpeaklist.md
+  title: convertpeaklist
+  tags:
+  - convertpeaklist
+  - analyze
+  - pick peaks
+  summary: Convert XML-format peak list to TXT-format peak list
+  category: Commands > Analyze > Pick Peaks
+- path: commands/copy.md
+  title: copy
+  tags:
+  - copy
+  - miscellaneous
+  - dataset handling
+  summary: Copy the active window to the clipboard
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/copypars.md
+  title: copypars
+  tags:
+  - copypars
+  - acquire
+  - set limits
+  summary: Advanced transfer of parameters
+  category: Commands > Acquire > Set Limits
+- path: commands/cortab.md
+  title: cortab
+  tags:
+  - cortab
+  - manage
+  - spectrometer
+  - hardware detections
+  summary: Setup amplifier and receiver correction table
+  category: Commands > Manage > Spectrometer > Hardware Detections
+- path: commands/cplbruk.md
+  title: compileall, cplbruk, cpluser
+  tags:
+  - compileall
+  - cplbruk
+  - cpluser
+  - miscellaneous
+  - run a program
+  summary: Compile all Bruker and User AU programs
+  category: Commands > Miscellaneous > Run a Program
+- path: commands/cpluser.md
+  title: compileall, cplbruk, cpluser
+  tags:
+  - compileall
+  - cplbruk
+  - cpluser
+  - miscellaneous
+  - run a program
+  summary: Compile all Bruker and User AU programs
+  category: Commands > Miscellaneous > Run a Program
+- path: commands/cppdisp.md
+  title: cppdisp
+  tags:
+  - cppdisp
+  - acquire
+  - sample
+  summary: CryoProbe Prodigy Graphical User Interface
+  category: Commands > Acquire > Sample
+- path: commands/cron.md
+  title: cron
+  tags:
+  - cron
+  - miscellaneous
+  - run a program
+  summary: Schedule a TopSpin command for execution
+  category: Commands > Miscellaneous > Run a Program
+- path: commands/crplock.md
+  title: crpon, crpoff, crplock, crpobs
+  tags:
+  - crpon
+  - crpoff
+  - crpobs
+  - crplock
+  - acquire
+  - sample
+  summary: Switch the cryo preamplifier on for the lock and observe channel
+  category: Commands > Acquire > Sample
+- path: commands/crpobs.md
+  title: crpon, crpoff, crplock, crpobs
+  tags:
+  - crpon
+  - crpoff
+  - crpobs
+  - crplock
+  - acquire
+  - sample
+  summary: Switch the cryo preamplifier on for the lock and observe channel
+  category: Commands > Acquire > Sample
+- path: commands/crpoff.md
+  title: crpon, crpoff, crplock, crpobs
+  tags:
+  - crpon
+  - crpoff
+  - crpobs
+  - crplock
+  - acquire
+  - sample
+  summary: Switch the cryo preamplifier on for the lock and observe channel
+  category: Commands > Acquire > Sample
+- path: commands/crpon.md
+  title: crpon, crpoff, crplock, crpobs
+  tags:
+  - crpon
+  - crpoff
+  - crpobs
+  - crplock
+  - acquire
+  - sample
+  summary: Switch the cryo preamplifier on for the lock and observe channel
+  category: Commands > Acquire > Sample
+- path: commands/cryodisp.md
+  title: cryodisp
+  tags:
+  - cryodisp
+  - acquire
+  - sample
+  summary: Helium-cold CryoProbe Graphical User Interface
+  category: Commands > Acquire > Sample
+- path: commands/csearch_ident.md
+  title: csearch_ident
+  tags:
+  - csearch_ident
+  - applications
+  - small molecules
+  summary: Identify C13 Spectra with CSEARCH
+  category: Commands > Applications > Small Molecules
+- path: commands/daisy.md
+  title: daisy
+  tags:
+  - daisy
+  - applications
+  - simulate
+  summary: Simulation of 1D spectra based on input of chemical shifts and coupling
+    constants
+  category: Commands > Applications > Simulate
+- path: commands/daisyguide.md
+  title: daisyguide
+  tags:
+  - daisyguide
+  - applications
+  - simulate
+  summary: Daisy tutorial
+  category: Commands > Applications > Simulate
+- path: commands/dalias.md
+  title: dalias
+  tags:
+  - dalias
+  - miscellaneous
+  - dataset handling
+  summary: Create an alias name for a dataset (nD)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/dcon.md
+  title: dcon2d, dcon
+  tags:
+  - dcon2d
+  - dcon
+  - analyze
+  - line shapes
+  summary: Open deconvolution workflow button bar (1D, 2D)
+  category: Commands > Analyze > Line Shapes
+- path: commands/dcon2d.md
+  title: dcon2d, dcon
+  tags:
+  - dcon2d
+  - dcon
+  - analyze
+  - line shapes
+  summary: Open deconvolution workflow button bar (1D, 2D)
+  category: Commands > Analyze > Line Shapes
+- path: commands/del.md
+  title: del, dela, delp, deldat, delete
+  tags:
+  - del
+  - dela
+  - delp
+  - deldat
+  - delete
+  - miscellaneous
+  - dataset handling
+  summary: Delete a complete dataset (nD)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/del2d.md
+  title: delf, dels, delser, del2d, deli
+  tags:
+  - delf
+  - dels
+  - delser
+  - del2d
+  - deli
+  - delete
+  - miscellaneous
+  - dataset handling
+  summary: Delete acquired (raw) data (1D)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/dela.md
+  title: del, dela, delp, deldat, delete
+  tags:
+  - del
+  - dela
+  - delp
+  - deldat
+  - delete
+  - miscellaneous
+  - dataset handling
+  summary: Delete a complete dataset (nD)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/delau.md
+  title: edau, xau, delau, xauw
+  tags:
+  - edau
+  - xau
+  - delau
+  - xauw
+  - miscellaneous
+  - run a program
+  summary: Edit an AU program
+  category: Commands > Miscellaneous > Run a Program
+- path: commands/delcpd.md
+  title: delpul, delcpd, delpy, delmac
+  tags:
+  - delpul
+  - delcpd
+  - delmac
+  - delpy
+  - parameter handling
+  summary: Delete pulse programs
+  category: Commands > Parameter Handling
+- path: commands/deldat.md
+  title: del, dela, delp, deldat, delete
+  tags:
+  - del
+  - dela
+  - delp
+  - deldat
+  - delete
+  - miscellaneous
+  - dataset handling
+  summary: Delete a complete dataset (nD)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/delete.md
+  title: del, dela, delp, deldat, delete
+  tags:
+  - del
+  - dela
+  - delp
+  - deldat
+  - delete
+  - miscellaneous
+  - dataset handling
+  summary: Delete a complete dataset (nD)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/deletetmpfiles.md
+  title: deletetmpfiles
+  tags:
+  - deletetmpfiles
+  - manage
+  - spectrometer
+  summary: Delete temporary acquisition data files
+  category: Commands > Manage > Spectrometer
+- path: commands/delf.md
+  title: delf, dels, delser, del2d, deli
+  tags:
+  - delf
+  - dels
+  - delser
+  - del2d
+  - deli
+  - delete
+  - miscellaneous
+  - dataset handling
+  summary: Delete acquired (raw) data (1D)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/delgp.md
+  title: delpar, delgp, delsh
+  tags:
+  - delpar
+  - delgp
+  - delsh
+  - acquire
+  - shim
+  summary: Delete parameter sets
+  category: Commands > Acquire > Shim
+- path: commands/deli.md
+  title: delf, dels, delser, del2d, deli
+  tags:
+  - delf
+  - dels
+  - delser
+  - del2d
+  - deli
+  - delete
+  - miscellaneous
+  - dataset handling
+  summary: Delete acquired (raw) data (1D)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/dellist.md
+  title: edlist, dellist
+  tags:
+  - edlist
+  - dellist
+  - parameter handling
+  summary: Edit various lists (vd, vp, va, f1, vt, vc etc.)
+  category: Commands > Parameter Handling
+- path: commands/delmac.md
+  title: delpul, delcpd, delpy, delmac
+  tags:
+  - delpul
+  - delcpd
+  - delmac
+  - delpy
+  - parameter handling
+  summary: Delete pulse programs
+  category: Commands > Parameter Handling
+- path: commands/delmisc.md
+  title: edmisc, rmisc, wmisc, delmisc
+  tags:
+  - edmisc
+  - rmisc
+  - wmisc
+  - delmisc
+  - parameter handling
+  summary: Edit misc. lists (integrals, baseline, peaks, levels, etc.)
+  category: Commands > Parameter Handling
+- path: commands/delp.md
+  title: del, dela, delp, deldat, delete
+  tags:
+  - del
+  - dela
+  - delp
+  - deldat
+  - delete
+  - miscellaneous
+  - dataset handling
+  summary: Delete a complete dataset (nD)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/delpar.md
+  title: delpar, delgp, delsh
+  tags:
+  - delpar
+  - delgp
+  - delsh
+  - acquire
+  - shim
+  summary: Delete parameter sets
+  category: Commands > Acquire > Shim
+- path: commands/delpul.md
+  title: delpul, delcpd, delpy, delmac
+  tags:
+  - delpul
+  - delcpd
+  - delmac
+  - delpy
+  - parameter handling
+  summary: Delete pulse programs
+  category: Commands > Parameter Handling
+- path: commands/delpy.md
+  title: delpul, delcpd, delpy, delmac
+  tags:
+  - delpul
+  - delcpd
+  - delmac
+  - delpy
+  - parameter handling
+  summary: Delete pulse programs
+  category: Commands > Parameter Handling
+- path: commands/dels.md
+  title: delf, dels, delser, del2d, deli
+  tags:
+  - delf
+  - dels
+  - delser
+  - del2d
+  - deli
+  - delete
+  - miscellaneous
+  - dataset handling
+  summary: Delete acquired (raw) data (1D)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/delser.md
+  title: delf, dels, delser, del2d, deli
+  tags:
+  - delf
+  - dels
+  - delser
+  - del2d
+  - deli
+  - delete
+  - miscellaneous
+  - dataset handling
+  summary: Delete acquired (raw) data (1D)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/delsh.md
+  title: delpar, delgp, delsh
+  tags:
+  - delpar
+  - delgp
+  - delsh
+  - acquire
+  - shim
+  summary: Delete parameter sets
+  category: Commands > Acquire > Shim
+- path: commands/delshape.md
+  title: edshape, delshape
+  tags:
+  - edshape
+  - delshape
+  - parameter handling
+  summary: Edit shape files
+  category: Commands > Parameter Handling
+- path: commands/dir.md
+  title: dir, dira, dirp, dirdat, browse
+  tags:
+  - dir
+  - dira
+  - dirp
+  - dirdat
+  - browse
+  - miscellaneous
+  - dataset handling
+  summary: List all dataset names from current data directory (nD)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/dir2d.md
+  title: dirf, dirs, dirser, dir2d, browse
+  tags:
+  - dirf
+  - dirs
+  - dirser
+  - dir2d
+  - browse
+  - miscellaneous
+  - dataset handling
+  summary: List acquired (raw) data (1D)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/dira.md
+  title: dir, dira, dirp, dirdat, browse
+  tags:
+  - dir
+  - dira
+  - dirp
+  - dirdat
+  - browse
+  - miscellaneous
+  - dataset handling
+  summary: List all dataset names from current data directory (nD)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/dirdat.md
+  title: dir, dira, dirp, dirdat, browse
+  tags:
+  - dir
+  - dira
+  - dirp
+  - dirdat
+  - browse
+  - miscellaneous
+  - dataset handling
+  summary: List all dataset names from current data directory (nD)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/dirf.md
+  title: dirf, dirs, dirser, dir2d, browse
+  tags:
+  - dirf
+  - dirs
+  - dirser
+  - dir2d
+  - browse
+  - miscellaneous
+  - dataset handling
+  summary: List acquired (raw) data (1D)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/dirp.md
+  title: dir, dira, dirp, dirdat, browse
+  tags:
+  - dir
+  - dira
+  - dirp
+  - dirdat
+  - browse
+  - miscellaneous
+  - dataset handling
+  summary: List all dataset names from current data directory (nD)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/dirs.md
+  title: dirf, dirs, dirser, dir2d, browse
+  tags:
+  - dirf
+  - dirs
+  - dirser
+  - dir2d
+  - browse
+  - miscellaneous
+  - dataset handling
+  summary: List acquired (raw) data (1D)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/dirser.md
+  title: dirf, dirs, dirser, dir2d, browse
+  tags:
+  - dirf
+  - dirs
+  - dirser
+  - dir2d
+  - browse
+  - miscellaneous
+  - dataset handling
+  summary: List acquired (raw) data (1D)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/div.md
+  title: mul, mulc, nm, div
+  tags:
+  - mul
+  - mulc
+  - nm
+  - div
+  - adsu
+  - process
+  - advanced
+  summary: Multiply two datasets (1D)
+  category: Commands > Process > Advanced
+- path: commands/dnmr.md
+  title: dnmr
+  tags:
+  - dnmr
+  - applications
+  - dynamics
+  summary: Fit Dynamic NMR Models
+  category: Commands > Applications > Dynamics
+- path: commands/docs.md
+  title: docs
+  tags:
+  - docs
+  - miscellaneous
+  - topspin interface
+  summary: Open Manual list
+  category: Commands > Miscellaneous > TopSpin Interface
+- path: commands/dosy2d.md
+  title: dosy2d
+  tags:
+  - dosy2d
+  - analyze
+  - dosy
+  summary: Process DOSY dataset (2D)
+  category: Commands > Analyze > Dosy
+- path: commands/dosy3d.md
+  title: dosy3d
+  tags:
+  - dosy3d
+  - analyze
+  - dosy
+  summary: Process DOSY dataset (3D)
+  category: Commands > Analyze > Dosy
+- path: commands/dpa.md
+  title: dpa
+  tags:
+  - dpa
+  - miscellaneous
+  - graphical user interface
+  summary: Display the acquisition status parameters
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/dpl.md
+  title: dpl
+  tags:
+  - dpl
+  - miscellaneous
+  - print/export
+  summary: Save limits of the displayed region (1D, 2D)
+  category: Commands > Miscellaneous > Print/Export
+- path: commands/dpp.md
+  title: dpp
+  tags:
+  - dpp
+  - miscellaneous
+  - graphical user interface
+  summary: Displays processing status parameters
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/dt.md
+  title: dt
+  tags:
+  - dt
+  - process
+  - advanced
+  - miscellaneous operations
+  summary: Calculate the first derivative of the data (1D)
+  category: Commands > Process > Advanced > Miscellaneous Operations
+- path: commands/duadd.md
+  title: add, duadd, addfid, addc, adsu
+  tags:
+  - add
+  - duadd
+  - addfid
+  - addc
+  - adsu
+  - process
+  - advanced
+  summary: Add two data sets point-wise, multiply 2nd with DC (1D)
+  category: Commands > Process > Advanced
+- path: commands/dync.md
+  title: dync
+  tags:
+  - dync
+  - applications
+  - dynamics
+  summary: Dynamics Center
+  category: Commands > Applications > Dynamics
+- path: commands/eda.md
+  title: eda
+  tags:
+  - eda
+  - miscellaneous
+  - graphical user interface
+  summary: Edit acquisition parameters
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/edasp.md
+  title: edsp, edasp
+  tags:
+  - edsp
+  - edasp
+  - manage
+  - spectrometer
+  - experiments/parameters
+  summary: Set up nuclei and spectrometer routing
+  category: Commands > Manage > Spectrometer > Experiments/Parameters
+- path: commands/edau.md
+  title: edau, xau, delau, xauw
+  tags:
+  - edau
+  - xau
+  - delau
+  - xauw
+  - miscellaneous
+  - run a program
+  summary: Edit an AU program
+  category: Commands > Miscellaneous > Run a Program
+- path: commands/edc2.md
+  title: edc2
+  tags:
+  - edc2
+  - miscellaneous
+  - dataset handling
+  summary: Define second and third data set
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/edcpd.md
+  title: edpul, edcpd, edpy, edpy3, edmac
+  tags:
+  - edpul
+  - edcpd
+  - edpy
+  - edpy3
+  - edmac
+  - parameter handling
+  summary: Edit any pulse program
+  category: Commands > Parameter Handling
+- path: commands/edcpul.md
+  title: edcpul, edpul
+  tags:
+  - edcpul
+  - edpul
+  - parameter handling
+  summary: Edit the current pulse program
+  category: Commands > Parameter Handling
+- path: commands/edcstm.md
+  title: edcstm
+  tags:
+  - edcstm
+  - manage
+  - spectrometer
+  - experiments/parameters
+  summary: Edit customer / system information
+  category: Commands > Manage > Spectrometer > Experiments/Parameters
+- path: commands/eddosy.md
+  title: eddosy
+  tags:
+  - eddosy
+  - analyze
+  - dosy
+  summary: Edit DOSY processing parameters (2D, 3D)
+  category: Commands > Analyze > Dosy
+- path: commands/edgp.md
+  title: edgp
+  tags:
+  - edgp
+  - parameter handling
+  summary: Edit gradient programs
+  category: Commands > Parameter Handling
+- path: commands/edlev.md
+  title: edlev, levcalc
+  tags:
+  - edlev
+  - levcalc
+  - miscellaneous
+  - graphical user interface
+  summary: Edit contour levels (2D, 3D)
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/edlist.md
+  title: edlist, dellist
+  tags:
+  - edlist
+  - dellist
+  - parameter handling
+  summary: Edit various lists (vd, vp, va, f1, vt, vc etc.)
+  category: Commands > Parameter Handling
+- path: commands/edlock.md
+  title: edlock, edsolv
+  tags:
+  - edlock
+  - edsolv
+  - manage
+  - spectrometer
+  - experiments/parameters
+  summary: Edit the lock parameter table
+  category: Commands > Manage > Spectrometer > Experiments/Parameters
+- path: commands/edmac.md
+  title: edpul, edcpd, edpy, edpy3, edmac
+  tags:
+  - edpul
+  - edcpd
+  - edpy
+  - edpy3
+  - edmac
+  - parameter handling
+  summary: Edit any pulse program
+  category: Commands > Parameter Handling
+- path: commands/edmisc.md
+  title: edmisc, rmisc, wmisc, delmisc
+  tags:
+  - edmisc
+  - rmisc
+  - wmisc
+  - delmisc
+  - parameter handling
+  summary: Edit misc. lists (integrals, baseline, peaks, levels, etc.)
+  category: Commands > Parameter Handling
+- path: commands/ednuc.md
+  title: ednuc
+  tags:
+  - ednuc
+  - manage
+  - spectrometer
+  - experiments/parameters
+  summary: Edit nuclei table
+  category: Commands > Manage > Spectrometer > Experiments/Parameters
+- path: commands/edp.md
+  title: edp
+  tags:
+  - edp
+  - process
+  - baseline
+  summary: Edit processing parameters (1D, 2D, 3D)
+  category: Commands > Process > Baseline
+- path: commands/edpar.md
+  title: wpar, edpar
+  tags:
+  - wpar
+  - edpar
+  - parameter handling
+  summary: Write a parameter set (nD)
+  category: Commands > Parameter Handling
+- path: commands/edprobe.md
+  title: edprobe
+  tags:
+  - edprobe
+  - manage
+  - spectrometer
+  - hardware detections
+  summary: Edit the probe table
+  category: Commands > Manage > Spectrometer > Hardware Detections
+- path: commands/edprosol.md
+  title: edprosol
+  tags:
+  - edprosol
+  - manage
+  - spectrometer
+  - experiments/parameters
+  summary: Edit probe- and solvent-dependent parameters
+  category: Commands > Manage > Spectrometer > Experiments/Parameters
+- path: commands/edpul.md
+  title: edpul, edcpd, edpy, edpy3, edmac
+  tags:
+  - edpul
+  - edcpd
+  - edpy
+  - edpy3
+  - edmac
+  - parameter handling
+  summary: Edit any pulse program
+  category: Commands > Parameter Handling
+- path: commands/edpy.md
+  title: edpul, edcpd, edpy, edpy3, edmac
+  tags:
+  - edpul
+  - edcpd
+  - edpy
+  - edpy3
+  - edmac
+  - parameter handling
+  summary: Edit any pulse program
+  category: Commands > Parameter Handling
+- path: commands/edpy3.md
+  title: edpul, edcpd, edpy, edpy3, edmac
+  tags:
+  - edpul
+  - edcpd
+  - edpy
+  - edpy3
+  - edmac
+  - parameter handling
+  summary: Edit any pulse program
+  category: Commands > Parameter Handling
+- path: commands/edscon.md
+  title: edscon
+  tags:
+  - edscon
+  - manage
+  - spectrometer
+  - experiments/parameters
+  summary: Edit spectrometer constants
+  category: Commands > Manage > Spectrometer > Experiments/Parameters
+- path: commands/edshape.md
+  title: edshape, delshape
+  tags:
+  - edshape
+  - delshape
+  - parameter handling
+  summary: Edit shape files
+  category: Commands > Parameter Handling
+- path: commands/edsolv.md
+  title: edlock, edsolv
+  tags:
+  - edlock
+  - edsolv
+  - manage
+  - spectrometer
+  - experiments/parameters
+  summary: Edit the lock parameter table
+  category: Commands > Manage > Spectrometer > Experiments/Parameters
+- path: commands/edsp.md
+  title: edsp, edasp
+  tags:
+  - edsp
+  - edasp
+  - manage
+  - spectrometer
+  - experiments/parameters
+  summary: Set up nuclei and spectrometer routing
+  category: Commands > Manage > Spectrometer > Experiments/Parameters
+- path: commands/edstruc.md
+  title: edstruc
+  tags:
+  - edstruc
+  - miscellaneous
+  - graphical user interface
+  summary: Open the 2D Molecule Structure Editor
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/edte.md
+  title: edte
+  tags:
+  - edte
+  - acquire
+  - sample
+  summary: Edit the temperature parameters
+  category: Commands > Acquire > Sample
+- path: commands/edtext.md
+  title: edtext
+  tags:
+  - edtext
+  - miscellaneous
+  - topspin interface
+  summary: Open an empty text file with an editor
+  category: Commands > Miscellaneous > TopSpin Interface
+- path: commands/edti.md
+  title: edti
+  tags:
+  - edti
+  - miscellaneous
+  - graphical user interface
+  summary: Set the dataset title (1D, 2D, 3D) in a TopSpin internal window
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/edtix.md
+  title: edtix
+  tags:
+  - edtix
+  - miscellaneous
+  - graphical user interface
+  summary: Set the data set title (1D, 2D, 3D) in a TopSpin external window
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/edtune.md
+  title: edtune
+  tags:
+  - edtune
+  - acquire
+  - shim
+  summary: Edit tune file for automatic shimming with the tune command
+  category: Commands > Acquire > Shim
+- path: commands/ef.md
+  title: ef, efp
+  tags:
+  - ef
+  - efp
+  - process
+  - advanced
+  - special transforms
+  summary: Exponential window multiplication + Fourier transform (1D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/efp.md
+  title: ef, efp
+  tags:
+  - ef
+  - efp
+  - process
+  - advanced
+  - special transforms
+  summary: Exponential window multiplication + Fourier transform (1D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/ej.md
+  title: ej, ij
+  tags:
+  - ej
+  - ij
+  - acquire
+  - sample
+  summary: Eject the sample from the magnet
+  category: Commands > Acquire > Sample
+- path: commands/em.md
+  title: em, gm, wm
+  tags:
+  - em
+  - gm
+  - wm
+  - process
+  - processing spectrum
+  summary: Exponential window multiplication of the FID (1D)
+  category: Commands > Process > Processing Spectrum
+- path: commands/env.md
+  title: env
+  tags:
+  - env
+  - general information
+  summary: Set Environment Variable for TopSpin Commands
+  category: General Information
+- path: commands/exit.md
+  title: exit
+  tags:
+  - exit
+  - miscellaneous
+  - topspin interface
+  summary: Exit TopSpin
+  category: Commands > Miscellaneous > TopSpin Interface
+- path: commands/expinstall.md
+  title: expinstall
+  tags:
+  - expinstall
+  - manage
+  - spectrometer
+  - experiments/parameters
+  summary: Install pulse programs, AU programs, parameter sets etc.
+  category: Commands > Manage > Spectrometer > Experiments/Parameters
+- path: commands/expl.md
+  title: expl
+  tags:
+  - expl
+  - miscellaneous
+  - run a program
+  summary: Open File Explorer showing files of current processing data directory
+  category: Commands > Miscellaneous > Run a Program
+- path: commands/exportfile.md
+  title: exportfile
+  tags:
+  - exportfile
+  - miscellaneous
+  - print/export
+  summary: Export data window to graphics file (1D,2D,3D)
+  category: Commands > Miscellaneous > Print/Export
+- path: commands/exprof.md
+  title: exprof
+  tags:
+  - exprof
+  - manage
+  - spectrometer
+  - experiments/parameters
+  summary: Display excitation profile of selective experiment
+  category: Commands > Manage > Spectrometer > Experiments/Parameters
+- path: commands/expt.md
+  title: expt
+  tags:
+  - expt
+  - acquire
+  - run
+  summary: Calculate and show the experiment time
+  category: Commands > Acquire > Run
+- path: commands/f1disco.md
+  title: f2disco, f1disco
+  tags:
+  - f2disco
+  - f1disco
+  - proj
+  - process
+  - advanced
+  summary: Calculate disco projection in F2 (2D)
+  category: Commands > Process > Advanced
+- path: commands/f1projn.md
+  title: f2projn, f2projp, f1projn, f1projp
+  tags:
+  - f2projn
+  - f2projp
+  - f1projn
+  - f1projp
+  - proj
+  - process
+  - advanced
+  summary: Calculate negative partial projection in F2 (2D)
+  category: Commands > Process > Advanced
+- path: commands/f1projp.md
+  title: f2projn, f2projp, f1projn, f1projp
+  tags:
+  - f2projn
+  - f2projp
+  - f1projn
+  - f1projp
+  - proj
+  - process
+  - advanced
+  summary: Calculate negative partial projection in F2 (2D)
+  category: Commands > Process > Advanced
+- path: commands/f1sum.md
+  title: f2sum, f1sum, proj
+  tags:
+  - f2sum
+  - f1sum
+  - proj
+  - process
+  - advanced
+  summary: Calculate partial sum in F2 (2D)
+  category: Commands > Process > Advanced
+- path: commands/f2disco.md
+  title: f2disco, f1disco
+  tags:
+  - f2disco
+  - f1disco
+  - proj
+  - process
+  - advanced
+  summary: Calculate disco projection in F2 (2D)
+  category: Commands > Process > Advanced
+- path: commands/f2projn.md
+  title: f2projn, f2projp, f1projn, f1projp
+  tags:
+  - f2projn
+  - f2projp
+  - f1projn
+  - f1projp
+  - proj
+  - process
+  - advanced
+  summary: Calculate negative partial projection in F2 (2D)
+  category: Commands > Process > Advanced
+- path: commands/f2projp.md
+  title: f2projn, f2projp, f1projn, f1projp
+  tags:
+  - f2projn
+  - f2projp
+  - f1projn
+  - f1projp
+  - proj
+  - process
+  - advanced
+  summary: Calculate negative partial projection in F2 (2D)
+  category: Commands > Process > Advanced
+- path: commands/f2sum.md
+  title: f2sum, f1sum, proj
+  tags:
+  - f2sum
+  - f1sum
+  - proj
+  - process
+  - advanced
+  summary: Calculate partial sum in F2 (2D)
+  category: Commands > Process > Advanced
+- path: commands/fbar.md
+  title: fbar
+  tags:
+  - fbar
+  - miscellaneous
+  - graphical user interface
+  summary: Display a flow bar
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/fbs.md
+  title: fbs - Fragment Based Screening
+  tags:
+  - fbs
+  - applications
+  summary: Fragment Based Screening
+  category: Commands > Applications
+- path: commands/fconv.md
+  title: fconv
+  tags:
+  - fconv
+  - miscellaneous
+  - dataset handling
+  summary: Convert Felix type data to Bruker TopSpin type data (1D)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/fid.md
+  title: fid
+  tags:
+  - fid
+  - miscellaneous
+  - graphical user interface
+  summary: Switch to FID Display
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/filt.md
+  title: filt
+  tags:
+  - filt
+  - process
+  - advanced
+  - miscellaneous operations
+  summary: Digital filtering of the data (1D)
+  category: Commands > Process > Advanced > Miscellaneous Operations
+- path: commands/find.md
+  title: find, search
+  tags:
+  - find
+  - search
+  - miscellaneous
+  - dataset handling
+  summary: Find data according to specified criteria (nD)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/fmc.md
+  title: fp, fmc
+  tags:
+  - fp
+  - fmc
+  - process
+  - advanced
+  - special transforms
+  summary: Fourier transform + phase correction (1D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/fp.md
+  title: fp, fmc
+  tags:
+  - fp
+  - fmc
+  - process
+  - advanced
+  - special transforms
+  summary: Fourier transform + phase correction (1D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/fromjdx.md
+  title: fromjdx
+  tags:
+  - fromjdx
+  - miscellaneous
+  - dataset handling
+  summary: Convert a JCAMP-DX data file to TopSpin format (1D, 2D)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/fromzip.md
+  title: fromzip
+  tags:
+  - fromzip
+  - miscellaneous
+  - dataset handling
+  summary: Unzip / display a zipped TopSpin data set (nD)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/ft.md
+  title: ft, ftf
+  tags:
+  - ft
+  - ftf
+  - process
+  - processing spectrum
+  summary: Fourier transform (1D)
+  category: Commands > Process > Processing Spectrum
+- path: commands/ft3d.md
+  title: ft3d
+  tags:
+  - ft3d
+  - process
+  - processing spectrum
+  summary: Process data, including FT, in the F3, F2 and F1 direction (3D)
+  category: Commands > Process > Processing Spectrum
+- path: commands/ftf.md
+  title: ft, ftf
+  tags:
+  - ft
+  - ftf
+  - process
+  - processing spectrum
+  summary: Fourier transform (1D)
+  category: Commands > Process > Processing Spectrum
+- path: commands/ftnd.md
+  title: ftnd
+  tags:
+  - ftnd
+  - process
+  - processing spectrum
+  summary: nD processing including Fourier transform (≥ 3D)
+  category: Commands > Process > Processing Spectrum
+- path: commands/gdcheck.md
+  title: gdcheck, auditc
+  tags:
+  - gdcheck
+  - auditc
+  - manage
+  - security
+  summary: Ensure that the processing audit trail is consistent
+  category: Commands > Manage > Security
+- path: commands/genfid.md
+  title: genfid
+  tags:
+  - genfid
+  - process
+  - advanced
+  summary: Generate pseudo-raw data (1D)
+  category: Commands > Process > Advanced
+- path: commands/genser.md
+  title: genser
+  tags:
+  - genser
+  - process
+  - advanced
+  summary: Generate pseudo-raw data (2D)
+  category: Commands > Process > Advanced
+- path: commands/getlcosy.md
+  title: getlim1d, getlcosy, getlxhco, getljres, getlinv
+  tags:
+  - getlim1d
+  - getlcosy
+  - getlxhco
+  - getljres
+  - getlinv
+  - acquire
+  - set limits
+  summary: Calculate 1D spectral width from integral ranges
+  category: Commands > Acquire > Set Limits
+- path: commands/getlim1d.md
+  title: getlim1d, getlcosy, getlxhco, getljres, getlinv
+  tags:
+  - getlim1d
+  - getlcosy
+  - getlxhco
+  - getljres
+  - getlinv
+  - acquire
+  - set limits
+  summary: Calculate 1D spectral width from integral ranges
+  category: Commands > Acquire > Set Limits
+- path: commands/getlinv.md
+  title: getlim1d, getlcosy, getlxhco, getljres, getlinv
+  tags:
+  - getlim1d
+  - getlcosy
+  - getlxhco
+  - getljres
+  - getlinv
+  - acquire
+  - set limits
+  summary: Calculate 1D spectral width from integral ranges
+  category: Commands > Acquire > Set Limits
+- path: commands/getljres.md
+  title: getlim1d, getlcosy, getlxhco, getljres, getlinv
+  tags:
+  - getlim1d
+  - getlcosy
+  - getlxhco
+  - getljres
+  - getlinv
+  - acquire
+  - set limits
+  summary: Calculate 1D spectral width from integral ranges
+  category: Commands > Acquire > Set Limits
+- path: commands/getlxhco.md
+  title: getlim1d, getlcosy, getlxhco, getljres, getlinv
+  tags:
+  - getlim1d
+  - getlcosy
+  - getlxhco
+  - getljres
+  - getlinv
+  - acquire
+  - set limits
+  summary: Calculate 1D spectral width from integral ranges
+  category: Commands > Acquire > Set Limits
+- path: commands/getprosol.md
+  title: getprosol
+  tags:
+  - getprosol
+  - acquire
+  - prosol
+  summary: Get probe- and solvent-dependent parameters
+  category: Commands > Acquire > Prosol
+- path: commands/gf.md
+  title: gf, gfp
+  tags:
+  - gf
+  - gfp
+  - process
+  - advanced
+  - special transforms
+  summary: Gaussian window multiplication + Fourier transform (1D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/gfp.md
+  title: gf, gfp
+  tags:
+  - gf
+  - gfp
+  - process
+  - advanced
+  - special transforms
+  summary: Gaussian window multiplication + Fourier transform (1D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/ghelp.md
+  title: help, ghelp
+  tags:
+  - help
+  - ghelp
+  - miscellaneous
+  - topspin interface
+  summary: Search for keywords in command help
+  category: Commands > Miscellaneous > TopSpin Interface
+- path: commands/gm.md
+  title: em, gm, wm
+  tags:
+  - em
+  - gm
+  - wm
+  - process
+  - processing spectrum
+  summary: Exponential window multiplication of the FID (1D)
+  category: Commands > Process > Processing Spectrum
+- path: commands/go.md
+  title: go
+  tags:
+  - go
+  - acquire
+  - run
+  summary: Perform an acquisition, adding to existing data
+  category: Commands > Acquire > Run
+- path: commands/gs.md
+  title: gs
+  tags:
+  - gs
+  - acquire
+  - run
+  summary: Interactive parameter optimization during acquisition
+  category: Commands > Acquire > Run
+- path: commands/ha.md
+  title: ha
+  tags:
+  - ha
+  - manage
+  - spectrometer
+  - hardware detections
+  summary: Show hardware Ethernet addresses
+  category: Commands > Manage > Spectrometer > Hardware Detections
+- path: commands/halt.md
+  title: halt
+  tags:
+  - acquire
+  - run
+  summary: The halt command halts the acquisition. It waits until the current scan
+    has been completed and writes the data to disk. It does not complete the phase
+    cycle, though.
+  category: Commands > Acquire > Run
+- path: commands/help.md
+  title: help, ghelp
+  tags:
+  - help
+  - ghelp
+  - miscellaneous
+  - topspin interface
+  summary: Search for keywords in command help
+  category: Commands > Miscellaneous > TopSpin Interface
+- path: commands/hist.md
+  title: hist
+  tags:
+  - hist
+  - manage
+  summary: Show the TopSpin history and protocol
+  category: Commands > Manage > Commands
+- path: commands/hpdisp.md
+  title: hpdisp
+  tags:
+  - hpdisp
+  - acquire
+  - more
+  summary: Pulse program display
+  category: Commands > Acquire > More
+- path: commands/ht.md
+  title: ht
+  tags:
+  - ht
+  - process
+  - advanced
+  - special transforms
+  summary: Hilbert transform (1D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/icona.md
+  title: icona, iconnmr
+  tags:
+  - icona
+  - iconnmr
+  - acquire
+  - more
+  summary: Start IconNMR automation
+  category: Commands > Acquire > More
+- path: commands/iconnmr.md
+  title: icona, iconnmr
+  tags:
+  - icona
+  - iconnmr
+  - acquire
+  - more
+  summary: Start IconNMR automation
+  category: Commands > Acquire > More
+- path: commands/ift.md
+  title: ift
+  tags:
+  - ift
+  - process
+  - advanced
+  - special transforms
+  summary: Inverse Fourier transform (1D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/ii.md
+  title: ii
+  tags:
+  - ii
+  - acquire
+  - run
+  summary: Initialize spectrometer interface
+  category: Commands > Acquire > Run
+- path: commands/ij.md
+  title: ej, ij
+  tags:
+  - ej
+  - ij
+  - acquire
+  - sample
+  summary: Eject the sample from the magnet
+  category: Commands > Acquire > Sample
+- path: commands/int.md
+  title: int2d, int3d, int
+  tags:
+  - int2d
+  - int3d
+  - int
+  - analyze
+  - integrate
+  summary: Calculate integrals (2D)
+  category: Commands > Analyze > Integrate
+- path: commands/int2d.md
+  title: int2d, int3d, int
+  tags:
+  - int2d
+  - int3d
+  - int
+  - analyze
+  - integrate
+  summary: Calculate integrals (2D)
+  category: Commands > Analyze > Integrate
+- path: commands/int3d.md
+  title: int2d, int3d, int
+  tags:
+  - int2d
+  - int3d
+  - int
+  - analyze
+  - integrate
+  summary: Calculate integrals (2D)
+  category: Commands > Analyze > Integrate
+- path: commands/intser.md
+  title: intser
+  tags:
+  - intser
+  - process
+  - advanced
+  summary: Integrate a series of datasets
+  category: Commands > Process > Advanced
+- path: commands/jconv.md
+  title: jconv
+  tags:
+  - jconv
+  - miscellaneous
+  - dataset handling
+  summary: Convert Jeol type data to Bruker TopSpin data (1D, 2D, 3D)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/jmol.md
+  title: jmol
+  tags:
+  - jmol
+  - applications
+  - small molecules
+  summary: Open the Jmol molecule structure viewer
+  category: Commands > Applications > Small Molecules
+- path: commands/kill.md
+  title: kill, show
+  tags:
+  - kill
+  - show
+  - manage
+  summary: Show active TopSpin commands and allow to kill them
+  category: Commands > Manage > Commands
+- path: commands/levcalc.md
+  title: edlev, levcalc
+  tags:
+  - edlev
+  - levcalc
+  - miscellaneous
+  - graphical user interface
+  summary: Edit contour levels (2D, 3D)
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/lfilter.md
+  title: lgain, ltime, lfilter
+  tags:
+  - lgain
+  - ltime
+  - lfilter
+  - manage
+  - spectrometer
+  - bsms control
+  summary: Set the lock regulator loop gain
+  category: Commands > Manage > Spectrometer > BSMS Control
+- path: commands/lg.md
+  title: lg
+  tags:
+  - lg
+  - acquire
+  - lock
+  summary: Set Lock Gain
+  category: Commands > Acquire > Lock
+- path: commands/lgain.md
+  title: lgain, ltime, lfilter
+  tags:
+  - lgain
+  - ltime
+  - lfilter
+  - manage
+  - spectrometer
+  - bsms control
+  summary: Set the lock regulator loop gain
+  category: Commands > Manage > Spectrometer > BSMS Control
+- path: commands/li.md
+  title: li, lipp, lippf, int
+  tags:
+  - li
+  - lipp
+  - lippf
+  - int
+  - analyze
+  - integrate
+  summary: List integrals (1D)
+  category: Commands > Analyze > Integrate
+- path: commands/lipp.md
+  title: li, lipp, lippf, int
+  tags:
+  - li
+  - lipp
+  - lippf
+  - int
+  - analyze
+  - integrate
+  summary: List integrals (1D)
+  category: Commands > Analyze > Integrate
+- path: commands/lippf.md
+  title: li, lipp, lippf, int
+  tags:
+  - li
+  - lipp
+  - lippf
+  - int
+  - analyze
+  - integrate
+  summary: List integrals (1D)
+  category: Commands > Analyze > Integrate
+- path: commands/lo.md
+  title: lo
+  tags:
+  - lo
+  - acquire
+  - lock
+  summary: Set Lock Power
+  category: Commands > Acquire > Lock
+- path: commands/lock.md
+  title: lock
+  tags:
+  - lock
+  - acquire
+  - lock
+  summary: Lock the magnetic field
+  category: Commands > Acquire > Lock
+- path: commands/lockdataset.md
+  title: lockdataset
+  tags:
+  - lockdataset
+  - manage
+  - security
+  summary: Lock dataset (change permissions) to prevent future changes
+  category: Commands > Manage > Security
+- path: commands/lockdisp.md
+  title: lockdisp
+  tags:
+  - lockdisp
+  - manage
+  - spectrometer
+  - bsms control
+  summary: Open the lock display window
+  category: Commands > Manage > Spectrometer > BSMS Control
+- path: commands/lockgui.md
+  title: lockgui
+  tags:
+  - lockgui
+  - manage
+  - security
+  summary: Lock the TopSpin interface
+  category: Commands > Manage > Security
+- path: commands/loopadj.md
+  title: loopadj, autogain, autophase
+  tags:
+  - loopadj
+  - autogain
+  - autophase
+  - acquire
+  - lock
+  summary: AU program for optimization of LGAIN (loop gain), LTIME (loop time) and
+    LFILTER (loop filter)
+  category: Commands > Acquire > Lock
+- path: commands/lopo.md
+  title: lopo
+  tags:
+  - lopo
+  - manage
+  - spectrometer
+  - bsms control
+  summary: Set the lock parameters
+  category: Commands > Manage > Spectrometer > BSMS Control
+- path: commands/lpnd.md
+  title: lpnd
+  tags:
+  - lpnd
+  - process
+  - advanced
+  summary: nD linear prediction (≥ 3D)
+  category: Commands > Process > Advanced
+- path: commands/ls.md
+  title: ls, rs
+  tags:
+  - ls
+  - rs
+  - process
+  - advanced
+  - miscellaneous operations
+  summary: Left shift data NSP points (1D)
+  category: Commands > Process > Advanced > Miscellaneous Operations
+- path: commands/ltime.md
+  title: lgain, ltime, lfilter
+  tags:
+  - lgain
+  - ltime
+  - lfilter
+  - manage
+  - spectrometer
+  - bsms control
+  summary: Set the lock regulator loop gain
+  category: Commands > Manage > Spectrometer > BSMS Control
+- path: commands/mana.md
+  title: mana
+  tags:
+  - mana
+  - analyze
+  - multiplets
+  summary: Switch to Interactive Multiplet Analysis Window (1D)
+  category: Commands > Analyze > Multiplets
+- path: commands/managuide.md
+  title: managuide
+  tags:
+  - managuide
+  - analyze
+  - multiplets
+  summary: Open the Multiplet Analysis Guide (1D)
+  category: Commands > Analyze > Multiplets
+- path: commands/masdisp.md
+  title: masdisp
+  tags:
+  - masdisp
+  - acquire
+  - spin
+  summary: Open interface to control the MAS unit
+  category: Commands > Acquire > Spin
+- path: commands/mase.md
+  title: mase, maseject
+  tags:
+  - mase
+  - maseject
+  - acquire
+  - spin
+  summary: Eject rotor from MAS probe
+  category: Commands > Acquire > Spin
+- path: commands/maseject.md
+  title: mase, maseject
+  tags:
+  - mase
+  - maseject
+  - acquire
+  - spin
+  summary: Eject rotor from MAS probe
+  category: Commands > Acquire > Spin
+- path: commands/masg.md
+  title: masg, masgo
+  tags:
+  - masg
+  - masgo
+  - acquire
+  - spin
+  summary: Start Spinning the MAS Rotor
+  category: Commands > Acquire > Spin
+- path: commands/masgo.md
+  title: masg, masgo
+  tags:
+  - masg
+  - masgo
+  - acquire
+  - spin
+  summary: Start Spinning the MAS Rotor
+  category: Commands > Acquire > Spin
+- path: commands/mash.md
+  title: mash, mashalt
+  tags:
+  - mash
+  - mashalt
+  - acquire
+  - spin
+  summary: Halt Spinning the MAS Rotor
+  category: Commands > Acquire > Spin
+- path: commands/mashalt.md
+  title: mash, mashalt
+  tags:
+  - mash
+  - mashalt
+  - acquire
+  - spin
+  summary: Halt Spinning the MAS Rotor
+  category: Commands > Acquire > Spin
+- path: commands/masi.md
+  title: masi, masinsert
+  tags:
+  - masi
+  - masinsert
+  - acquire
+  - spin
+  summary: Insert rotor into the MAS probe
+  category: Commands > Acquire > Spin
+- path: commands/masinsert.md
+  title: masi, masinsert
+  tags:
+  - masi
+  - masinsert
+  - acquire
+  - spin
+  summary: Insert rotor into the MAS probe
+  category: Commands > Acquire > Spin
+- path: commands/masreflip.md
+  title: masreflip
+  tags:
+  - masreflip
+  - acquire
+  - spin
+  summary: Flips the status without ejecting the rotor
+  category: Commands > Acquire > Spin
+- path: commands/masrget.md
+  title: masrget
+  tags:
+  - masrget
+  - acquire
+  - spin
+  summary: Read MAS Spinning Rate
+  category: Commands > Acquire > Spin
+- path: commands/masrset.md
+  title: masrset
+  tags:
+  - masrset
+  - acquire
+  - spin
+  summary: Set MAS Spinning Rate
+  category: Commands > Acquire > Spin
+- path: commands/maxed.md
+  title: maxed, maxent, maxinf, maxres, xline
+  tags:
+  - maxed
+  - maxent
+  - maxinf
+  - maxres
+  - xline
+  - analyze
+  - line shapes
+  summary: Open maxent parameters control window
+  category: Commands > Analyze > Line Shapes
+- path: commands/maxent.md
+  title: maxed, maxent, maxinf, maxres, xline
+  tags:
+  - maxed
+  - maxent
+  - maxinf
+  - maxres
+  - xline
+  - analyze
+  - line shapes
+  summary: Open maxent parameters control window
+  category: Commands > Analyze > Line Shapes
+- path: commands/maxinf.md
+  title: maxed, maxent, maxinf, maxres, xline
+  tags:
+  - maxed
+  - maxent
+  - maxinf
+  - maxres
+  - xline
+  - analyze
+  - line shapes
+  summary: Open maxent parameters control window
+  category: Commands > Analyze > Line Shapes
+- path: commands/maxres.md
+  title: maxed, maxent, maxinf, maxres, xline
+  tags:
+  - maxed
+  - maxent
+  - maxinf
+  - maxres
+  - xline
+  - analyze
+  - line shapes
+  summary: Open maxent parameters control window
+  category: Commands > Analyze > Line Shapes
+- path: commands/mc.md
+  title: mc
+  tags:
+  - mc
+  - process
+  - adjust phase
+  summary: Magnitude calculation (1D)
+  category: Commands > Process > Adjust Phase
+- path: commands/mcnd.md
+  title: mcnd
+  tags:
+  - mcnd
+  - process
+  - adjust phase
+  summary: nD magnitude calculation (≥ 3D)
+  category: Commands > Process > Adjust Phase
+- path: commands/mldcon.md
+  title: mldcon
+  tags:
+  - analyze
+  - line shapes
+  summary: The command mldcon deconvolves a 1D spectrum by fitting a mixed Lorentzian/Gaussian
+    function to the peaks. The algorithm was developed to work on 1H 1D spectra, and
+    it is based on a deep learning algo
+  category: Commands > Analyze > Line Shapes
+- path: commands/mul.md
+  title: mul, mulc, nm, div
+  tags:
+  - mul
+  - mulc
+  - nm
+  - div
+  - adsu
+  - process
+  - advanced
+  summary: Multiply two datasets (1D)
+  category: Commands > Process > Advanced
+- path: commands/mul2d.md
+  title: add2d, mul2d, addser
+  tags:
+  - add2d
+  - mul2d
+  - addser
+  - adsu
+  - process
+  - advanced
+  summary: Add or subtract two datasets (2D)
+  category: Commands > Process > Advanced
+- path: commands/mulc.md
+  title: mul, mulc, nm, div
+  tags:
+  - mul
+  - mulc
+  - nm
+  - div
+  - adsu
+  - process
+  - advanced
+  summary: Multiply two datasets (1D)
+  category: Commands > Process > Advanced
+- path: commands/nbook.md
+  title: nbook
+  tags:
+  - nbook
+  - manage
+  summary: Open the user notebook
+  category: Commands > Manage > Commands
+- path: commands/new.md
+  title: new
+  tags:
+  - new
+  - acquire
+  summary: Define a new dataset (nD)
+  category: Commands > Acquire
+- path: commands/newtop.md
+  title: newtop
+  tags:
+  - newtop
+  - miscellaneous
+  - topspin interface
+  summary: Open a new TopSpin interface
+  category: Commands > Miscellaneous > TopSpin Interface
+- path: commands/newwin.md
+  title: newwin, nextwin, close, closeall
+  tags:
+  - newwin
+  - nextwin
+  - close
+  - closeall
+  - miscellaneous
+  - topspin interface
+  summary: Open a new (empty) data window
+  category: Commands > Miscellaneous > TopSpin Interface
+- path: commands/nextwin.md
+  title: newwin, nextwin, close, closeall
+  tags:
+  - newwin
+  - nextwin
+  - close
+  - closeall
+  - miscellaneous
+  - topspin interface
+  summary: Open a new (empty) data window
+  category: Commands > Miscellaneous > TopSpin Interface
+- path: commands/nm.md
+  title: mul, mulc, nm, div
+  tags:
+  - mul
+  - mulc
+  - nm
+  - div
+  - adsu
+  - process
+  - advanced
+  summary: Multiply two datasets (1D)
+  category: Commands > Process > Advanced
+- path: commands/nmr_restore.md
+  title: nmr_save, nmr_restore, user_save, user_restore
+  tags:
+  - nmr_save
+  - nmrsave
+  - nmr_restore
+  - user_save
+  - user_restore
+  - manage
+  - spectrometer
+  - save/restore installation
+  summary: Save installation-specific files
+  category: Commands > Manage > Spectrometer > Save/Restore Installation
+- path: commands/nmr_save.md
+  title: nmr_save, nmr_restore, user_save, user_restore
+  tags:
+  - nmr_save
+  - nmrsave
+  - nmr_restore
+  - user_save
+  - user_restore
+  - manage
+  - spectrometer
+  - save/restore installation
+  summary: Save installation-specific files
+  category: Commands > Manage > Spectrometer > Save/Restore Installation
+- path: commands/nmrq.md
+  title: nmrq
+  tags:
+  - nmrq
+  - analyze
+  - quantify
+  summary: Quantitative NMR (1D)
+  category: Commands > Analyze > Quantify
+- path: commands/nmrsave.md
+  title: nmr_save, nmr_restore, user_save, user_restore
+  tags:
+  - nmr_save
+  - nmrsave
+  - nmr_restore
+  - user_save
+  - user_restore
+  - manage
+  - spectrometer
+  - save/restore installation
+  summary: Save installation-specific files
+  category: Commands > Manage > Spectrometer > Save/Restore Installation
+- path: commands/nmrsim.md
+  title: nmrsim
+  tags:
+  - nmrsim
+  - applications
+  - simulate
+  summary: Simulate FID from Pulse Program
+  category: Commands > Applications > Simulate
+- path: commands/nmrtemp.md
+  title: nmrtemp
+  tags:
+  - nmrtemp
+  - acquire
+  - more
+  summary: NMR Thermometer
+  category: Commands > Acquire > More
+- path: commands/open.md
+  title: open
+  tags:
+  - open
+  - miscellaneous
+  - dataset handling
+  summary: Open a dataset, pulse program, AU program etc. (nD)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/paracon.md
+  title: paracon
+  tags:
+  - paracon
+  - manage
+  - spectrometer
+  - experiments/parameters
+  summary: Change the basic frequency in parameter sets
+  category: Commands > Manage > Spectrometer > Experiments/Parameters
+- path: commands/parameterindex.md
+  title: parameterindex
+  tags:
+  - parameterindex
+  - miscellaneous
+  - topspin interface
+  summary: Open the parameter index
+  category: Commands > Miscellaneous > TopSpin Interface
+- path: commands/parplot.md
+  title: parplot
+  tags:
+  - parplot
+  - miscellaneous
+  - print/export
+  summary: Select parameters to appear on the plot (1D, 2D)
+  category: Commands > Miscellaneous > Print/Export
+- path: commands/parwin.md
+  title: parwin
+  tags:
+  - parwin
+  - miscellaneous
+  - graphical user interface
+  summary: Open parameter window associated with current data (nD)
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/paste.md
+  title: paste
+  tags:
+  - paste
+  - miscellaneous
+  - dataset handling
+  summary: Open the dataset that was last copied (nD)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/pdudisp.md
+  title: pdudisp
+  tags:
+  - pdudisp
+  - manage
+  - spectrometer
+  summary: Spectrometer Power On/Off
+  category: Commands > Manage > Spectrometer
+- path: commands/peakw.md
+  title: peakw
+  tags:
+  - peakw
+  - analyze
+  - pick peaks
+  summary: Calculate width of highest peak in displayed region (1D)
+  category: Commands > Analyze > Pick Peaks
+- path: commands/ph.md
+  title: apk0, apk1, apk0f, ph
+  tags:
+  - apk0
+  - apk1
+  - apk0f
+  - ph
+  - process
+  - adjust phase
+  - automatic phasing options
+  summary: Zero-order automatic phase correction (1D)
+  category: Commands > Process > Adjust Phase > Automatic Phasing Options
+- path: commands/pk.md
+  title: pk
+  tags:
+  - pk
+  - process
+  - adjust phase
+  summary: Phase correction according to PHC0 / PHC1 (1D)
+  category: Commands > Process > Adjust Phase
+- path: commands/pknd.md
+  title: pknd
+  tags:
+  - pknd
+  - process
+  - adjust phase
+  summary: nD phase correction (≥ 3D)
+  category: Commands > Process > Adjust Phase
+- path: commands/plot.md
+  title: plot, xwp, xwpr, xwinplot
+  tags:
+  - plot
+  - xwp
+  - xwpr
+  - xwinplot
+  - miscellaneous
+  - print/export
+  summary: Start Plot Editor
+  category: Commands > Miscellaneous > Print/Export
+- path: commands/popt.md
+  title: popt
+  tags:
+  - popt
+  - acquire
+  - run
+  summary: Open the parameter optimization window
+  category: Commands > Acquire > Run
+- path: commands/pp.md
+  title: pp2d, pp
+  tags:
+  - pp2d
+  - pp
+  - analyze
+  - pick peaks
+  summary: Perform peak picking (2D)
+  category: Commands > Analyze > Pick Peaks
+- path: commands/pp2d.md
+  title: pp2d, pp
+  tags:
+  - pp2d
+  - pp
+  - analyze
+  - pick peaks
+  summary: Perform peak picking (2D)
+  category: Commands > Analyze > Pick Peaks
+- path: commands/pp2dml.md
+  title: pp2dml
+  tags:
+  - pp2dml
+  - analyze
+  - pick peaks
+  summary: Peak picking and annotation using machine learning based algorithm (2D)
+  category: Commands > Analyze > Pick Peaks
+- path: commands/pp3d.md
+  title: pp3d
+  tags:
+  - pp3d
+  - pp
+  - analyze
+  - pick peaks
+  summary: Perform peak picking (3D)
+  category: Commands > Analyze > Pick Peaks
+- path: commands/ppd.md
+  title: ppd
+  tags:
+  - ppd
+  - analyze
+  - pick peaks
+  summary: Perform peak picking with derivative-based algorithm (1D)
+  category: Commands > Analyze > Pick Peaks
+- path: commands/ppf.md
+  title: pps, ppf, ppl, pph, ppj
+  tags:
+  - pps
+  - ppf
+  - ppl
+  - pph
+  - ppj
+  - analyze
+  - pick peaks
+  summary: Perform peak picking on displayed region (1D, 2D, 3D)
+  category: Commands > Analyze > Pick Peaks
+- path: commands/pph.md
+  title: pps, ppf, ppl, pph, ppj
+  tags:
+  - pps
+  - ppf
+  - ppl
+  - pph
+  - ppj
+  - analyze
+  - pick peaks
+  summary: Perform peak picking on displayed region (1D, 2D, 3D)
+  category: Commands > Analyze > Pick Peaks
+- path: commands/ppj.md
+  title: pps, ppf, ppl, pph, ppj
+  tags:
+  - pps
+  - ppf
+  - ppl
+  - pph
+  - ppj
+  - analyze
+  - pick peaks
+  summary: Perform peak picking on displayed region (1D, 2D, 3D)
+  category: Commands > Analyze > Pick Peaks
+- path: commands/ppl.md
+  title: pps, ppf, ppl, pph, ppj
+  tags:
+  - pps
+  - ppf
+  - ppl
+  - pph
+  - ppj
+  - analyze
+  - pick peaks
+  summary: Perform peak picking on displayed region (1D, 2D, 3D)
+  category: Commands > Analyze > Pick Peaks
+- path: commands/pps.md
+  title: pps, ppf, ppl, pph, ppj
+  tags:
+  - pps
+  - ppf
+  - ppl
+  - pph
+  - ppj
+  - analyze
+  - pick peaks
+  summary: Perform peak picking on displayed region (1D, 2D, 3D)
+  category: Commands > Analyze > Pick Peaks
+- path: commands/prguide.md
+  title: prguide
+  tags:
+  - prguide
+  - process
+  - processing spectrum
+  summary: Open the Processing Guide (1D,2D)
+  category: Commands > Process > Processing Spectrum
+- path: commands/print.md
+  title: print
+  tags:
+  - print
+  - miscellaneous
+  - print/export
+  summary: Open Data Publishing Dialog Box
+  category: Commands > Miscellaneous > Print/Export
+- path: commands/prnt.md
+  title: prnt
+  tags:
+  - prnt
+  - miscellaneous
+  - print/export
+  summary: Print the current dataset (1D, 2D, 3D)
+  category: Commands > Miscellaneous > Print/Export
+- path: commands/proc1d.md
+  title: proc1d, proc1d y
+  tags:
+  - proc1d
+  - process
+  - processing spectrum
+  summary: Setup parameters for automatic data processing
+  category: Commands > Process > Processing Spectrum
+- path: commands/proc2d.md
+  title: proc2d, proc2d y
+  tags:
+  - proc2d
+  - process
+  - processing spectrum
+  summary: Configure standard processing
+  category: Commands > Process > Processing Spectrum
+- path: commands/proj.md
+  title: f2disco, f1disco
+  tags:
+  - f2disco
+  - f1disco
+  - proj
+  - process
+  - advanced
+  summary: Calculate disco projection in F2 (2D)
+  category: Commands > Process > Advanced
+- path: commands/projcbn.md
+  title: projcbp, projcbn, sumcb
+  tags:
+  - projcbp
+  - projcbn
+  - sumcb
+  - process
+  - advanced
+  summary: Calculate positive 3D projection
+  category: Commands > Process > Advanced
+- path: commands/projcbp.md
+  title: projcbp, projcbn, sumcb
+  tags:
+  - projcbp
+  - projcbn
+  - sumcb
+  - process
+  - advanced
+  summary: Calculate positive 3D projection
+  category: Commands > Process > Advanced
+- path: commands/projd.md
+  title: projd
+  tags:
+  - projd
+  - process
+  - advanced
+  summary: Display projections along with the 2D spectrum (2D)
+  category: Commands > Process > Advanced
+- path: commands/projpln.md
+  title: projplp, projpln, sumpl
+  tags:
+  - projplp
+  - projpln
+  - sumpl
+  - process
+  - advanced
+  summary: Calculate positive projection (nD)
+  category: Commands > Process > Advanced
+- path: commands/projplp.md
+  title: projplp, projpln, sumpl
+  tags:
+  - projplp
+  - projpln
+  - sumpl
+  - process
+  - advanced
+  summary: Calculate positive projection (nD)
+  category: Commands > Process > Advanced
+- path: commands/ps.md
+  title: ps
+  tags:
+  - ps
+  - process
+  - adjust phase
+  summary: Calculate power spectrum (1D)
+  category: Commands > Process > Adjust Phase
+- path: commands/psf.md
+  title: psf, wspf
+  tags:
+  - psf
+  - wpsf
+  - analyze
+  - line shapes
+  summary: Generate Point Spread Function (1D, 2D, 3D)
+  category: Commands > Analyze > Line Shapes
+- path: commands/ptilt.md
+  title: tilt, ptilt, ptilt1
+  tags:
+  - tilt
+  - ptilt
+  - ptilt1
+  - symt
+  - process
+  - processing spectrum
+  summary: Tilt a 2D spectrum
+  category: Commands > Process > Processing Spectrum
+- path: commands/ptilt1.md
+  title: tilt, ptilt, ptilt1
+  tags:
+  - tilt
+  - ptilt
+  - ptilt1
+  - symt
+  - process
+  - processing spectrum
+  summary: Tilt a 2D spectrum
+  category: Commands > Process > Processing Spectrum
+- path: commands/ptrace.md
+  title: ptrace
+  tags:
+  - ptrace
+  - manage
+  summary: Display messages from various log files time sorted
+  category: Commands > Manage > Commands
+- path: commands/pulsecal.md
+  title: pulsecal
+  tags:
+  - pulsecal
+  - acquire
+  - prosol
+  summary: Single Scan Pulse Calibration
+  category: Commands > Acquire > Prosol
+- path: commands/qf.md
+  title: qf, qfp
+  tags:
+  - qf
+  - qfp
+  - process
+  - advanced
+  - special transforms
+  summary: Sine squared window multiplication + Fourier transform (1D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/qfp.md
+  title: qf, qfp
+  tags:
+  - qf
+  - qfp
+  - process
+  - advanced
+  - special transforms
+  summary: Sine squared window multiplication + Fourier transform (1D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/qnmr.md
+  title: qnmr
+  tags:
+  - qnmr
+  - analyze
+  - quantify
+  summary: Potency determination
+  category: Commands > Analyze > Quantify
+- path: commands/qsin.md
+  title: sinm, qsin, sinc, qsinc
+  tags:
+  - sinm
+  - qsin
+  - sinc
+  - qsinc
+  - wm
+  - process
+  - processing spectrum
+  summary: Sine window multiplication of the FID (1D)
+  category: Commands > Process > Processing Spectrum
+- path: commands/qsinc.md
+  title: sinm, qsin, sinc, qsinc
+  tags:
+  - sinm
+  - qsin
+  - sinc
+  - qsinc
+  - wm
+  - process
+  - processing spectrum
+  summary: Sine window multiplication of the FID (1D)
+  category: Commands > Process > Processing Spectrum
+- path: commands/qu.md
+  title: qu
+  tags:
+  - qu
+  - miscellaneous
+  - run a program
+  summary: Queue a TopSpin command for execution
+  category: Commands > Miscellaneous > Run a Program
+- path: commands/qumulti.md
+  title: qumulti
+  tags:
+  - qumulti
+  - miscellaneous
+  - run a program
+  summary: Queue a TopSpin command for execution on multiple expnos
+  category: Commands > Miscellaneous > Run a Program
+- path: commands/r12.md
+  title: r12, r13, r23, slice
+  tags:
+  - r12
+  - r13
+  - r23
+  - slice
+  - process
+  - advanced
+  summary: Read F1-F2 plane from 3D data and store as 2D data
+  category: Commands > Process > Advanced
+- path: commands/r12d.md
+  title: r12d, r13d, r23d
+  tags:
+  - r12d
+  - r13d
+  - r23d
+  - process
+  - advanced
+  summary: Read diagonal F1=F2 plane and store as 2D data (3D)
+  category: Commands > Process > Advanced
+- path: commands/r13.md
+  title: r12, r13, r23, slice
+  tags:
+  - r12
+  - r13
+  - r23
+  - slice
+  - process
+  - advanced
+  summary: Read F1-F2 plane from 3D data and store as 2D data
+  category: Commands > Process > Advanced
+- path: commands/r13d.md
+  title: r12d, r13d, r23d
+  tags:
+  - r12d
+  - r13d
+  - r23d
+  - process
+  - advanced
+  summary: Read diagonal F1=F2 plane and store as 2D data (3D)
+  category: Commands > Process > Advanced
+- path: commands/r23.md
+  title: r12, r13, r23, slice
+  tags:
+  - r12
+  - r13
+  - r23
+  - slice
+  - process
+  - advanced
+  summary: Read F1-F2 plane from 3D data and store as 2D data
+  category: Commands > Process > Advanced
+- path: commands/r23d.md
+  title: r12d, r13d, r23d
+  tags:
+  - r12d
+  - r13d
+  - r23d
+  - process
+  - advanced
+  summary: Read diagonal F1=F2 plane and store as 2D data (3D)
+  category: Commands > Process > Advanced
+- path: commands/rcb.md
+  title: rcb
+  tags:
+  - rcb
+  - process
+  - advanced
+  summary: Read cube from data ≥ 4D and store as 3D data
+  category: Commands > Process > Advanced
+- path: commands/re.md
+  title: re, rep, rew, repw
+  tags:
+  - re
+  - rep
+  - rew
+  - repw
+  - miscellaneous
+  - dataset handling
+  summary: Read data of specified name or expno (nD)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/reb.md
+  title: reb
+  tags:
+  - reb
+  - miscellaneous
+  - dataset handling
+  summary: Open a data browser at the level of data names (nD)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/refdcon.md
+  title: refdcon, .refdcon
+  tags:
+  - refdcon
+  - .refdcon
+  - process
+  - advanced
+  summary: Reference deconvolution (1D)
+  category: Commands > Process > Advanced
+- path: commands/rel.md
+  title: rel, repl
+  tags:
+  - rel
+  - repl
+  - miscellaneous
+  - dataset handling
+  summary: Open a list of expnos / procnos in current dataset (nD)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/reopen.md
+  title: reopen
+  tags:
+  - reopen
+  - miscellaneous
+  - dataset handling
+  summary: Reopen current dataset in new data window (nD)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/rep.md
+  title: re, rep, rew, repw
+  tags:
+  - re
+  - rep
+  - rew
+  - repw
+  - miscellaneous
+  - dataset handling
+  summary: Read data of specified name or expno (nD)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/repl.md
+  title: rel, repl
+  tags:
+  - rel
+  - repl
+  - miscellaneous
+  - dataset handling
+  summary: Open a list of expnos / procnos in current dataset (nD)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/repw.md
+  title: re, rep, rew, repw
+  tags:
+  - re
+  - rep
+  - rew
+  - repw
+  - miscellaneous
+  - dataset handling
+  summary: Read data of specified name or expno (nD)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/restart.md
+  title: restart
+  tags:
+  - restart
+  - miscellaneous
+  - topspin interface
+  summary: Restart the TopSpin Graphical Interface
+  category: Commands > Miscellaneous > TopSpin Interface
+- path: commands/resume.md
+  title: resume
+  tags:
+  - resume
+  - acquire
+  - run
+  summary: Resume a suspended acquisition
+  category: Commands > Acquire > Run
+- path: commands/rev1.md
+  title: rev2, rev1
+  tags:
+  - rev2
+  - rev1
+  - process
+  - advanced
+  - miscellaneous operations
+  summary: Reverse spectrum in F2 (2D)
+  category: Commands > Process > Advanced > Miscellaneous Operations
+- path: commands/rev2.md
+  title: rev2, rev1
+  tags:
+  - rev2
+  - rev1
+  - process
+  - advanced
+  - miscellaneous operations
+  summary: Reverse spectrum in F2 (2D)
+  category: Commands > Process > Advanced > Miscellaneous Operations
+- path: commands/revnd.md
+  title: revnd
+  tags:
+  - revnd
+  - process
+  - advanced
+  - miscellaneous operations
+  summary: Reverse of an nD spectrum along a dimension (≥ 3D)
+  category: Commands > Process > Advanced > Miscellaneous Operations
+- path: commands/rew.md
+  title: re, rep, rew, repw
+  tags:
+  - re
+  - rep
+  - rew
+  - repw
+  - miscellaneous
+  - dataset handling
+  summary: Read data of specified name or expno (nD)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/rga.md
+  title: rga
+  tags:
+  - rga
+  - acquire
+  - gain
+  summary: Automatic receiver gain optimization
+  category: Commands > Acquire > Gain
+- path: commands/rhnp.md
+  title: rhpp, rhnp, rvpp, rvnp
+  tags:
+  - rhpp
+  - rhnp
+  - rvpp
+  - rvnp
+  - proj
+  - process
+  - advanced
+  summary: Calculate horizontal (F2) positive projection (2D)
+  category: Commands > Process > Advanced
+- path: commands/rhpp.md
+  title: rhpp, rhnp, rvpp, rvnp
+  tags:
+  - rhpp
+  - rhnp
+  - rvpp
+  - rvnp
+  - proj
+  - process
+  - advanced
+  summary: Calculate horizontal (F2) positive projection (2D)
+  category: Commands > Process > Advanced
+- path: commands/rmisc.md
+  title: edmisc, rmisc, wmisc, delmisc
+  tags:
+  - edmisc
+  - rmisc
+  - wmisc
+  - delmisc
+  - parameter handling
+  summary: Edit misc. lists (integrals, baseline, peaks, levels, etc.)
+  category: Commands > Parameter Handling
+- path: commands/ro.md
+  title: ro
+  tags:
+  - ro
+  - acquire
+  - spin
+  summary: Switch the sample rotation on or off
+  category: Commands > Acquire > Spin
+- path: commands/rpar.md
+  title: rpar
+  tags:
+  - rpar
+  - parameter handling
+  summary: Read a parameter set (nD)
+  category: Commands > Parameter Handling
+- path: commands/rpl.md
+  title: rpl
+  tags:
+  - rpl
+  - process
+  - advanced
+  summary: Read plane from data ≥ 3D and store as 2D data
+  category: Commands > Process > Advanced
+- path: commands/rs.md
+  title: ls, rs
+  tags:
+  - ls
+  - rs
+  - process
+  - advanced
+  - miscellaneous operations
+  summary: Left shift data NSP points (1D)
+  category: Commands > Process > Advanced > Miscellaneous Operations
+- path: commands/rsc.md
+  title: rsc
+  tags:
+  - rsc
+  - process
+  - advanced
+  summary: Read column from 2D data and store as 1D data (2D, 1D)
+  category: Commands > Process > Advanced
+- path: commands/rser.md
+  title: rser
+  tags:
+  - rser
+  - process
+  - advanced
+  summary: Read row from 2D raw data and store as 1D FID (2D,1D)
+  category: Commands > Process > Advanced
+- path: commands/rser2d.md
+  title: rser2d
+  tags:
+  - rser2d
+  - process
+  - advanced
+  summary: Read plane from raw 3D data and store as a 2D (3D)
+  category: Commands > Process > Advanced
+- path: commands/rsh.md
+  title: rsh, wsh, vish
+  tags:
+  - rsh
+  - wsh
+  - vish
+  - acquire
+  - shim
+  summary: Read a set of shim values
+  category: Commands > Acquire > Shim
+- path: commands/rsr.md
+  title: rsr
+  tags:
+  - rsr
+  - process
+  - advanced
+  summary: Read row from 2D data and store as 1D data (2D, 1D)
+  category: Commands > Process > Advanced
+- path: commands/rtr.md
+  title: rtr
+  tags:
+  - rtr
+  - process
+  - advanced
+  summary: Read trace from data ≥ 2D and store as 1D data
+  category: Commands > Process > Advanced
+- path: commands/run.md
+  title: run
+  tags:
+  - run
+  - miscellaneous
+  - run a program
+  summary: Open dialog for starting macro, AU, Jython or serial
+  category: Commands > Miscellaneous > Run a Program
+- path: commands/rv.md
+  title: rv
+  tags:
+  - rv
+  - process
+  - advanced
+  - miscellaneous operations
+  summary: Reverse spectrum or FID (1D)
+  category: Commands > Process > Advanced > Miscellaneous Operations
+- path: commands/rvnp.md
+  title: rhpp, rhnp, rvpp, rvnp
+  tags:
+  - rhpp
+  - rhnp
+  - rvpp
+  - rvnp
+  - proj
+  - process
+  - advanced
+  summary: Calculate horizontal (F2) positive projection (2D)
+  category: Commands > Process > Advanced
+- path: commands/rvpp.md
+  title: rhpp, rhnp, rvpp, rvnp
+  tags:
+  - rhpp
+  - rhnp
+  - rvpp
+  - rvnp
+  - proj
+  - process
+  - advanced
+  summary: Calculate horizontal (F2) positive projection (2D)
+  category: Commands > Process > Advanced
+- path: commands/sab.md
+  title: sab
+  tags:
+  - sab
+  - process
+  - baseline
+  summary: Spline baseline correction (1D)
+  category: Commands > Process > Baseline
+- path: commands/savelogs.md
+  title: savelogs
+  tags:
+  - savelogs
+  - manage
+  summary: Save all TopSpin logfiles for debugging purposes
+  category: Commands > Manage > Commands
+- path: commands/search.md
+  title: find, search
+  tags:
+  - find
+  - search
+  - miscellaneous
+  - dataset handling
+  summary: Find data according to specified criteria (nD)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/serial.md
+  title: serial
+  tags:
+  - serial
+  - process
+  - advanced
+  summary: Open workflow button bar for serial processing with commands, macros or
+    Jython scripts on a series of datasets
+  category: Commands > Process > Advanced
+- path: commands/set.md
+  title: set
+  tags:
+  - set
+  - miscellaneous
+  - topspin interface
+  summary: Open the user preferences window
+  category: Commands > Miscellaneous > TopSpin Interface
+- path: commands/setdef.md
+  title: setdef
+  tags:
+  - setdef
+  - general information
+  summary: Configure acknowledgment of dialog windows
+  category: General Information
+- path: commands/setlimits.md
+  title: setlimits
+  tags:
+  - setlimits
+  - acquire
+  - set limits
+  summary: Setup limits for 2D in F2 and F1
+  category: Commands > Acquire > Set Limits
+- path: commands/setpre.md
+  title: setpre
+  tags:
+  - setpre
+  - manage
+  - spectrometer
+  - experiments/parameters
+  summary: Set all gradient related parameters
+  category: Commands > Manage > Spectrometer > Experiments/Parameters
+- path: commands/setsh.md
+  title: setshim, setsh
+  tags:
+  - setshim
+  - setsh
+  - acquire
+  - shim
+  summary: Set Shims
+  category: Commands > Acquire > Shim
+- path: commands/setshim.md
+  title: setshim, setsh
+  tags:
+  - setshim
+  - setsh
+  - acquire
+  - shim
+  summary: Set Shims
+  category: Commands > Acquire > Shim
+- path: commands/shell.md
+  title: shell
+  tags:
+  - shell
+  - miscellaneous
+  - run a program
+  summary: Open a Windows Command Prompt or Linux Shell
+  category: Commands > Miscellaneous > Run a Program
+- path: commands/show.md
+  title: kill, show
+  tags:
+  - kill
+  - show
+  - manage
+  summary: Show active TopSpin commands and allow to kill them
+  category: Commands > Manage > Commands
+- path: commands/sigreg.md
+  title: sigreg
+  tags:
+  - sigreg
+  - analyze
+  - integrate
+  summary: Automatic signal region detection in 1D 1H spectra
+  category: Commands > Analyze > Integrate
+- path: commands/sinc.md
+  title: sinm, qsin, sinc, qsinc
+  tags:
+  - sinm
+  - qsin
+  - sinc
+  - qsinc
+  - wm
+  - process
+  - processing spectrum
+  summary: Sine window multiplication of the FID (1D)
+  category: Commands > Process > Processing Spectrum
+- path: commands/sinm.md
+  title: sinm, qsin, sinc, qsinc
+  tags:
+  - sinm
+  - qsin
+  - sinc
+  - qsinc
+  - wm
+  - process
+  - processing spectrum
+  summary: Sine window multiplication of the FID (1D)
+  category: Commands > Process > Processing Spectrum
+- path: commands/sino.md
+  title: sino
+  tags:
+  - sino
+  - analyze
+  - sino
+  summary: Calculate signal to noise ratio (1D)
+  category: Commands > Analyze > SiNo
+- path: commands/sino2d.md
+  title: sino2d
+  tags:
+  - sino2d
+  - analyze
+  - sino
+  summary: Calculate signal-to-noise ratio (2D)
+  category: Commands > Analyze > SiNo
+- path: commands/slice.md
+  title: r12, r13, r23, slice
+  tags:
+  - r12
+  - r13
+  - r23
+  - slice
+  - process
+  - advanced
+  summary: Read F1-F2 plane from 3D data and store as 2D data
+  category: Commands > Process > Advanced
+- path: commands/smail.md
+  title: smail
+  tags:
+  - smail
+  - miscellaneous
+  - dataset handling
+  summary: Send Data by E-Mail to E-Mail recipient
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/sola.md
+  title: sola
+  tags:
+  - sola
+  - analyze
+  - line shapes
+  summary: Switch to solids line shape analysis mode (1D)
+  category: Commands > Analyze > Line Shapes
+- path: commands/solaguide.md
+  title: solaguide
+  tags:
+  - solaguide
+  - analyze
+  - line shapes
+  summary: Open the solids analysis guide (1D)
+  category: Commands > Analyze > Line Shapes
+- path: commands/spdisp.md
+  title: spdisp
+  tags:
+  - spdisp
+  - acquire
+  - more
+  summary: Symbolic (graphical) pulse program display
+  category: Commands > Acquire > More
+- path: commands/spec.md
+  title: spec
+  tags:
+  - spec
+  - miscellaneous
+  - graphical user interface
+  summary: Switch to Spectrum Display
+  category: Commands > Miscellaneous > Graphical User Interface
+- path: commands/spooler.md
+  title: spooler
+  tags:
+  - spooler
+  - manage
+  summary: Display queued, scheduled and cron jobs
+  category: Commands > Manage > Commands
+- path: commands/sref.md
+  title: sref, cal
+  tags:
+  - sref
+  - cal
+  - process
+  - calibrate axis
+  summary: Calibrate the spectrum; set the TMS signal to 0 ppm (1D, 2D)
+  category: Commands > Process > Calibrate Axis
+- path: commands/st.md
+  title: st
+  tags:
+  - st
+  - manage
+  - spectrometer
+  - experiments/parameters
+  summary: Generate, manipulate and analyze RF shapes and gradients
+  category: Commands > Manage > Spectrometer > Experiments/Parameters
+- path: commands/stdisp.md
+  title: stdisp
+  tags:
+  - stdisp
+  - manage
+  - spectrometer
+  - experiments/parameters
+  summary: ShapeTool for handling RF shapes and gradients
+  category: Commands > Manage > Spectrometer > Experiments/Parameters
+- path: commands/stop.md
+  title: stop
+  tags:
+  - stop
+  - acquire
+  - run
+  summary: Stop an Acquisition
+  category: Commands > Acquire > Run
+- path: commands/sub1.md
+  title: sub2, sub1, sub1d2, sub1d1
+  tags:
+  - sub2
+  - sub1
+  - sub1d2
+  - sub1d1
+  - adsu
+  - process
+  - advanced
+  summary: Subtract 1D data from 2D data rows, keep sign (2D)
+  category: Commands > Process > Advanced
+- path: commands/sub1d1.md
+  title: sub2, sub1, sub1d2, sub1d1
+  tags:
+  - sub2
+  - sub1
+  - sub1d2
+  - sub1d1
+  - adsu
+  - process
+  - advanced
+  summary: Subtract 1D data from 2D data rows, keep sign (2D)
+  category: Commands > Process > Advanced
+- path: commands/sub1d2.md
+  title: sub2, sub1, sub1d2, sub1d1
+  tags:
+  - sub2
+  - sub1
+  - sub1d2
+  - sub1d1
+  - adsu
+  - process
+  - advanced
+  summary: Subtract 1D data from 2D data rows, keep sign (2D)
+  category: Commands > Process > Advanced
+- path: commands/sub2.md
+  title: sub2, sub1, sub1d2, sub1d1
+  tags:
+  - sub2
+  - sub1
+  - sub1d2
+  - sub1d1
+  - adsu
+  - process
+  - advanced
+  summary: Subtract 1D data from 2D data rows, keep sign (2D)
+  category: Commands > Process > Advanced
+- path: commands/sumcb.md
+  title: projcbp, projcbn, sumcb
+  tags:
+  - projcbp
+  - projcbn
+  - sumcb
+  - process
+  - advanced
+  summary: Calculate positive 3D projection
+  category: Commands > Process > Advanced
+- path: commands/sumpl.md
+  title: projplp, projpln, sumpl
+  tags:
+  - projplp
+  - projpln
+  - sumpl
+  - process
+  - advanced
+  summary: Calculate positive projection (nD)
+  category: Commands > Process > Advanced
+- path: commands/suspend.md
+  title: suspend
+  tags:
+  - suspend
+  - acquire
+  - run
+  summary: Suspend a running acquisition
+  category: Commands > Acquire > Run
+- path: commands/swin.md
+  title: swin
+  tags:
+  - swin
+  - miscellaneous
+  - topspin interface
+  summary: Open the window switcher box to switch between different datasets
+  category: Commands > Miscellaneous > TopSpin Interface
+- path: commands/sx.md
+  title: sx ej, sx, sxl
+  tags:
+  - sx
+  - sxl
+  - acquire
+  - sample
+  summary: Change Sample according to Sample position
+  category: Commands > Acquire > Sample
+- path: commands/sxl.md
+  title: sx ej, sx, sxl
+  tags:
+  - sx
+  - sxl
+  - acquire
+  - sample
+  summary: Change Sample according to Sample position
+  category: Commands > Acquire > Sample
+- path: commands/sym.md
+  title: sym, syma, symj, symt
+  tags:
+  - sym
+  - syma
+  - symj
+  - symt
+  - process
+  - processing spectrum
+  summary: Symmetrize spectrum about the diagonal (2D)
+  category: Commands > Process > Processing Spectrum
+- path: commands/syma.md
+  title: sym, syma, symj, symt
+  tags:
+  - sym
+  - syma
+  - symj
+  - symt
+  - process
+  - processing spectrum
+  summary: Symmetrize spectrum about the diagonal (2D)
+  category: Commands > Process > Processing Spectrum
+- path: commands/symj.md
+  title: sym, syma, symj, symt
+  tags:
+  - sym
+  - syma
+  - symj
+  - symt
+  - process
+  - processing spectrum
+  summary: Symmetrize spectrum about the diagonal (2D)
+  category: Commands > Process > Processing Spectrum
+- path: commands/symt.md
+  title: sym, syma, symj, symt
+  tags:
+  - sym
+  - syma
+  - symj
+  - symt
+  - process
+  - processing spectrum
+  summary: Symmetrize spectrum about the diagonal (2D)
+  category: Commands > Process > Processing Spectrum
+- path: commands/t1guide.md
+  title: t1guide
+  tags:
+  - t1guide
+  - applications
+  - dynamics
+  summary: Open the relaxation analysis guide (2D)
+  category: Commands > Applications > Dynamics
+- path: commands/t1t2.md
+  title: t1t2
+  tags:
+  - t1t2
+  - applications
+  - dynamics
+  summary: Tool for the Analysis of Relaxation Type Experiments
+  category: Commands > Applications > Dynamics
+- path: commands/tabs1.md
+  title: tabs3, tabs2, tabs1
+  tags:
+  - tabs3
+  - tabs2
+  - tabs1
+  - process
+  - baseline
+  summary: Automatic baseline correction in F3 (3D)
+  category: Commands > Process > Baseline
+- path: commands/tabs2.md
+  title: tabs3, tabs2, tabs1
+  tags:
+  - tabs3
+  - tabs2
+  - tabs1
+  - process
+  - baseline
+  summary: Automatic baseline correction in F3 (3D)
+  category: Commands > Process > Baseline
+- path: commands/tabs3.md
+  title: tabs3, tabs2, tabs1
+  tags:
+  - tabs3
+  - tabs2
+  - tabs1
+  - process
+  - baseline
+  summary: Automatic baseline correction in F3 (3D)
+  category: Commands > Process > Baseline
+- path: commands/te1get.md
+  title: teget, te1get, te2get, te3get, te4get
+  tags:
+  - teget
+  - te1get
+  - te2get
+  - te3get
+  - te4get
+  - acquire
+  - sample
+  summary: Read the temperature from the temperature unit
+  category: Commands > Acquire > Sample
+- path: commands/te1ready.md
+  title: teready, te1ready, te2ready, te3ready, te4ready
+  tags:
+  - teready
+  - te1ready
+  - te2ready
+  - te3ready
+  - te4ready
+  - acquire
+  - sample
+  summary: Waiting command to ensure the desired temperature TE is stable
+  category: Commands > Acquire > Sample
+- path: commands/te1set.md
+  title: teset, te1set, te2set, te3set, te4set
+  tags:
+  - teset
+  - te1set
+  - te2set
+  - te3set
+  - te4set
+  - acquire
+  - sample
+  summary: Set the temperature on the temperature unit
+  category: Commands > Acquire > Sample
+- path: commands/te2get.md
+  title: teget, te1get, te2get, te3get, te4get
+  tags:
+  - teget
+  - te1get
+  - te2get
+  - te3get
+  - te4get
+  - acquire
+  - sample
+  summary: Read the temperature from the temperature unit
+  category: Commands > Acquire > Sample
+- path: commands/te2ready.md
+  title: teready, te1ready, te2ready, te3ready, te4ready
+  tags:
+  - teready
+  - te1ready
+  - te2ready
+  - te3ready
+  - te4ready
+  - acquire
+  - sample
+  summary: Waiting command to ensure the desired temperature TE is stable
+  category: Commands > Acquire > Sample
+- path: commands/te2set.md
+  title: teset, te1set, te2set, te3set, te4set
+  tags:
+  - teset
+  - te1set
+  - te2set
+  - te3set
+  - te4set
+  - acquire
+  - sample
+  summary: Set the temperature on the temperature unit
+  category: Commands > Acquire > Sample
+- path: commands/te3get.md
+  title: teget, te1get, te2get, te3get, te4get
+  tags:
+  - teget
+  - te1get
+  - te2get
+  - te3get
+  - te4get
+  - acquire
+  - sample
+  summary: Read the temperature from the temperature unit
+  category: Commands > Acquire > Sample
+- path: commands/te3ready.md
+  title: teready, te1ready, te2ready, te3ready, te4ready
+  tags:
+  - teready
+  - te1ready
+  - te2ready
+  - te3ready
+  - te4ready
+  - acquire
+  - sample
+  summary: Waiting command to ensure the desired temperature TE is stable
+  category: Commands > Acquire > Sample
+- path: commands/te3set.md
+  title: teset, te1set, te2set, te3set, te4set
+  tags:
+  - teset
+  - te1set
+  - te2set
+  - te3set
+  - te4set
+  - acquire
+  - sample
+  summary: Set the temperature on the temperature unit
+  category: Commands > Acquire > Sample
+- path: commands/te4get.md
+  title: teget, te1get, te2get, te3get, te4get
+  tags:
+  - teget
+  - te1get
+  - te2get
+  - te3get
+  - te4get
+  - acquire
+  - sample
+  summary: Read the temperature from the temperature unit
+  category: Commands > Acquire > Sample
+- path: commands/te4ready.md
+  title: teready, te1ready, te2ready, te3ready, te4ready
+  tags:
+  - teready
+  - te1ready
+  - te2ready
+  - te3ready
+  - te4ready
+  - acquire
+  - sample
+  summary: Waiting command to ensure the desired temperature TE is stable
+  category: Commands > Acquire > Sample
+- path: commands/te4set.md
+  title: teset, te1set, te2set, te3set, te4set
+  tags:
+  - teset
+  - te1set
+  - te2set
+  - te3set
+  - te4set
+  - acquire
+  - sample
+  summary: Set the temperature on the temperature unit
+  category: Commands > Acquire > Sample
+- path: commands/teget.md
+  title: teget, te1get, te2get, te3get, te4get
+  tags:
+  - teget
+  - te1get
+  - te2get
+  - te3get
+  - te4get
+  - acquire
+  - sample
+  summary: Read the temperature from the temperature unit
+  category: Commands > Acquire > Sample
+- path: commands/teready.md
+  title: teready, te1ready, te2ready, te3ready, te4ready
+  tags:
+  - teready
+  - te1ready
+  - te2ready
+  - te3ready
+  - te4ready
+  - acquire
+  - sample
+  summary: Waiting command to ensure the desired temperature TE is stable
+  category: Commands > Acquire > Sample
+- path: commands/teset.md
+  title: teset, te1set, te2set, te3set, te4set
+  tags:
+  - teset
+  - te1set
+  - te2set
+  - te3set
+  - te4set
+  - acquire
+  - sample
+  summary: Set the temperature on the temperature unit
+  category: Commands > Acquire > Sample
+- path: commands/tf1.md
+  title: tf1
+  tags:
+  - tf1
+  - process
+  - advanced
+  - special transforms
+  summary: Process data, including FT, in F1 (3D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/tf1p.md
+  title: tf3p, tf2p, tf1p
+  tags:
+  - tf3p
+  - tf2p
+  - tf1p
+  - process
+  - advanced
+  - special transforms
+  summary: Phase correction in F3 (3D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/tf2.md
+  title: tf2
+  tags:
+  - tf2
+  - process
+  - advanced
+  - special transforms
+  summary: Process data, including FT, in F2 (3D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/tf2p.md
+  title: tf3p, tf2p, tf1p
+  tags:
+  - tf3p
+  - tf2p
+  - tf1p
+  - process
+  - advanced
+  - special transforms
+  summary: Phase correction in F3 (3D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/tf3.md
+  title: tf3
+  tags:
+  - tf3
+  - process
+  - advanced
+  - special transforms
+  summary: Process data, including FT, in F3 (3D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/tf3p.md
+  title: tf3p, tf2p, tf1p
+  tags:
+  - tf3p
+  - tf2p
+  - tf1p
+  - process
+  - advanced
+  - special transforms
+  summary: Phase correction in F3 (3D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/tfp.md
+  title: tfp, tsfp
+  tags:
+  - tfp
+  - tsfp
+  - process
+  - advanced
+  - special transforms
+  summary: Traficante window mult. + FT + phase correction (1D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/tht1.md
+  title: tht3, tht2, tht1
+  tags:
+  - tht3
+  - tht2
+  - tht1
+  - process
+  - advanced
+  - special transforms
+  summary: Hilbert transform in F3 (3D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/tht2.md
+  title: tht3, tht2, tht1
+  tags:
+  - tht3
+  - tht2
+  - tht1
+  - process
+  - advanced
+  - special transforms
+  summary: Hilbert transform in F3 (3D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/tht3.md
+  title: tht3, tht2, tht1
+  tags:
+  - tht3
+  - tht2
+  - tht1
+  - process
+  - advanced
+  - special transforms
+  summary: Hilbert transform in F3 (3D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/tilt.md
+  title: tilt, ptilt, ptilt1
+  tags:
+  - tilt
+  - ptilt
+  - ptilt1
+  - symt
+  - process
+  - processing spectrum
+  summary: Tilt a 2D spectrum
+  category: Commands > Process > Processing Spectrum
+- path: commands/tm.md
+  title: tm, traf, trafs
+  tags:
+  - tm
+  - traf
+  - trafs
+  - wm
+  - process
+  - processing spectrum
+  summary: Trapezoidal window multiplication of the FID (1D)
+  category: Commands > Process > Processing Spectrum
+- path: commands/tojdx.md
+  title: tojdx
+  tags:
+  - tojdx
+  - miscellaneous
+  - dataset handling
+  summary: Convert dataset to JCAMP-DX format (1D, 2D)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/topguide.md
+  title: topguide
+  tags:
+  - topguide
+  - acquire
+  - more
+  summary: Open the TopGuide acquisition and processing tool
+  category: Commands > Acquire > More
+- path: commands/topshim.md
+  title: topshim, topshim gui, topshim report
+  tags:
+  - topshim
+  - acquire
+  - shim
+  summary: Start Automatic Shimming
+  category: Commands > Acquire > Shim
+- path: commands/topsolids.md
+  title: topsolids
+  tags:
+  - topsolids
+  - acquire
+  - more
+  summary: Assisted Biological Solid State NMR
+  category: Commands > Acquire > More
+- path: commands/totxt.md
+  title: totxt
+  tags:
+  - totxt
+  - miscellaneous
+  - dataset handling
+  summary: Save the currently displayed region as a text file (1D, 2D)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/tozip.md
+  title: tozip
+  tags:
+  - tozip
+  - miscellaneous
+  - dataset handling
+  summary: Write current dataset to a ZIP file (nD)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/tr.md
+  title: tr
+  tags:
+  - tr
+  - acquire
+  - run
+  summary: Transfer data to disk during the acquisition.
+  category: Commands > Acquire > Run
+- path: commands/traf.md
+  title: tm, traf, trafs
+  tags:
+  - tm
+  - traf
+  - trafs
+  - wm
+  - process
+  - processing spectrum
+  summary: Trapezoidal window multiplication of the FID (1D)
+  category: Commands > Process > Processing Spectrum
+- path: commands/trafs.md
+  title: tm, traf, trafs
+  tags:
+  - tm
+  - traf
+  - trafs
+  - wm
+  - process
+  - processing spectrum
+  summary: Trapezoidal window multiplication of the FID (1D)
+  category: Commands > Process > Processing Spectrum
+- path: commands/trf.md
+  title: trf, trfp
+  tags:
+  - trf
+  - trfp
+  - process
+  - advanced
+  - special transforms
+  summary: User-defined processing of raw data (1D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/trfp.md
+  title: trf, trfp
+  tags:
+  - trf
+  - trfp
+  - process
+  - advanced
+  - special transforms
+  summary: User-defined processing of raw data (1D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/tsfp.md
+  title: tfp, tsfp
+  tags:
+  - tfp
+  - tsfp
+  - process
+  - advanced
+  - special transforms
+  summary: Traficante window mult. + FT + phase correction (1D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/tune.md
+  title: tune
+  tags:
+  - tune
+  - acquire
+  - shim
+  summary: Perform automatic shimming of the magnet
+  category: Commands > Acquire > Shim
+- path: commands/user_restore.md
+  title: nmr_save, nmr_restore, user_save, user_restore
+  tags:
+  - nmr_save
+  - nmrsave
+  - nmr_restore
+  - user_save
+  - user_restore
+  - manage
+  - spectrometer
+  - save/restore installation
+  summary: Save installation-specific files
+  category: Commands > Manage > Spectrometer > Save/Restore Installation
+- path: commands/user_save.md
+  title: nmr_save, nmr_restore, user_save, user_restore
+  tags:
+  - nmr_save
+  - nmrsave
+  - nmr_restore
+  - user_save
+  - user_restore
+  - manage
+  - spectrometer
+  - save/restore installation
+  summary: Save installation-specific files
+  category: Commands > Manage > Spectrometer > Save/Restore Installation
+- path: commands/uwm.md
+  title: uwm
+  tags:
+  - uwm
+  - process
+  - advanced
+  - miscellaneous operations
+  summary: User-defined Window Multiplication
+  category: Commands > Process > Advanced > Miscellaneous Operations
+- path: commands/vconv.md
+  title: vconv
+  tags:
+  - vconv
+  - miscellaneous
+  - dataset handling
+  summary: Convert Varian type data to TopSpin data (1D, 2D, 3D)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/vish.md
+  title: rsh, wsh, vish
+  tags:
+  - rsh
+  - wsh
+  - vish
+  - acquire
+  - shim
+  summary: Read a set of shim values
+  category: Commands > Acquire > Shim
+- path: commands/vregs.md
+  title: vregs
+  tags:
+  - vregs
+  - process
+  - advanced
+  summary: View of regions of interest of a list of spectra (1D, 2D)
+  category: Commands > Process > Advanced
+- path: commands/vstrucs.md
+  title: vstrucs
+  tags:
+  - vstrucs
+  - applications
+  - small molecules
+  summary: Visualize Structure Data (SD) files
+  category: Commands > Applications > Small Molecules
+- path: commands/vtudisp.md
+  title: vtudisp
+  tags:
+  - vtudisp
+  - acquire
+  - sample
+  summary: User Interface for Temperature Handling
+  category: Commands > Acquire > Sample
+- path: commands/wbwr.md
+  title: wbwr
+  tags:
+  - wbwr
+  - acquire
+  - tune
+  summary: Write wobble curve to disk
+  category: Commands > Acquire > Tune
+- path: commands/wcb.md
+  title: wcb
+  tags:
+  - wcb
+  - process
+  - advanced
+  summary: Write 3D data to a cube of data ≥ 4D
+  category: Commands > Process > Advanced
+- path: commands/winconv.md
+  title: winconv
+  tags:
+  - winconv
+  - miscellaneous
+  - dataset handling
+  summary: Convert WINNMR type data to TopSpin data (1D)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/wm.md
+  title: em, gm, wm
+  tags:
+  - em
+  - gm
+  - wm
+  - process
+  - processing spectrum
+  summary: Exponential window multiplication of the FID (1D)
+  category: Commands > Process > Processing Spectrum
+- path: commands/wmisc.md
+  title: edmisc, rmisc, wmisc, delmisc
+  tags:
+  - edmisc
+  - rmisc
+  - wmisc
+  - delmisc
+  - parameter handling
+  summary: Edit misc. lists (integrals, baseline, peaks, levels, etc.)
+  category: Commands > Parameter Handling
+- path: commands/wobb.md
+  title: wobb
+  tags:
+  - wobb
+  - acquire
+  - tune
+  summary: Manual tuning and matching of the probe
+  category: Commands > Acquire > Tune
+- path: commands/wpar.md
+  title: wpar, edpar
+  tags:
+  - wpar
+  - edpar
+  - parameter handling
+  summary: Write a parameter set (nD)
+  category: Commands > Parameter Handling
+- path: commands/wpl.md
+  title: wpl
+  tags:
+  - wpl
+  - process
+  - advanced
+  summary: Write 2D data to a plane of data ≥ 3D
+  category: Commands > Process > Advanced
+- path: commands/wpsf.md
+  title: psf, wspf
+  tags:
+  - psf
+  - wpsf
+  - analyze
+  - line shapes
+  summary: Generate Point Spread Function (1D, 2D, 3D)
+  category: Commands > Analyze > Line Shapes
+- path: commands/wr.md
+  title: wrpa, wra, wrp, wraparam, wrpparam
+  tags:
+  - wrpa
+  - wr
+  - wra
+  - wrp
+  - wraparam
+  - wrpparam
+  - miscellaneous
+  - dataset handling
+  summary: Copy a complete data set, raw and processed data (nD)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/wra.md
+  title: wrpa, wra, wrp, wraparam, wrpparam
+  tags:
+  - wrpa
+  - wr
+  - wra
+  - wrp
+  - wraparam
+  - wrpparam
+  - miscellaneous
+  - dataset handling
+  summary: Copy a complete data set, raw and processed data (nD)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/wraparam.md
+  title: wrpa, wra, wrp, wraparam, wrpparam
+  tags:
+  - wrpa
+  - wr
+  - wra
+  - wrp
+  - wraparam
+  - wrpparam
+  - miscellaneous
+  - dataset handling
+  summary: Copy a complete data set, raw and processed data (nD)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/wrp.md
+  title: wrpa, wra, wrp, wraparam, wrpparam
+  tags:
+  - wrpa
+  - wr
+  - wra
+  - wrp
+  - wraparam
+  - wrpparam
+  - miscellaneous
+  - dataset handling
+  summary: Copy a complete data set, raw and processed data (nD)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/wrpa.md
+  title: wrpa, wra, wrp, wraparam, wrpparam
+  tags:
+  - wrpa
+  - wr
+  - wra
+  - wrp
+  - wraparam
+  - wrpparam
+  - miscellaneous
+  - dataset handling
+  summary: Copy a complete data set, raw and processed data (nD)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/wrpparam.md
+  title: wrpa, wra, wrp, wraparam, wrpparam
+  tags:
+  - wrpa
+  - wr
+  - wra
+  - wrp
+  - wraparam
+  - wrpparam
+  - miscellaneous
+  - dataset handling
+  summary: Copy a complete data set, raw and processed data (nD)
+  category: Commands > Miscellaneous > Dataset Handling
+- path: commands/wsc.md
+  title: wsc
+  tags:
+  - wsc
+  - process
+  - advanced
+  summary: Replace column of 2D spectrum by 1D spectrum
+  category: Commands > Process > Advanced
+- path: commands/wser.md
+  title: wser
+  tags:
+  - wser
+  - process
+  - advanced
+  summary: Replace row of 2D raw data by 1D raw data (2D)
+  category: Commands > Process > Advanced
+- path: commands/wserp.md
+  title: wserp
+  tags:
+  - wserp
+  - process
+  - advanced
+  summary: Replace row of 2D raw data by 1D processed data
+  category: Commands > Process > Advanced
+- path: commands/wsh.md
+  title: rsh, wsh, vish
+  tags:
+  - rsh
+  - wsh
+  - vish
+  - acquire
+  - shim
+  summary: Read a set of shim values
+  category: Commands > Acquire > Shim
+- path: commands/wsr.md
+  title: wsr
+  tags:
+  - wsr
+  - process
+  - advanced
+  summary: Replace row of a 2D spectrum by 1D spectrum
+  category: Commands > Process > Advanced
+- path: commands/wtr.md
+  title: wtr
+  tags:
+  - wtr
+  - process
+  - advanced
+  summary: Write 1D data to a trace of data ≥ 2D
+  category: Commands > Process > Advanced
+- path: commands/wvm.md
+  title: wvm
+  tags:
+  - wvm
+  - manage
+  - spectrometer
+  - experiments/parameters
+  summary: WaveMaker (Software solution for pulse shaping)
+  category: Commands > Manage > Spectrometer > Experiments/Parameters
+- path: commands/xau.md
+  title: edau, xau, delau, xauw
+  tags:
+  - edau
+  - xau
+  - delau
+  - xauw
+  - miscellaneous
+  - run a program
+  summary: Edit an AU program
+  category: Commands > Miscellaneous > Run a Program
+- path: commands/xaua.md
+  title: xaua, xaup
+  tags:
+  - xaua
+  - xaup
+  - acquire
+  - run
+  summary: Execute the AU program specified with AUNM
+  category: Commands > Acquire > Run
+- path: commands/xaup.md
+  title: xaua, xaup
+  tags:
+  - xaua
+  - xaup
+  - acquire
+  - run
+  summary: Execute the AU program specified with AUNM
+  category: Commands > Acquire > Run
+- path: commands/xauw.md
+  title: edau, xau, delau, xauw
+  tags:
+  - edau
+  - xau
+  - delau
+  - xauw
+  - miscellaneous
+  - run a program
+  summary: Edit an AU program
+  category: Commands > Miscellaneous > Run a Program
+- path: commands/xf1.md
+  title: xf1
+  tags:
+  - xf1
+  - process
+  - processing spectrum
+  summary: Process data, including FT, in F1 (2D)
+  category: Commands > Process > Processing Spectrum
+- path: commands/xf1m.md
+  title: xfbm, xf2m, xf1m
+  tags:
+  - xfbm
+  - xf2m
+  - xf1m
+  - ph
+  - process
+  - adjust phase
+  summary: Calculate magnitude spectrum in F2 and F1 (2D)
+  category: Commands > Process > Adjust Phase
+- path: commands/xf1p.md
+  title: xfbp, xf2p, xf1p
+  tags:
+  - xfbp
+  - xf2p
+  - xf1p
+  - ph
+  - process
+  - adjust phase
+  summary: Phase correction in F2 and F1 direction (2D)
+  category: Commands > Process > Adjust Phase
+- path: commands/xf1ps.md
+  title: xfbps, xf2ps, xf1ps
+  tags:
+  - xfbps
+  - xf2ps
+  - xf1ps
+  - ph
+  - process
+  - adjust phase
+  summary: Calculate power spectrum in F2 and F1 (2D)
+  category: Commands > Process > Adjust Phase
+- path: commands/xf2.md
+  title: xf2
+  tags:
+  - xf2
+  - process
+  - processing spectrum
+  summary: Process data, including FT, in F2 (2D)
+  category: Commands > Process > Processing Spectrum
+- path: commands/xf2m.md
+  title: xfbm, xf2m, xf1m
+  tags:
+  - xfbm
+  - xf2m
+  - xf1m
+  - ph
+  - process
+  - adjust phase
+  summary: Calculate magnitude spectrum in F2 and F1 (2D)
+  category: Commands > Process > Adjust Phase
+- path: commands/xf2p.md
+  title: xfbp, xf2p, xf1p
+  tags:
+  - xfbp
+  - xf2p
+  - xf1p
+  - ph
+  - process
+  - adjust phase
+  summary: Phase correction in F2 and F1 direction (2D)
+  category: Commands > Process > Adjust Phase
+- path: commands/xf2ps.md
+  title: xfbps, xf2ps, xf1ps
+  tags:
+  - xfbps
+  - xf2ps
+  - xf1ps
+  - ph
+  - process
+  - adjust phase
+  summary: Calculate power spectrum in F2 and F1 (2D)
+  category: Commands > Process > Adjust Phase
+- path: commands/xfb.md
+  title: xfb, ftf
+  tags:
+  - xfb
+  - ftf
+  - process
+  - processing spectrum
+  summary: Process data, including FT, in F2 and F1 (2D)
+  category: Commands > Process > Processing Spectrum
+- path: commands/xfbm.md
+  title: xfbm, xf2m, xf1m
+  tags:
+  - xfbm
+  - xf2m
+  - xf1m
+  - ph
+  - process
+  - adjust phase
+  summary: Calculate magnitude spectrum in F2 and F1 (2D)
+  category: Commands > Process > Adjust Phase
+- path: commands/xfbp.md
+  title: xfbp, xf2p, xf1p
+  tags:
+  - xfbp
+  - xf2p
+  - xf1p
+  - ph
+  - process
+  - adjust phase
+  summary: Phase correction in F2 and F1 direction (2D)
+  category: Commands > Process > Adjust Phase
+- path: commands/xfbps.md
+  title: xfbps, xf2ps, xf1ps
+  tags:
+  - xfbps
+  - xf2ps
+  - xf1ps
+  - ph
+  - process
+  - adjust phase
+  summary: Calculate power spectrum in F2 and F1 (2D)
+  category: Commands > Process > Adjust Phase
+- path: commands/xht1.md
+  title: xht2, xht1
+  tags:
+  - xht2
+  - xht1
+  - process
+  - advanced
+  - special transforms
+  summary: Hilbert transform in F2 (2D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/xht2.md
+  title: xht2, xht1
+  tags:
+  - xht2
+  - xht1
+  - process
+  - advanced
+  - special transforms
+  summary: Hilbert transform in F2 (2D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/xif1.md
+  title: xif2, xif1
+  tags:
+  - xif2
+  - xif1
+  - process
+  - advanced
+  - special transforms
+  summary: Inverse Fourier transform in F2 (2D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/xif2.md
+  title: xif2, xif1
+  tags:
+  - xif2
+  - xif1
+  - process
+  - advanced
+  - special transforms
+  summary: Inverse Fourier transform in F2 (2D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/xline.md
+  title: maxed, maxent, maxinf, maxres, xline
+  tags:
+  - maxed
+  - maxent
+  - maxinf
+  - maxres
+  - xline
+  - analyze
+  - line shapes
+  summary: Open maxent parameters control window
+  category: Commands > Analyze > Line Shapes
+- path: commands/xmac.md
+  title: xmac
+  tags:
+  - xmac
+  - miscellaneous
+  - run a program
+  summary: Execute macro
+  category: Commands > Miscellaneous > Run a Program
+- path: commands/xpy.md
+  title: xpy
+  tags:
+  - xpy
+  - miscellaneous
+  - run a program
+  summary: Execute Jython program
+  category: Commands > Miscellaneous > Run a Program
+- path: commands/xpy3.md
+  title: xpy3
+  tags:
+  - xpy3
+  - miscellaneous
+  - run a program
+  summary: Execute Python 3 program
+  category: Commands > Miscellaneous > Run a Program
+- path: commands/xpyp.md
+  title: xpyp
+  tags:
+  - xpyp
+  - miscellaneous
+  - run a program
+  summary: Execute Jython program defined by the parameter PYNMP
+  category: Commands > Miscellaneous > Run a Program
+- path: commands/xtrf.md
+  title: xtrf, xtrf2
+  tags:
+  - xtrf
+  - xtrf2
+  - process
+  - advanced
+  - special transforms
+  summary: Custom processing of raw data in F2 and F1 (2D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/xtrf2.md
+  title: xtrf, xtrf2
+  tags:
+  - xtrf
+  - xtrf2
+  - process
+  - advanced
+  - special transforms
+  summary: Custom processing of raw data in F2 and F1 (2D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/xtrfp.md
+  title: xtrfp, xtrfp2, xtrfp1
+  tags:
+  - xtrfp
+  - xtrfp2
+  - xtrfp1
+  - process
+  - advanced
+  - special transforms
+  summary: Custom processing of processed data in F2 and F1 (2D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/xtrfp1.md
+  title: xtrfp, xtrfp2, xtrfp1
+  tags:
+  - xtrfp
+  - xtrfp2
+  - xtrfp1
+  - process
+  - advanced
+  - special transforms
+  summary: Custom processing of processed data in F2 and F1 (2D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/xtrfp2.md
+  title: xtrfp, xtrfp2, xtrfp1
+  tags:
+  - xtrfp
+  - xtrfp2
+  - xtrfp1
+  - process
+  - advanced
+  - special transforms
+  summary: Custom processing of processed data in F2 and F1 (2D)
+  category: Commands > Process > Advanced > Special Transforms
+- path: commands/xwinplot.md
+  title: plot, xwp, xwpr, xwinplot
+  tags:
+  - plot
+  - xwp
+  - xwpr
+  - xwinplot
+  - miscellaneous
+  - print/export
+  summary: Start Plot Editor
+  category: Commands > Miscellaneous > Print/Export
+- path: commands/xwp.md
+  title: plot, xwp, xwpr, xwinplot
+  tags:
+  - plot
+  - xwp
+  - xwpr
+  - xwinplot
+  - miscellaneous
+  - print/export
+  summary: Start Plot Editor
+  category: Commands > Miscellaneous > Print/Export
+- path: commands/xwpr.md
+  title: plot, xwp, xwpr, xwinplot
+  tags:
+  - plot
+  - xwp
+  - xwpr
+  - xwinplot
+  - miscellaneous
+  - print/export
+  summary: Start Plot Editor
+  category: Commands > Miscellaneous > Print/Export
+- path: commands/zert.md
+  title: zert2, zert1, zert
+  tags:
+  - zert2
+  - zert1
+  - zert
+  - process
+  - advanced
+  - miscellaneous operations
+  summary: Zero a trapezoidal region of each row (2D)
+  category: Commands > Process > Advanced > Miscellaneous Operations
+- path: commands/zert1.md
+  title: zert2, zert1, zert
+  tags:
+  - zert2
+  - zert1
+  - zert
+  - process
+  - advanced
+  - miscellaneous operations
+  summary: Zero a trapezoidal region of each row (2D)
+  category: Commands > Process > Advanced > Miscellaneous Operations
+- path: commands/zert2.md
+  title: zert2, zert1, zert
+  tags:
+  - zert2
+  - zert1
+  - zert
+  - process
+  - advanced
+  - miscellaneous operations
+  summary: Zero a trapezoidal region of each row (2D)
+  category: Commands > Process > Advanced > Miscellaneous Operations
+- path: commands/zf.md
+  title: zf
+  tags:
+  - zf
+  - process
+  - advanced
+  - miscellaneous operations
+  summary: Zero all data points (1D)
+  category: Commands > Process > Advanced > Miscellaneous Operations
+- path: commands/zg.md
+  title: zg
+  tags:
+  - zg
+  - acquire
+  - run
+  summary: Perform an acquisition, overwriting possibly existing data
+  category: Commands > Acquire > Run
+- path: commands/zp.md
+  title: zp
+  tags:
+  - zp
+  - process
+  - advanced
+  - miscellaneous operations
+  summary: Zero the first NZP data points (1D)
+  category: Commands > Process > Advanced > Miscellaneous Operations

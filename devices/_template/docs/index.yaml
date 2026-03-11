@@ -1,0 +1,29 @@
+# Device Documentation Index
+#
+# This file is read by device_use.knowledge.DocRetriever to find relevant
+# documentation pages for Computer Use agents operating this device.
+#
+# Format:
+#   version: "1.0.0"           # Software/firmware version
+#   software: "Device Name"    # Human-readable software name
+#   pages:                     # List of documentation pages
+#     - path: "commands/cmd.md"      # Relative path from this directory
+#       title: "cmd - Do Something"  # Page title (used for title matching)
+#       tags: ["cmd", "process"]     # Keywords for tag matching (score: 2.0 each)
+#       summary: "Short description" # One-line summary (score: 0.5 per keyword)
+#       category: "Commands > Process"  # Optional breadcrumb category
+#
+# Scoring when a task query is matched against pages:
+#   - Tag match:     2.0 per keyword found in tags
+#   - Title match:   1.0 per keyword found in title
+#   - Summary match: 0.5 per keyword found in summary
+#
+# Tips:
+#   - Put command names and aliases in tags for direct lookup
+#   - Put functional categories (e.g. "baseline", "fourier") in tags
+#   - Keep summaries concise but descriptive
+#   - Use category for hierarchical organization
+
+version: "1.0.0"
+software: "Template Device"
+pages: []

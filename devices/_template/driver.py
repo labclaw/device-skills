@@ -7,18 +7,13 @@ from __future__ import annotations
 
 from typing import Any
 
+from device_skills.base import BaseDriver
 
-class DeviceDriver:
+
+class TemplateDriver(BaseDriver):
     """Implement the labclaw DeviceDriver protocol.
 
-    Required interface:
-        device_id: str (property)
-        device_type: str (property)
-        async connect() -> bool
-        async disconnect() -> None
-        async read() -> dict[str, Any]
-        async write(command) -> bool
-        async status() -> dict[str, Any]
+    TODO: Rename to match your device (e.g. MyDeviceDriver).
     """
 
     def __init__(self, device_id: str = "", config: dict[str, Any] | None = None) -> None:
@@ -34,22 +29,22 @@ class DeviceDriver:
     def device_type(self) -> str:
         return "my-device"
 
-    async def connect(self) -> bool:
-        self._connected = True
-        return True
+    def info(self) -> dict[str, Any]:
+        """Return device metadata."""
+        return {
+            "device_id": self._device_id,
+            "device_type": self.device_type,
+            "connected": self._connected,
+        }
+
+    async def connect(self, config: dict[str, Any] | None = None) -> bool:
+        raise NotImplementedError
 
     async def disconnect(self) -> None:
-        self._connected = False
+        raise NotImplementedError
 
-    async def read(self) -> dict[str, Any]:
-        if not self._connected:
-            return {"error": "Not connected"}
-        return {}
+    async def read(self, query: dict[str, Any] | None = None) -> dict[str, Any]:
+        raise NotImplementedError
 
     async def write(self, command: dict[str, Any]) -> bool:
-        if not self._connected:
-            return False
-        return True
-
-    async def status(self) -> dict[str, Any]:
-        return {"connected": self._connected, "device_id": self._device_id}
+        raise NotImplementedError
