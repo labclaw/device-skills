@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 
 try:
     _DEFAULT_DEVICES_DIR = Path(str(importlib.resources.files("devices")))
-except (TypeError, ModuleNotFoundError):
+except (TypeError, ModuleNotFoundError, AttributeError):
     _DEFAULT_DEVICES_DIR = Path(__file__).resolve().parent.parent.parent / "devices"
 
 
