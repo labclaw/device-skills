@@ -6,6 +6,7 @@ from typing import Any
 import pytest
 
 from device_skills.base import BaseAdapter, BaseBrain, BaseProcessor
+from device_skills.schema import ControlMode
 
 
 class StubAdapter(BaseAdapter):
@@ -18,6 +19,10 @@ class StubAdapter(BaseAdapter):
     @property
     def connected(self) -> bool:
         return self._connected
+
+    @property
+    def mode(self) -> ControlMode:
+        return ControlMode.OFFLINE
 
     def connect(self) -> bool:
         self._connected = True

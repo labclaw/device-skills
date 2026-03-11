@@ -4,6 +4,7 @@ from __future__ import annotations
 from typing import Any
 
 from device_skills.base import BaseAdapter
+from device_skills.schema import ControlMode
 
 
 class DeviceAdapter(BaseAdapter):
@@ -18,6 +19,10 @@ class DeviceAdapter(BaseAdapter):
     @property
     def connected(self) -> bool:
         return self._connected
+
+    @property
+    def mode(self) -> ControlMode:
+        return ControlMode.OFFLINE
 
     def connect(self) -> bool:
         self._connected = True

@@ -3,7 +3,13 @@ from __future__ import annotations
 
 import pytest
 
-from device_skills.schema import ControlMode, InterfaceType, SkillManifest
+from device_skills.schema import (
+    ControlMode,
+    DeviceCapabilities,
+    InterfaceType,
+    SafetyLevel,
+    SkillManifest,
+)
 
 
 def test_minimal_manifest():
@@ -18,7 +24,7 @@ def test_minimal_manifest():
     assert m.vendor == "TestCorp"
     assert m.category == "plate-reader"
     assert m.control_modes == []
-    assert m.capabilities == []
+    assert m.capabilities == DeviceCapabilities()
 
 
 def test_full_manifest():
@@ -32,14 +38,18 @@ def test_full_manifest():
         platform="windows",
         interface_type=InterfaceType.GUI,
         control_modes=[ControlMode.API, ControlMode.GUI, ControlMode.OFFLINE],
-        capabilities=["absorbance", "fluorescence", "luminescence"],
-        data_formats=["csv", "xlsx"],
-        safety_level="strict",
+        capabilities=DeviceCapabilities(
+            can_observe=["absorbance", "fluorescence", "luminescence"],
+            data_formats=["csv", "xlsx"],
+        ),
+        safety_level=SafetyLevel.STRICT,
     )
     assert len(m.control_modes) == 3
     assert ControlMode.GUI in m.control_modes
-    assert m.safety_level == "strict"
+    assert m.safety_level == SafetyLevel.STRICT
     assert m.interface_type == InterfaceType.GUI
+    assert "absorbance" in m.capabilities.can_observe
+    assert "csv" in m.capabilities.data_formats
 
 
 def test_manifest_rejects_empty_name():

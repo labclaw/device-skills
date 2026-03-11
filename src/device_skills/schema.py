@@ -29,6 +29,23 @@ class InterfaceType(str, Enum):
     GUI = "gui"
 
 
+class SafetyLevel(str, Enum):
+    """Safety classification for device operations."""
+
+    NORMAL = "normal"
+    STRICT = "strict"
+    CRITICAL = "critical"
+
+
+class DeviceCapabilities(BaseModel):
+    """Structured capabilities — compatible with labclaw's DeviceCapabilities."""
+
+    can_observe: list[str] = Field(default_factory=list, description="What data it produces")
+    can_control: list[str] = Field(default_factory=list, description="What it can actuate")
+    data_formats: list[str] = Field(default_factory=list, description="Output file formats")
+    supports_streaming: bool = Field(default=False, description="Can stream data in real-time")
+
+
 class SkillManifest(BaseModel):
     """Metadata for a device skill — parsed from skill.yaml."""
 
@@ -45,13 +62,12 @@ class SkillManifest(BaseModel):
     control_modes: list[ControlMode] = Field(
         default_factory=list, description="Supported control modes"
     )
-    capabilities: list[str] = Field(
-        default_factory=list, description="What it can measure/do"
+    capabilities: DeviceCapabilities = Field(
+        default_factory=DeviceCapabilities, description="Structured device capabilities"
     )
-    data_formats: list[str] = Field(
-        default_factory=list, description="Output file formats"
+    safety_level: SafetyLevel = Field(
+        default=SafetyLevel.NORMAL, description="Safety classification"
     )
-    safety_level: str = Field(default="normal", description="Safety level: normal, strict, critical")
     dependencies: list[str] = Field(
         default_factory=list, description="Python package dependencies beyond core"
     )

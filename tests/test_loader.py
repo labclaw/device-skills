@@ -20,7 +20,7 @@ def tmp_devices(tmp_path: Path) -> Path:
         "version": "1.0.0",
         "vendor": "VendorA",
         "category": "plate-reader",
-        "capabilities": ["absorbance"],
+        "capabilities": {"can_observe": ["absorbance"]},
     }
     (dev_a / "skill.yaml").write_text(yaml.dump(manifest_a))
     (dev_a / "__init__.py").write_text("")
@@ -39,7 +39,8 @@ def tmp_devices(tmp_path: Path) -> Path:
     # _template should be skipped
     tmpl = tmp_path / "_template"
     tmpl.mkdir()
-    (tmpl / "skill.yaml").write_text(yaml.dump({"name": "template", "version": "0", "vendor": "x", "category": "x"}))
+    tmpl_data = {"name": "template", "version": "0", "vendor": "x", "category": "x"}
+    (tmpl / "skill.yaml").write_text(yaml.dump(tmpl_data))
 
     return tmp_path
 

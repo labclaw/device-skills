@@ -8,6 +8,8 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 from typing import Any
 
+from device_skills.schema import ControlMode
+
 
 class BaseAdapter(ABC):
     """Instrument adapter — how to connect, acquire, and process data.
@@ -25,6 +27,12 @@ class BaseAdapter(ABC):
     @abstractmethod
     def connected(self) -> bool:
         """Whether the instrument is currently connected."""
+        ...
+
+    @property
+    @abstractmethod
+    def mode(self) -> ControlMode:
+        """Current control mode (API, GUI, or OFFLINE)."""
         ...
 
     @abstractmethod
