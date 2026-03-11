@@ -2,9 +2,10 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field
 from enum import Enum
 from typing import Any
+
+from pydantic import BaseModel, Field
 
 
 class PlateFormat(Enum):
@@ -26,9 +27,10 @@ class ReadingMode(Enum):
     LUMINESCENCE = "luminescence"
 
 
-@dataclass
-class Well:
+class Well(BaseModel):
     """A single well in a microplate."""
+
+    model_config = {"frozen": False}
 
     row: str      # A-H for 96-well
     col: int      # 1-12 for 96-well
@@ -40,12 +42,11 @@ class Well:
         return f"{self.row}{self.col}"
 
 
-@dataclass
-class WellPlate:
+class WellPlate(BaseModel):
     """A microplate with readings."""
 
     format: PlateFormat
-    wells: list[Well] = field(default_factory=list)
+    wells: list[Well] = Field(default_factory=list)
 
     def get_well(self, name: str) -> Well | None:
         for w in self.wells:
@@ -60,12 +61,13 @@ class WellPlate:
         return [w for w in self.wells if w.row == row]
 
 
-@dataclass
-class PlateReading:
+class PlateReading(BaseModel):
     """Result of a plate reader measurement."""
+
+    model_config = {"arbitrary_types_allowed": True}
 
     plate: WellPlate
     mode: ReadingMode
     wavelength_nm: int
     protocol: str = ""
-    metadata: dict[str, Any] = field(default_factory=dict)
+    metadata: dict[str, Any] = Field(default_factory=dict)
