@@ -5,7 +5,6 @@ Directories starting with _ (like _template) are skipped.
 """
 from __future__ import annotations
 
-import importlib.resources
 import logging
 from pathlib import Path
 
@@ -15,10 +14,7 @@ from device_skills.schema import SkillManifest
 
 logger = logging.getLogger(__name__)
 
-try:
-    _DEFAULT_DEVICES_DIR = Path(str(importlib.resources.files("devices")))
-except (TypeError, ModuleNotFoundError, AttributeError):
-    _DEFAULT_DEVICES_DIR = Path(__file__).resolve().parent.parent.parent / "devices"
+_DEFAULT_DEVICES_DIR = Path(__file__).resolve().parent.parent.parent / "devices"
 
 
 def load_manifest(skill_yaml_path: Path) -> SkillManifest:
