@@ -19,14 +19,20 @@ Public API::
 """
 from __future__ import annotations
 
-from .adapter import TopSpinAdapter
-from .brain import TopSpinBrain
-from .processor import NMRPeak, NMRSpectrum, TopSpinProcessor
+# Guard against pytest importing this __init__.py directly without a package context.
+# When imported normally (via 'devices.bruker_topspin'), relative imports work fine.
+# When pytest scans the directory with a hyphenated path, __package__ may be None.
+if __package__:
+    from .adapter import TopSpinAdapter
+    from .brain import TopSpinBrain
+    from .processor import NMRPeak, NMRSpectrum, TopSpinProcessor
 
-__all__ = [
-    "TopSpinAdapter",
-    "TopSpinBrain",
-    "TopSpinProcessor",
-    "NMRSpectrum",
-    "NMRPeak",
-]
+    __all__ = [
+        "TopSpinAdapter",
+        "TopSpinBrain",
+        "TopSpinProcessor",
+        "NMRSpectrum",
+        "NMRPeak",
+    ]
+else:
+    __all__ = []

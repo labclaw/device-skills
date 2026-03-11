@@ -5,11 +5,10 @@ from unittest.mock import patch
 
 import numpy as np
 import pytest
+from devices.bruker_topspin.adapter import TopSpinAdapter
+from devices.bruker_topspin.processor import NMRPeak, NMRSpectrum, TopSpinProcessor
 
 from device_skills.schema import ControlMode
-
-from ..adapter import TopSpinAdapter
-from ..processor import NMRPeak, NMRSpectrum, TopSpinProcessor
 
 # ── NMRPeak ──────────────────────────────────────────────────────────────────
 
@@ -234,7 +233,7 @@ class TestTopSpinAdapter:
 class TestVisualizer:
     def test_plot_returns_bytes(self):
         """plot_spectrum with output_path=None should return bytes."""
-        from ..visualizer import plot_spectrum
+        from devices.bruker_topspin.visualizer import plot_spectrum
 
         spectrum = NMRSpectrum(
             data=np.sin(np.linspace(0, 10, 1000)),
@@ -251,7 +250,7 @@ class TestVisualizer:
 
     def test_plot_saves_file(self, tmp_path):
         """plot_spectrum with a path should save a file."""
-        from ..visualizer import plot_spectrum
+        from devices.bruker_topspin.visualizer import plot_spectrum
 
         spectrum = NMRSpectrum(
             data=np.sin(np.linspace(0, 10, 100)),
@@ -273,14 +272,14 @@ class TestVisualizer:
 
 class TestTopSpinBrain:
     def test_brain_instantiation(self):
-        from ..brain import TopSpinBrain
+        from devices.bruker_topspin.brain import TopSpinBrain
 
         brain = TopSpinBrain()
         assert brain is not None
 
     def test_cached_interpretation(self):
         """Brain returns cached response for known compounds (no API key needed)."""
-        from ..brain import TopSpinBrain
+        from devices.bruker_topspin.brain import TopSpinBrain
 
         TopSpinBrain()
         spectrum = NMRSpectrum(
@@ -304,7 +303,7 @@ class TestTopSpinBrain:
 
     def test_analyze_interface(self):
         """BaseBrain.analyze() works with a spectrum dict."""
-        from ..brain import TopSpinBrain
+        from devices.bruker_topspin.brain import TopSpinBrain
 
         spectrum = NMRSpectrum(
             data=np.zeros(100),
@@ -326,7 +325,7 @@ class TestTopSpinBrain:
 
     def test_summarize_interface(self):
         """BaseBrain.summarize() returns a non-empty string."""
-        from ..brain import TopSpinBrain
+        from devices.bruker_topspin.brain import TopSpinBrain
 
         env = dict(**__import__("os").environ)
         env.pop("ANTHROPIC_API_KEY", None)
@@ -337,7 +336,7 @@ class TestTopSpinBrain:
             assert len(result) > 0
 
     def test_summarize_empty(self):
-        from ..brain import TopSpinBrain
+        from devices.bruker_topspin.brain import TopSpinBrain
 
         brain = TopSpinBrain()
         result = brain.summarize([])
@@ -349,7 +348,7 @@ class TestTopSpinBrain:
 
 class TestSpectralLibrary:
     def test_add_and_list(self):
-        from ..library import SpectralLibrary
+        from devices.bruker_topspin.library import SpectralLibrary
 
         lib = SpectralLibrary()
         lib.add("ethanol", [1.2, 3.7, 4.8])
@@ -358,7 +357,7 @@ class TestSpectralLibrary:
         assert lib.list_entries() == ["ethanol", "acetone"]
 
     def test_exact_match(self):
-        from ..library import SpectralLibrary
+        from devices.bruker_topspin.library import SpectralLibrary
 
         lib = SpectralLibrary()
         lib.add("ethanol", [1.2, 3.7])
@@ -370,7 +369,7 @@ class TestSpectralLibrary:
         assert matches[0].score == 1.0
 
     def test_partial_match(self):
-        from ..library import SpectralLibrary
+        from devices.bruker_topspin.library import SpectralLibrary
 
         lib = SpectralLibrary()
         lib.add("ethanol", [1.2, 3.7, 4.8])
@@ -381,7 +380,7 @@ class TestSpectralLibrary:
         assert matches[0].matched_peaks == 2
 
     def test_tolerance(self):
-        from ..library import SpectralLibrary
+        from devices.bruker_topspin.library import SpectralLibrary
 
         lib = SpectralLibrary(tolerance_ppm=0.1)
         lib.add("ethanol", [1.20])
@@ -395,14 +394,14 @@ class TestSpectralLibrary:
         assert matches2[0].score == 0.0
 
     def test_no_entries(self):
-        from ..library import SpectralLibrary
+        from devices.bruker_topspin.library import SpectralLibrary
 
         lib = SpectralLibrary()
         matches = lib.match_peaks([1.2, 3.7])
         assert matches == []
 
     def test_empty_peaks(self):
-        from ..library import SpectralLibrary
+        from devices.bruker_topspin.library import SpectralLibrary
 
         lib = SpectralLibrary()
         lib.add("ethanol", [1.2, 3.7])
@@ -410,7 +409,7 @@ class TestSpectralLibrary:
         assert matches[0].score == 0.0
 
     def test_add_spectrum(self):
-        from ..library import SpectralLibrary
+        from devices.bruker_topspin.library import SpectralLibrary
 
         lib = SpectralLibrary()
         spectrum = NMRSpectrum(
@@ -423,7 +422,7 @@ class TestSpectralLibrary:
         assert lib.list_entries() == ["chloroform"]
 
     def test_match_spectrum(self):
-        from ..library import SpectralLibrary
+        from devices.bruker_topspin.library import SpectralLibrary
 
         lib = SpectralLibrary()
         lib.add("chloroform", [7.26])
@@ -441,7 +440,7 @@ class TestSpectralLibrary:
     def test_from_examdata(self):
         from pathlib import Path
 
-        from ..library import SpectralLibrary
+        from devices.bruker_topspin.library import SpectralLibrary
 
         lib = SpectralLibrary.from_examdata()
         if Path("/opt/topspin5.0.0/examdata").exists():
@@ -450,7 +449,7 @@ class TestSpectralLibrary:
             assert len(lib) == 0  # graceful fallback
 
     def test_top_k(self):
-        from ..library import SpectralLibrary
+        from devices.bruker_topspin.library import SpectralLibrary
 
         lib = SpectralLibrary()
         for i in range(10):
