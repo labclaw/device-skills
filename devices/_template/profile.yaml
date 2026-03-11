@@ -1,0 +1,44 @@
+# GUI Automation Profile — for device-use
+# Describes the instrument software's screen layout, workflows, and safety bounds.
+
+name: my-device
+version: "1.0"
+description: "Device software GUI profile"
+software: "SoftwareName"
+hardware_connected: false
+safety_level: normal
+
+screen:
+  width: 1920
+  height: 1080
+  scale_factor: 1.0
+
+window_title_pattern: ".*SoftwareName.*"
+
+allowed_actions:
+  - click
+  - type
+  - hotkey
+  - wait
+  - screenshot
+
+ui_elements: []
+  # - name: element_name
+  #   description: "What this element does"
+  #   element_type: button
+  #   region: null
+
+workflows: []
+  # - name: workflow_name
+  #   description: "What this workflow does"
+  #   steps:
+  #     - action: click
+  #       target: element_name
+  #       description: "Step description"
+
+safety:
+  max_actions_per_minute: 30
+  forbidden_regions: []
+  requires_confirmation: []
+  emergency_stop_file: "/tmp/device_use_stop"
+  bounds: {}

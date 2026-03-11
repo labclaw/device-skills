@@ -1,0 +1,17 @@
+# Device Skill Manifest — copy and fill in for your device.
+# This file is parsed into a SkillManifest (see src/device_skills/schema.py).
+
+name: "my-device"                    # unique slug (lowercase, hyphens)
+version: "0.1.0"                     # semver
+vendor: "Vendor Name"
+category: "plate-reader"             # plate-reader | nmr | microscope | flow-cytometer | ...
+model: ""                            # specific model (e.g. "Synergy H1")
+description: "Short description of the device"
+platform: ""                         # windows | macos | linux | cross
+interface_type: "file_based"         # file_based | serial | network_api | gpio_daq | software_bridge | gui
+control_modes:                       # which modes this skill supports
+  - offline
+capabilities: []                     # what it can measure: absorbance, fluorescence, 1H-NMR, ...
+data_formats: []                     # output formats: csv, xlsx, fid, tif, ...
+safety_level: "normal"               # normal | strict | critical
+dependencies: []                     # extra pip packages (e.g. nmrglue)
