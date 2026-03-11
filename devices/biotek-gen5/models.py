@@ -64,8 +64,6 @@ class WellPlate(BaseModel):
 class PlateReading(BaseModel):
     """Result of a plate reader measurement."""
 
-    model_config = {"arbitrary_types_allowed": True}
-
     plate: WellPlate
     mode: ReadingMode
     wavelength_nm: int
