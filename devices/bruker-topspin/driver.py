@@ -17,14 +17,14 @@ if TYPE_CHECKING:
 class TopSpinDriver(BaseDriver):
     """labclaw DeviceDriver for Bruker TopSpin NMR.
 
-    Required labclaw interface:
+    Implements the BaseDriver ABC contract:
         device_id: str (property)
         device_type: str (property)
         async connect() -> bool
         async disconnect() -> None
         async read() -> dict[str, Any]
         async write(command) -> bool
-        async status() -> dict[str, Any]
+        info() -> dict[str, Any]
 
     In offline mode the driver succeeds immediately without any
     network connection.  In API mode it delegates to the TopSpin

@@ -22,14 +22,14 @@ logger = logging.getLogger(__name__)
 class Gen5Driver(BaseDriver):
     """DeviceDriver for BioTek Gen5 CSV exports.
 
-    Implements the labclaw DeviceDriver protocol:
+    Implements the BaseDriver ABC contract:
         device_id: str (property)
         device_type: str (property)
         async connect() -> bool
         async disconnect() -> None
         async read() -> dict[str, Any]
         async write(command) -> bool
-        async status() -> dict[str, Any]
+        info() -> dict[str, Any]
 
     The driver is file-based: it reads CSV files exported from Gen5 software.
     No live connection to the instrument is made in this driver; for live
