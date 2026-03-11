@@ -1,0 +1,49 @@
+# GUI Automation Profile — Bruker TopSpin
+# Used by TopSpinGUIAutomation to interact with the TopSpin window.
+
+device: "bruker-topspin"
+software: "TopSpin 5.x"
+automation_mode: "computer_use"
+
+# Window detection
+window:
+  process_name_macos: "TopSpin 5"
+  process_name_linux: "TopSpin"
+  title_contains: "TopSpin"
+
+# Command line interface
+# TopSpin exposes a command bar at the bottom of the main window.
+# All processing commands are entered here and executed with Return.
+command_bar:
+  location: "bottom"
+  activation: "click_or_focus"
+  submit_key: "Return"
+
+# Standard processing commands
+commands:
+  open_dataset:    "re {path}"          # re = read experiment
+  fourier_xform:   "efp"               # exponential multiply + FT + phase
+  auto_phase:      "apbk"              # auto phase + baseline (neural net)
+  peak_pick:       "ppf"               # peak picking with frequencies
+  process_all:     "efp ; apbk ; ppf"  # full pipeline in one sequence
+
+# Processing pipeline delays (seconds)
+# TopSpin processes asynchronously; these delays ensure completion.
+delays:
+  after_open:        2.0
+  after_efp:         3.0
+  after_apbk:        3.0
+  after_ppf:         2.0
+
+# Screenshot settings (for Computer Use)
+screenshot:
+  format: "png"
+  dpi: 96
+
+# Safety constraints
+safety:
+  # Never send these commands via automation (could damage probe/sample)
+  forbidden_commands:
+    - "zg"      # start acquisition without operator confirmation
+    - "halt"    # emergency stop (must be manual)
+    - "atma"    # auto-tune (hardware risk)

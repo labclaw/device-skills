@@ -1,0 +1,34 @@
+name: "bruker-topspin"
+version: "0.1.0"
+vendor: "Bruker"
+category: "nmr"
+model: "TopSpin 5.x"
+description: "NMR spectrometer control and data processing via TopSpin"
+platform: "cross"
+interface_type: "software_bridge"
+control_modes:
+  - api
+  - gui
+  - offline
+capabilities:
+  can_observe:
+    - 1H-NMR
+    - 13C-NMR
+    - 2D-COSY
+    - 2D-HSQC
+    - 2D-HMBC
+  can_control:
+    - acquisition
+    - processing
+    - peak-picking
+  data_formats:
+    - fid
+    - ft
+    - csv
+    - png
+  supports_streaming: false
+safety_level: "normal"
+dependencies:
+  - nmrglue
+  - numpy
+  - matplotlib
