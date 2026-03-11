@@ -6,6 +6,7 @@ what the device is, what it can do, and how to interact with it.
 from __future__ import annotations
 
 from enum import Enum
+from pathlib import Path
 
 from pydantic import BaseModel, Field, field_validator
 
@@ -70,6 +71,9 @@ class SkillManifest(BaseModel):
     )
     dependencies: list[str] = Field(
         default_factory=list, description="Python package dependencies beyond core"
+    )
+    skill_dir: Path | None = Field(
+        default=None, description="Filesystem path to the skill directory (set by discover_skills)"
     )
 
     @field_validator("name")
