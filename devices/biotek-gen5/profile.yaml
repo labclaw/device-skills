@@ -1,0 +1,49 @@
+# GUI automation profile for BioTek Gen5 software
+# Used by device-use Computer Use automation (GUI control mode)
+
+name: "biotek-gen5"
+software: "Gen5"
+version_hint: "3.x"
+platform: "windows"
+
+# Window identification
+window:
+  title_pattern: "Gen5*"
+  process_name: "Gen5.exe"
+
+# Key UI locations (relative coordinates, 1920x1080 reference)
+ui:
+  menu_file: [25, 30]
+  menu_protocol: [90, 30]
+  btn_run_protocol: [120, 60]
+  btn_open_plate: [200, 60]
+  btn_export_data: [280, 60]
+  plate_grid_origin: [100, 150]   # top-left corner of well A1 in plate view
+  plate_grid_cell_size: [40, 40]  # pixels per well
+
+# Automation steps for reading a plate
+read_plate_steps:
+  - action: "open_protocol"
+    description: "File > Open Protocol"
+  - action: "load_plate"
+    description: "Click 'Read Plate' or load carrier"
+  - action: "run"
+    description: "Start acquisition"
+  - action: "wait_complete"
+    description: "Wait for 'Reading Complete' dialog"
+  - action: "export_csv"
+    description: "File > Export > Data as CSV"
+
+# Export settings
+export:
+  format: "csv"
+  include_metadata: true
+  delimiter: ","
+  encoding: "utf-8-sig"
+
+# Timeouts (seconds)
+timeouts:
+  connect: 30
+  plate_read_96well: 180
+  plate_read_384well: 300
+  export: 30

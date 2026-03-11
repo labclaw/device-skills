@@ -1,0 +1,27 @@
+name: "biotek-gen5"
+version: "0.1.0"
+vendor: "Agilent (BioTek)"
+category: "plate-reader"
+model: "Synergy H1"
+description: "Microplate reader with absorbance, fluorescence, and luminescence detection"
+platform: "windows"
+interface_type: "gui"
+control_modes:
+  - api
+  - gui
+  - offline
+capabilities:
+  can_observe:
+    - absorbance
+    - fluorescence
+    - luminescence
+  can_control:
+    - temperature
+    - shaking
+  data_formats:
+    - csv
+    - xlsx
+  supports_streaming: false
+safety_level: "normal"
+dependencies:
+  - matplotlib
