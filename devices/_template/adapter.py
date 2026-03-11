@@ -7,14 +7,14 @@ from device_skills.base import BaseAdapter
 from device_skills.schema import ControlMode
 
 
-class DeviceAdapter(BaseAdapter):
+class TemplateAdapter(BaseAdapter):
     """Implement BaseAdapter for this device. TODO: Rename to match your device."""
 
     def __init__(self) -> None:
         self._connected = False
 
     def info(self) -> dict[str, Any]:
-        return {"name": "my-device", "vendor": "Vendor", "type": "category"}
+        raise NotImplementedError
 
     @property
     def connected(self) -> bool:
@@ -25,14 +25,13 @@ class DeviceAdapter(BaseAdapter):
         return ControlMode.OFFLINE
 
     def connect(self) -> bool:
-        self._connected = True
-        return True
+        raise NotImplementedError
 
     def disconnect(self) -> None:
-        self._connected = False
+        raise NotImplementedError
 
     def list_datasets(self) -> list[dict[str, Any]]:
-        return []
+        raise NotImplementedError
 
     def acquire(self, **kwargs: Any) -> Any:
         raise NotImplementedError
