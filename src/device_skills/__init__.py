@@ -1,6 +1,7 @@
 """device-skills — modular, standardized device skills for labclaw & device-use."""
 from __future__ import annotations
 
+from device_skills.base import BaseAdapter, BaseBrain, BaseProcessor
 from device_skills.loader import discover_skills, load_manifest
 from device_skills.schema import (
     ControlMode,
@@ -11,6 +12,9 @@ from device_skills.schema import (
 )
 
 __all__ = [
+    "BaseAdapter",
+    "BaseBrain",
+    "BaseProcessor",
     "ControlMode",
     "DeviceCapabilities",
     "InterfaceType",

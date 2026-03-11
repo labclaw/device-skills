@@ -28,11 +28,13 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-biotek-gen5 = []
+biotek-gen5 = [
+    "matplotlib>=3.7",
+    "numpy>=1.24",
+]
 bruker-topspin = [
     "nmrglue>=0.9",
     "numpy>=1.24",
-    "scipy>=1.10",
     "matplotlib>=3.7",
 ]
 all = [
@@ -57,6 +59,10 @@ Repository = "https://github.com/labclaw/device-skills"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/device_skills", "devices"]
+
+[tool.ruff.lint.per-file-ignores]
+"devices/*/__init__.py" = ["N999"]
+"devices/*/tests/__init__.py" = ["N999"]
 
 [tool.ruff]
 target-version = "py311"
