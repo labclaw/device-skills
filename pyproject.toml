@@ -75,6 +75,11 @@ select = ["E", "F", "I", "N", "W", "UP"]
 testpaths = ["tests", "devices"]
 asyncio_mode = "auto"
 
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+check_untyped_defs = true
+
 [tool.coverage.run]
 source = ["device_skills", "devices"]
 omit = ["*/tests/*", "*/_template/*"]
