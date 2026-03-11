@@ -1,0 +1,74 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "device-skills"
+version = "0.1.0"
+description = "Modular, standardized device skills for labclaw & device-use"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.11"
+authors = [
+    { name = "LabClaw Team" },
+]
+keywords = ["lab-automation", "device-skills", "scientific-instruments"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+dependencies = [
+    "pydantic>=2.0.0,<3.0.0",
+    "pyyaml>=6.0,<7.0",
+]
+
+[project.optional-dependencies]
+biotek-gen5 = []
+bruker-topspin = [
+    "nmrglue>=0.9",
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "matplotlib>=3.7",
+]
+all = [
+    "device-skills[biotek-gen5]",
+    "device-skills[bruker-topspin]",
+]
+dev = [
+    "pytest>=8.0,<10.0",
+    "pytest-asyncio>=0.24,<2.0",
+    "pytest-cov>=6.0,<8.0",
+    "ruff>=0.6.0,<1.0.0",
+    "mypy>=1.11,<2.0",
+]
+
+[project.urls]
+Repository = "https://github.com/labclaw/device-skills"
+
+[project.entry-points."labclaw.plugins"]
+# Each device can register as a labclaw plugin
+# biotek_gen5 = "devices.biotek_gen5.driver:create_plugin"
+# bruker_topspin = "devices.bruker_topspin.driver:create_plugin"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/device_skills", "devices"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "devices"]
+asyncio_mode = "auto"
+
+[tool.coverage.run]
+source = ["device_skills", "devices"]
+omit = ["*/tests/*", "*/_template/*"]
