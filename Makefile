@@ -1,7 +1,7 @@
 .PHONY: test lint format install dev-install clean
 
 test:
-	python -m pytest devices/ -v --tb=short
+	python -m pytest tests/ devices/ -v --tb=short
 
 lint:
 	ruff check src/ devices/

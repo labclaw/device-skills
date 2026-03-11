@@ -34,4 +34,4 @@ jobs:
       - name: Install dependencies
         run: pip install -e ".[dev,bruker-topspin,biotek-gen5]"
       - name: Run tests
-        run: python -m pytest devices/ -v --tb=short
+        run: python -m pytest tests/ devices/ -v --tb=short
