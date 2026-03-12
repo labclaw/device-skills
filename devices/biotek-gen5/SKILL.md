@@ -1,25 +1,36 @@
 ---
 name: "biotek-gen5"
-description: "Operate a BioTek Gen5 (Agilent Synergy H1) microplate reader for absorbance, fluorescence, and luminescence assays across 96- and 384-well plates. Use for: ELISA quantification, cell viability screens, dose-response curves, fluorescence intensity reads. Parses Gen5 CSV/XLSX exports offline on any platform; live control (API/GUI) requires Windows with Gen5 3.x. Outputs well-by-well numeric readings, blank-corrected values, and plate heatmaps."
+description: "Operate a BioTek Gen5 (Agilent Synergy H1) microplate reader for absorbance, fluorescence, and luminescence assays on 96-well plates. Use for: ELISA quantification, cell viability screens, dose-response curves, fluorescence intensity reads. Parses Gen5 CSV exports offline on any platform; live control (API/GUI) requires Windows with Gen5 3.x. Outputs well-by-well numeric readings, blank-corrected values, and plate heatmaps."
 ---
 
 # BioTek Gen5 Plate Reader Skill
 
-Operate and analyze data from the BioTek Gen5 (Agilent Synergy H1) microplate reader. Supports absorbance, fluorescence, and luminescence across 96- and 384-well plates.
+Operate and analyze data from the BioTek Gen5 (Agilent Synergy H1) microplate reader. Supports absorbance, fluorescence, and luminescence on 96-well plates (rows A-H, columns 1-12).
+
+## Safety
+
+Safety level: normal
+
+- **Plate carrier ejection:** Carrier can eject if protocol is interrupted mid-read; keep hands clear during acquisition.
+- **Warm-up required:** Allow 15-30 min warm-up for fluorescence reads. Cold reads show higher CV% and unreliable baselines.
+- **Windows-only for live control:** GUI and API modes require Windows with Gen5 3.x installed and licensed. Do not attempt live instrument control from other platforms.
 
 ## Control Modes
 
 | Mode | Platform | Requirements | Use Case |
 |------|----------|-------------|----------|
-| **OFFLINE** | Any | None (demo data built-in) | Parse exported CSV/XLSX, demos, testing |
-| **API** | Windows | Gen5 3.x installed + COM license | Programmatic instrument control |
-| **GUI** | Windows | Gen5 3.x running | Computer Use automation fallback |
+| **OFFLINE** | Any | None (demo data built-in) | Parse exported CSV, demos, testing |
+| **API** | Windows | Gen5 3.x installed + COM license | Programmatic instrument control (not yet implemented) |
+| **GUI** | Windows | Gen5 3.x running | Computer Use automation fallback (not yet implemented) |
 
 Offline mode works immediately with built-in demo datasets. API and GUI modes require Windows with Gen5 software.
+
+> **Note:** API and GUI modes are defined but not yet implemented. `connect()` returns `False` for both.
 
 ## Quick Start
 
 ```python
+# Note: Directory is 'biotek-gen5' on disk but imports use underscores
 from device_skills.schema import ControlMode
 from devices.biotek_gen5.adapter import Gen5Adapter
 
@@ -57,7 +68,20 @@ viability = reader.process("CellViability_DrugScreen")
 
 Dataset name matching: names containing "viability" or "cell" return fluorescence data; all others return absorbance data.
 
-### 2. Process CSV Exports
+### 2. Process Exported Data
+
+> **WARNING:** In OFFLINE mode, `adapter.process()` returns demo data for testing, not real file contents. Use `Gen5Processor` directly for real CSV files.
+
+```python
+# For real exported CSV files, use the processor directly:
+from devices.biotek_gen5.processor import Gen5Processor
+processor = Gen5Processor()
+raw = processor.load("/path/to/export.csv")
+corrected = processor.transform(raw)
+reading = processor.extract(corrected)
+```
+
+### 3. Process CSV Exports (Detailed Pipeline)
 
 Use `Gen5Processor` for the three-step pipeline on Gen5 CSV files:
 
@@ -82,7 +106,7 @@ stats = result["stats"]       # {"well_count", "min", "max", "mean", "blank_avg"
 
 **CSV format expected:** Gen5 export with metadata rows at top, then rows A-H with 12 numeric columns. Non-row lines are parsed as key-value metadata.
 
-### 3. Analyze Results with AI
+### 4. Analyze Results with AI
 
 ```python
 from devices.biotek_gen5.brain import Gen5Brain
@@ -109,7 +133,7 @@ summary = brain.summarize([analysis_1, analysis_2])
 
 Without `ANTHROPIC_API_KEY`, the brain serves cached responses for ELISA and cell viability protocols.
 
-### 4. Visualize Plate Data
+### 5. Visualize Plate Data
 
 ```python
 from devices.biotek_gen5.visualizer import plot_plate_heatmap
@@ -123,14 +147,14 @@ png_bytes = plot_plate_heatmap(reading, output_path=None, title="My ELISA")
 
 Colormap: `YlOrRd` for absorbance, `YlGn` for fluorescence. Wells are annotated with values.
 
-### 5. Export to CSV
+### 6. Export to CSV
 
 ```python
 csv_string = Gen5Adapter.reading_to_csv(reading)
 # Gen5-style CSV: header row with protocol/mode/wavelength, then 8x12 grid
 ```
 
-### 6. File-Based Driver (for labclaw integration)
+### 7. File-Based Driver (for labclaw integration)
 
 ```python
 from pathlib import Path
@@ -177,14 +201,11 @@ await driver.disconnect()
 
 ## Important Notes
 
-- **Windows-only for live control:** GUI and API modes require Windows with Gen5 3.x installed and licensed
-- **Warm-up:** Allow 15-30 min warm-up for fluorescence reads (cold reads show higher CV%)
 - **CSV parsing:** Gen5Processor expects the specific Gen5 export format, not generic CSVs
 - **Blank correction:** Automatic in both adapter (demo data) and processor pipeline, using cols 11-12
 - **Quality thresholds:** CV% >15% = warning, >25% = problematic; Z-factor >0.5 = good screening assay
-- **Safety:** Plate carrier can eject if protocol interrupted; keep hands clear during acquisition
 
-## Reference Files
+## Reference Documentation
 
 | File | When to read |
 |------|-------------|

@@ -9,6 +9,8 @@ Read `SOUL.md` for device identity, quirks, and safety personality before first 
 
 ## Safety — Read Before Anything Else
 
+Safety level: critical
+
 These rules are non-negotiable. Violating them causes permanent hardware damage or injury.
 
 - **NEVER open the light box enclosure while PMTs are at operating gain.** GaAsP PMTs (H7422PA-40 SEL) are permanently degraded by ambient light exposure. Set gain to 0 first.
@@ -28,6 +30,7 @@ For laser classification and safety details, read `docs/manual/safety_manual.md`
 Connect to running PrairieView via COM or TCP. Windows only.
 
 ```python
+# Note: Directory is 'bruker-2p' on disk but imports use underscores
 from devices.bruker_2p.adapter import TwoPhotonAdapter
 
 adapter = TwoPhotonAdapter(data_dir="/path/to/data", mode="api", password="0000")

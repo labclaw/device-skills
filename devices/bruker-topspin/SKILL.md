@@ -1,6 +1,6 @@
 ---
 name: "bruker-topspin"
-description: "Operate a Bruker NMR spectrometer via TopSpin software. Covers 1H-NMR, 13C-NMR, 2D-COSY, HSQC, HMBC experiments. Process FID data, pick peaks, analyze chemical shifts, identify compounds. Handles spectrum acquisition, Fourier transform, phase correction, baseline correction, peak picking, and structure elucidation."
+description: "Operate a Bruker NMR spectrometer via TopSpin software. Covers 1H-NMR acquisition and processing (1D). 13C-NMR and 2D experiments (COSY, HSQC, HMBC) supported for acquisition only — processing pipeline is 1D 1H. Process FID data, pick peaks, analyze chemical shifts, identify compounds."
 ---
 
 # Bruker TopSpin NMR Skill
@@ -18,12 +18,14 @@ NMR spectrometers have a superconducting magnet that is ALWAYS energized:
 - **RF exposure.** The probe generates high-power RF pulses. Never reach into the bore during acquisition.
 - **Sample handling.** Use non-magnetic NMR tubes only. Verify spinner balance before insertion.
 
+Safety level: normal
+
 ## Three Control Modes
 
 | Mode | When to use | Requirements |
 |------|-------------|--------------|
 | **Offline** | Process existing FID data without TopSpin running | `nmrglue`, `numpy` |
-| **API** | Programmatic control of a running TopSpin instance | TopSpin running, gRPC port 3081 |
+| **API** | Programmatic control of a running TopSpin instance (processing only — see note below) | TopSpin running, gRPC port 3081 |
 | **GUI** | Visual automation of TopSpin window via Computer Use | TopSpin visible, `ANTHROPIC_API_KEY` |
 
 Always start with Offline mode unless you specifically need live instrument control.
@@ -31,6 +33,7 @@ Always start with Offline mode unless you specifically need live instrument cont
 ## Quick Start: Process a Spectrum (Offline)
 
 ```python
+# Note: Directory is 'bruker-topspin' on disk but imports use underscores
 from devices.bruker_topspin.adapter import TopSpinAdapter
 from devices.bruker_topspin.processor import TopSpinProcessor
 from devices.bruker_topspin.visualizer import plot_spectrum
@@ -97,6 +100,8 @@ Processing steps (automatic):
 8. Peak picking (threshold = 2% of max intensity)
 
 ### 2. Process via TopSpin API (Live)
+
+Note: `_acquire_api()` is not yet implemented (raises NotImplementedError). Use API mode for processing only (`adapter.process()`), not acquisition.
 
 ```python
 adapter = TopSpinAdapter(mode="api")
@@ -185,6 +190,8 @@ Files are named by command (e.g., `efp.md`, `apk.md`, `ppf.md`). Read a specific
 
 ### Standard Processing Pipeline
 
+Note: Processor currently handles 1D 1H only. 2D data can be acquired but must be processed in TopSpin.
+
 For a typical 1D 1H spectrum, the command sequence is:
 
 ```
@@ -228,7 +235,7 @@ Instance-specific operational data in `user/`:
 | `user/protocols/` | When running standard experiment protocols |
 | `user/findings/` | When reviewing previous analysis results |
 
-## Key Files
+## Reference Documentation
 
 | File | Purpose |
 |------|---------|
