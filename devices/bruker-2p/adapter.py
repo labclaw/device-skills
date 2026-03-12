@@ -134,7 +134,7 @@ class TwoPhotonAdapter(BaseAdapter):
             if not child.is_dir():
                 continue
             xml_files = list(child.glob("*.xml"))
-            tiff_files = list(child.glob("*.ome.tif")) + list(child.glob("*.tif"))
+            tiff_files = list({*child.glob("*.ome.tif"), *child.glob("*.tif")})
             if xml_files:
                 datasets.append({
                     "path": str(child),
