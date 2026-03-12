@@ -58,6 +58,27 @@ class ROI:
     trace: np.ndarray | None = None  # Fluorescence trace over time
 
 
+def _safe_float(value: Any) -> float:
+    """Convert a value to float, handling dicts (take first value) and errors."""
+    if isinstance(value, dict):
+        # IndexedValue — take the first numeric value
+        for v in value.values():
+            try:
+                return float(v)
+            except (ValueError, TypeError):
+                continue
+        return 0.0
+    try:
+        return float(value)
+    except (ValueError, TypeError):
+        return 0.0
+
+
+def _safe_int(value: Any) -> int:
+    """Convert a value to int, handling dicts and errors."""
+    return int(_safe_float(value))
+
+
 def _parse_prairie_xml(xml_path: Path) -> dict[str, Any]:
     """Parse a Prairie View XML metadata file.
 
@@ -251,16 +272,27 @@ class TwoPhotonProcessor(BaseProcessor):
                     ))
 
         # Extract scan parameters from metadata
-        pixels_per_line = int(metadata.get("pixelsPerLine", 512))
-        lines_per_frame = int(metadata.get("linesPerFrame", 512))
-        microns_x = float(metadata.get("micronsPerPixel_XAxis", 0))
-        microns_y = float(metadata.get("micronsPerPixel_YAxis", 0))
-        objective = str(metadata.get("objectiveLens", ""))
-        scan_mode = str(metadata.get("scanMode", ""))
+        # Some PVStateValues are IndexedValue dicts, others are flat strings.
+        pixels_per_line = _safe_int(metadata.get("pixelsPerLine", 512))
+        lines_per_frame = _safe_int(metadata.get("linesPerFrame", 512))
 
-        # Try to extract laser info
-        laser_wl = float(metadata.get("currentWavelength", 0))
-        laser_power = float(metadata.get("laserPower", 0))
+        # micronsPerPixel is stored as IndexedValue: {"XAxis": "0.87", "YAxis": "0.87"}
+        microns_raw = metadata.get("micronsPerPixel", {})
+        if isinstance(microns_raw, dict):
+            microns_x = _safe_float(microns_raw.get("XAxis", 0))
+            microns_y = _safe_float(microns_raw.get("YAxis", 0))
+        else:
+            microns_x = _safe_float(microns_raw)
+            microns_y = microns_x
+
+        objective = str(metadata.get("objectiveLens", ""))
+        scan_mode = str(metadata.get("activeMode", metadata.get("scanMode", "")))
+
+        # Laser info — may be indexed (multi-laser) or flat
+        wl_raw = metadata.get("multiphotonWavelength", metadata.get("currentWavelength", 0))
+        laser_wl = _safe_float(wl_raw)
+        power_raw = metadata.get("laserPower", 0)
+        laser_power = _safe_float(power_raw)
 
         # Compute frame rate from timing
         frame_rate = 0.0

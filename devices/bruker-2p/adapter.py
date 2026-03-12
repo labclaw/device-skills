@@ -46,11 +46,15 @@ class TwoPhotonAdapter(BaseAdapter):
         self,
         data_dir: str = "",
         mode: ControlMode | str = ControlMode.OFFLINE,
+        host: str = "127.0.0.1",
+        password: str = "0000",
     ) -> None:
         self._data_dir = Path(data_dir) if data_dir else Path.cwd()
         self._mode = ControlMode(mode) if isinstance(mode, str) else mode
         self._connected = False
         self._prairie_link: Any = None
+        self._host = host
+        self._password = password
         self.processor = TwoPhotonProcessor()
 
     def info(self) -> dict[str, Any]:
@@ -104,7 +108,7 @@ class TwoPhotonAdapter(BaseAdapter):
             self._prairie_link = win32com.client.Dispatch(
                 "PrairieLink64.Application"
             )
-            self._prairie_link.Connect()
+            self._prairie_link.Connect(self._host, self._password)
             self._connected = True
             return True
         except Exception:
@@ -209,9 +213,9 @@ class TwoPhotonAdapter(BaseAdapter):
             raise RuntimeError("Motor position requires API mode with active connection")
         if self._prairie_link is None:
             raise RuntimeError("PrairieLink not connected")
-        x = float(self._prairie_link.GetMotorPosition("XAxis"))
-        y = float(self._prairie_link.GetMotorPosition("YAxis"))
-        z = float(self._prairie_link.GetMotorPosition("ZAxis"))
+        x = float(self._prairie_link.GetMotorPosition("X"))
+        y = float(self._prairie_link.GetMotorPosition("Y"))
+        z = float(self._prairie_link.GetMotorPosition("Z"))
         return {"x": x, "y": y, "z": z}
 
     def set_motor_position(self, axis: str, position: float) -> bool:
@@ -229,7 +233,7 @@ class TwoPhotonAdapter(BaseAdapter):
         """
         if self._mode != ControlMode.API or not self._connected:
             raise RuntimeError("Motor control requires API mode with active connection")
-        axis_map = {"x": "XAxis", "y": "YAxis", "z": "ZAxis"}
+        axis_map = {"x": "X", "y": "Y", "z": "Z"}
         pv_axis = axis_map.get(axis.lower())
         if pv_axis is None:
             raise ValueError(f"Invalid axis '{axis}'. Must be 'x', 'y', or 'z'.")
@@ -262,7 +266,7 @@ class TwoPhotonAdapter(BaseAdapter):
             raise RuntimeError("Laser control requires API mode with active connection")
         if self._prairie_link is None:
             raise RuntimeError("PrairieLink not connected")
-        self._prairie_link.SendScriptCommands(f"-SetLaserWavelength {nm:.0f}")
+        self._prairie_link.SendScriptCommands(f"-SetMultiphotonWavelength '{nm:.0f}' 1")
         return True
 
     def start_tseries(self) -> bool:
