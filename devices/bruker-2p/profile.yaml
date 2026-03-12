@@ -1,0 +1,48 @@
+# GUI Automation Profile — Bruker Ultima Investigator
+# Used by device-use to interact with PrairieView for two-photon microscopy.
+
+device:
+  name: "Bruker Ultima Investigator"
+  software: "PrairieView"
+  version: "5.6+"
+  os: "Windows 10/11"
+
+automation_mode: "computer_use"
+
+window:
+  process: "PrairieView.exe"
+  title_pattern: "PrairieView*"
+
+# PrairieLink programmatic interface (preferred over GUI when available)
+prairielink:
+  com_progid: "PrairieLink64.Application"
+  tcp_port: 1236
+  password_location: "Tools > Scripts > Edit Scripts (bottom-left)"
+  default_password: "0000"
+
+# Scan mode configurations
+scan_modes:
+  resonant_galvo:
+    fps: 30
+    resolution: "512x512"
+    use_for: ["calcium-imaging", "time-series"]
+  galvo_galvo:
+    use_for: ["z-stack", "tile-scan", "high-resolution"]
+
+# Safety constraints
+safety:
+  forbidden_commands: []
+  pre_acquisition_checks:
+    - "Verify light box door closed (interlock active)"
+    - "Verify PMT gain at safe level before opening shutter"
+    - "Verify cooling water circulator running at 25C"
+    - "Verify Pockels cell warmed up (20-30 min)"
+  max_pmt_voltage: 900
+  max_laser_power_percent: 100
+
+# Timing delays (milliseconds)
+delays:
+  after_wavelength_change: 8000
+  after_z_move: 1000
+  after_mode_switch: 2000
+  pockels_warmup: 1800000

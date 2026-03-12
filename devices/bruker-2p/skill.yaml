@@ -1,0 +1,16 @@
+name: "bruker-2p"
+version: "0.1.0"
+vendor: "Bruker"
+category: "microscopy"
+model: "Ultima Investigator"
+description: "Two-photon fluorescence microscope for in vivo calcium imaging"
+platform: "windows"
+interface_type: "software_bridge"
+control_modes: [api, gui, offline]
+capabilities:
+  can_observe: [calcium-imaging, z-stack, time-series, line-scan, tile-scan, vasculature-imaging]
+  can_control: [stage-xyz, laser-wavelength, laser-power, pmt-gain, scan-mode, zoom, acquisition]
+  data_formats: [ome-tif, xml, raw, csv, env]
+  supports_streaming: true
+safety_level: "critical"
+dependencies: [tifffile, numpy, matplotlib, scikit-image, lxml]
