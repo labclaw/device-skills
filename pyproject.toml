@@ -37,9 +37,17 @@ bruker-topspin = [
     "numpy>=1.24",
     "matplotlib>=3.7",
 ]
+bruker-2p = [
+    "tifffile>=2023.0",
+    "numpy>=1.24",
+    "matplotlib>=3.7",
+    "scikit-image>=0.21",
+    "lxml>=4.9",
+]
 all = [
     "device-skills[biotek-gen5]",
     "device-skills[bruker-topspin]",
+    "device-skills[bruker-2p]",
 ]
 dev = [
     "pytest>=8.0,<10.0",
