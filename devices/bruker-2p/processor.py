@@ -6,6 +6,7 @@ image frames from OME-TIFF files, and produces ImagingStack objects.
 """
 from __future__ import annotations
 
+import logging
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
@@ -13,6 +14,8 @@ from typing import Any
 import numpy as np
 
 from device_skills.base import BaseProcessor
+
+logger = logging.getLogger(__name__)
 
 
 @dataclass
@@ -170,6 +173,8 @@ def _load_tiff_frames(
         if fpath.exists():
             img = tifffile.imread(str(fpath))
             arrays.append(img)
+        else:
+            logger.warning("TIFF file not found, skipping: %s", fpath)
     return arrays
 
 

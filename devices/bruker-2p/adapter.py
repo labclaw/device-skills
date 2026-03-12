@@ -169,8 +169,9 @@ class TwoPhotonAdapter(BaseAdapter):
             "linescan": "-LineScan",
         }
         cmd = cmd_map.get(acq_mode, "-TSeries")
-        if self._prairie_link is not None:
-            self._prairie_link.SendScriptCommands(cmd)
+        if self._prairie_link is None:
+            raise RuntimeError("PrairieLink not connected")
+        self._prairie_link.SendScriptCommands(cmd)
         return {"status": "started", "mode": acq_mode}
 
     def _acquire_gui(self, **kwargs: Any) -> Any:
@@ -232,10 +233,11 @@ class TwoPhotonAdapter(BaseAdapter):
         pv_axis = axis_map.get(axis.lower())
         if pv_axis is None:
             raise ValueError(f"Invalid axis '{axis}'. Must be 'x', 'y', or 'z'.")
-        if self._prairie_link is not None:
-            self._prairie_link.SendScriptCommands(
-                f"-SetMotorPosition {pv_axis} {position}"
-            )
+        if self._prairie_link is None:
+            raise RuntimeError("PrairieLink not connected")
+        self._prairie_link.SendScriptCommands(
+            f"-SetMotorPosition {pv_axis} {position}"
+        )
         return True
 
     def set_laser_wavelength(self, nm: float) -> bool:
@@ -258,8 +260,9 @@ class TwoPhotonAdapter(BaseAdapter):
             )
         if self._mode != ControlMode.API or not self._connected:
             raise RuntimeError("Laser control requires API mode with active connection")
-        if self._prairie_link is not None:
-            self._prairie_link.SendScriptCommands(f"-SetLaserWavelength {nm:.0f}")
+        if self._prairie_link is None:
+            raise RuntimeError("PrairieLink not connected")
+        self._prairie_link.SendScriptCommands(f"-SetLaserWavelength {nm:.0f}")
         return True
 
     def start_tseries(self) -> bool:
@@ -299,6 +302,7 @@ class TwoPhotonAdapter(BaseAdapter):
         """
         if self._mode != ControlMode.API or not self._connected:
             raise RuntimeError("Abort requires API mode with active connection")
-        if self._prairie_link is not None:
-            self._prairie_link.SendScriptCommands("-Abort")
+        if self._prairie_link is None:
+            raise RuntimeError("PrairieLink not connected")
+        self._prairie_link.SendScriptCommands("-Abort")
         return True

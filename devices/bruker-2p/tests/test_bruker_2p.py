@@ -498,18 +498,6 @@ class TestTwoPhotonDriver:
             assert read_result["scan_mode"] == "ResonantGalvo"
 
     @pytest.mark.asyncio
-    async def test_driver_status_reports_mode(self) -> None:
-        """Given connected driver, When status(), Then mode is reported."""
-        from devices.bruker_2p.driver import TwoPhotonDriver
-
-        driver = TwoPhotonDriver()
-        await driver.connect()
-        status = await driver.status()
-        assert status["connected"] is True
-        assert status["mode"] == "offline"
-        assert status["device_type"] == "two-photon-microscope"
-
-    @pytest.mark.asyncio
     async def test_driver_disconnect(self) -> None:
         """Given connected driver, When disconnect(), Then not connected."""
         from devices.bruker_2p.driver import TwoPhotonDriver

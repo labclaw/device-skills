@@ -6,10 +6,13 @@ two-photon fluorescence microscope.
 """
 from __future__ import annotations
 
+import logging
 from typing import TYPE_CHECKING, Any
 
 from device_skills.base import BaseDriver
 from device_skills.schema import ControlMode
+
+logger = logging.getLogger(__name__)
 
 if TYPE_CHECKING:
     from .adapter import TwoPhotonAdapter
@@ -147,6 +150,7 @@ class TwoPhotonDriver(BaseDriver):
                 }
                 return True
             except Exception:
+                logger.exception("process command failed for path %s", path)
                 return False
 
         if action == "list_datasets":
@@ -155,6 +159,7 @@ class TwoPhotonDriver(BaseDriver):
                 self._last_stack = {"datasets": datasets}
                 return True
             except Exception:
+                logger.exception("list_datasets command failed")
                 return False
 
         if action == "tseries":
@@ -162,6 +167,7 @@ class TwoPhotonDriver(BaseDriver):
                 self._adapter.start_tseries()
                 return True
             except Exception:
+                logger.exception("tseries command failed")
                 return False
 
         if action == "zseries":
@@ -169,6 +175,7 @@ class TwoPhotonDriver(BaseDriver):
                 self._adapter.start_zseries()
                 return True
             except Exception:
+                logger.exception("zseries command failed")
                 return False
 
         if action == "abort":
@@ -176,16 +183,8 @@ class TwoPhotonDriver(BaseDriver):
                 self._adapter.abort()
                 return True
             except Exception:
+                logger.exception("abort command failed")
                 return False
 
         return False
 
-    async def status(self) -> dict[str, Any]:
-        """Return current driver status."""
-        return {
-            "connected": self._connected,
-            "device_id": self._device_id,
-            "device_type": self.device_type,
-            "mode": self._mode.value,
-            "has_data": bool(self._last_stack),
-        }
