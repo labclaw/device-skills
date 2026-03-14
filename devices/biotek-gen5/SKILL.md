@@ -215,5 +215,9 @@ await driver.disconnect()
 | `user/calibration_log.md` | Before quantitative assays — check last calibration date |
 | `user/protocols/` | When running standard assay protocols |
 | `user/findings/` | When reviewing previous assay results |
-
-Note: No `docs/` directory exists yet for this device. Core operational knowledge is in this SKILL.md and SOUL.md.
+| `docs/index.yaml` | Documentation index — all reference docs listed with descriptions |
+| `docs/manual/` | Getting started guide, common assay protocols |
+| `docs/api/` | Gen5 COM automation interface, software commands reference |
+| `docs/specs/` | Synergy H1 hardware specifications, plate format details |
+| `docs/formats/` | Gen5 CSV export format, protocol file format |
+| `docs/science/` | Absorbance, fluorescence, luminescence theory, data analysis principles |
