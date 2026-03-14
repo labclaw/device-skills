@@ -1,0 +1,25 @@
+# BioTek Gen5 Documentation Index
+# Structured reference documentation for the Synergy H1 plate reader
+# and Gen5 software. See individual files for details.
+
+manual:
+  getting_started.md: "First-time setup, warm-up, basic reads, plate handling"
+  assay_protocols.md: "ELISA, cell viability, Bradford, BCA, nucleic acid, luminescence protocols"
+
+api:
+  gen5_com_interface.md: "Gen5 COM automation API — objects, methods, workflow examples"
+  gen5_commands.md: "Gen5 menu commands, protocol steps, keyboard shortcuts"
+
+specs:
+  synergy_h1_specs.md: "Hardware specifications — detection modes, wavelength ranges, temperature"
+  plate_formats.md: "Supported plate formats, well geometry, path length correction"
+
+formats:
+  csv_export_format.md: "Gen5 CSV export structure — metadata headers, data grid, parsing notes"
+  protocol_file_format.md: "Gen5 .prt protocol files and .xpt experiment files"
+
+science:
+  absorbance_theory.md: "Beer-Lambert law, chromophores, dual-wavelength correction"
+  fluorescence_theory.md: "Fluorescence principle, common fluorophores, top/bottom reading"
+  luminescence_theory.md: "Bioluminescence, chemiluminescence, flash vs glow kinetics"
+  data_analysis.md: "Blank subtraction, CV%, standard curves, 4PL fitting, Z-factor"
