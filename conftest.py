@@ -10,6 +10,7 @@ from __future__ import annotations
 import importlib.util
 import sys
 import types
+import warnings
 from pathlib import Path
 
 _REPO_ROOT = Path(__file__).parent
@@ -44,7 +45,22 @@ def _load_module(pkg_name: str, mod_name: str, file_path: Path) -> None:
     mod = importlib.util.module_from_spec(spec)
     mod.__package__ = pkg_name
     sys.modules[full_name] = mod
-    spec.loader.exec_module(mod)
+    try:
+        spec.loader.exec_module(mod)
+    except ModuleNotFoundError as exc:
+        # Optional third-party deps (for one device only) should not abort
+        # collection for the entire workspace.
+        missing = exc.name or ""
+        is_internal = missing == pkg_name or missing.startswith(f"{pkg_name}.")
+        if not is_internal:
+            warnings.warn(
+                f"Skipping optional module {full_name!r}: missing dependency {missing!r}",
+                RuntimeWarning,
+                stacklevel=2,
+            )
+            sys.modules.pop(full_name, None)
+            return
+        raise
 
 
 def _register_device(device_dir: Path) -> None:
@@ -80,6 +96,18 @@ def _register_device(device_dir: Path) -> None:
             pkg_mod.__file__ = str(init_file)
             try:
                 init_spec.loader.exec_module(pkg_mod)
+            except ModuleNotFoundError as exc:
+                missing = exc.name or ""
+                is_internal = missing == pkg_name or missing.startswith(f"{pkg_name}.")
+                if not is_internal:
+                    warnings.warn(
+                        f"Skipping optional device package {pkg_name!r}: missing dependency {missing!r}",
+                        RuntimeWarning,
+                        stacklevel=2,
+                    )
+                    return
+                sys.modules.pop(pkg_name, None)
+                raise
             except Exception:
                 sys.modules.pop(pkg_name, None)
                 raise
