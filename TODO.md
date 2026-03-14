@@ -33,6 +33,8 @@ Immediate product focus is narrower than the full roadmap. See
 ### Micro-Manager
 
 - [ ] Create `devices/micro-manager/` from the template.
+- [ ] Use `MICROMANAGER_DEMO.md` as the implementation target for a TopSpin-like
+      complete no-hardware demo.
 - [ ] Define `skill.yaml` around microscopy-widefield control plus simulation.
 - [ ] Write `SOUL.md` with Micro-Manager's role as the default simulation-first
       microscopy platform.
@@ -45,6 +47,8 @@ Immediate product focus is narrower than the full roadmap. See
 - [ ] Add deterministic demo fixtures that generate synthetic MDA runs for tests.
 - [ ] Add end-to-end tests that run without hardware and prove:
       simulated acquire -> saved dataset -> process -> summarize.
+- [ ] Add a second-layer realism demo using `FakeCamera` with curated source
+      images on disk.
 - [ ] Document the minimum local setup for "works without hardware".
 
 Acceptance criteria:
