@@ -49,6 +49,10 @@ Immediate product focus is narrower than the full roadmap. See
       simulated acquire -> saved dataset -> process -> summarize.
 - [ ] Add a second-layer realism demo using `FakeCamera` with curated source
       images on disk.
+- [ ] Build a bounded GUI / CUA wrapper over the same adapter contract, rather
+      than a separate GUI-only execution stack.
+- [ ] Define one prepared customer walkthrough for GUI mode:
+      launch app -> trigger acquisition -> show results.
 - [ ] Document the minimum local setup for "works without hardware".
 
 Acceptance criteria:
