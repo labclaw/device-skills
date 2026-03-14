@@ -18,6 +18,8 @@ and biotech research groups.
 
 Immediate product focus is narrower than the full roadmap. See
 `PHASE1_SHORTLIST.md` for the current "suitable first devices" list.
+See `PLAN_CLOSEOUT.md` for the project-level closeout checklist that should be
+used to end planning cleanly before implementation.
 
 ## P0: Phase 1 Product Focus
 
