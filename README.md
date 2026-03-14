@@ -37,6 +37,13 @@ Each lab instrument gets a self-contained skill package with everything needed t
 
 Copy `devices/_template/` → `devices/your-device/`, fill in the files, add tests, submit PR.
 
+## Roadmap
+
+See [ROADMAP.md](ROADMAP.md) for the simulation-first imaging expansion plan and
+[TODO.md](TODO.md) for the active worklist. See
+[PHASE1_SHORTLIST.md](PHASE1_SHORTLIST.md) for the narrow first-wave set that is
+actually suitable for immediate `labclaw` focus.
+
 ## How It Fits Together
 
     ┌─────────────────────────────────────────┐
