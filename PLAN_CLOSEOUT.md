@@ -91,11 +91,16 @@ Before implementation begins, the project should satisfy all items below.
 
 ### 4. Repo Hygiene
 
-- [ ] Planning docs are pushed to GitHub.
+- [x] Planning docs are pushed to GitHub.
 - [x] Unrelated local changes are identified and not mixed into the next
       implementation commit.
 - [ ] The next code implementation starts from a clean, intentional commit
       boundary.
+
+Current unrelated local changes to keep out of the next implementation commit:
+
+- `conftest.py`
+- `uv.lock`
 
 ### 5. Implementation Package Readiness
 
