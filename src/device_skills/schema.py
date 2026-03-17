@@ -3,6 +3,7 @@
 Every device skill has a skill.yaml parsed into this model. It defines
 what the device is, what it can do, and how to interact with it.
 """
+
 from __future__ import annotations
 
 from enum import StrEnum

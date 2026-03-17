@@ -10,6 +10,7 @@ Usage:
     lib = SpectralLibrary.from_examdata()  # load TopSpin example data
     matches = lib.match(unknown_spectrum, top_k=3)
 """
+
 from __future__ import annotations
 
 import logging

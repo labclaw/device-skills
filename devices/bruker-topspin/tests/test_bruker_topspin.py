@@ -1,4 +1,5 @@
 """Tests for the Bruker TopSpin device skill."""
+
 from __future__ import annotations
 
 from unittest.mock import patch

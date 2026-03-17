@@ -4,6 +4,7 @@ Implements BaseProcessor (load -> transform -> extract) for Prairie View
 OME-TIFF + XML data. Parses metadata from Prairie XML hierarchy, loads
 image frames from OME-TIFF files, and produces ImagingStack objects.
 """
+
 from __future__ import annotations
 
 import logging
@@ -125,11 +126,13 @@ def _parse_prairie_xml(xml_path: Path) -> dict[str, Any]:
             }
             files: list[dict[str, str]] = []
             for file_elem in frame_elem.findall("File"):
-                files.append({
-                    "channel": file_elem.get("channel", "1"),
-                    "channel_name": file_elem.get("channelName", ""),
-                    "filename": file_elem.get("filename", ""),
-                })
+                files.append(
+                    {
+                        "channel": file_elem.get("channel", "1"),
+                        "channel_name": file_elem.get("channelName", ""),
+                        "filename": file_elem.get("filename", ""),
+                    }
+                )
             frame_info["files"] = files
             frames.append(frame_info)
 
@@ -265,11 +268,13 @@ class TwoPhotonProcessor(BaseProcessor):
                 arrays = _load_tiff_frames(data_dir, file_list)
                 for i, arr in enumerate(arrays):
                     channel = int(file_list[i].get("channel", "1")) if i < len(file_list) else 1
-                    frames.append(CalciumFrame(
-                        data=arr,
-                        timestamp=frame_info.get("absolute_time", 0.0),
-                        channel=channel,
-                    ))
+                    frames.append(
+                        CalciumFrame(
+                            data=arr,
+                            timestamp=frame_info.get("absolute_time", 0.0),
+                            channel=channel,
+                        )
+                    )
 
         # Extract scan parameters from metadata
         # Some PVStateValues are IndexedValue dicts, others are flat strings.
@@ -390,8 +395,7 @@ class TwoPhotonProcessor(BaseProcessor):
             f"  Pixel size: {stack.microns_per_pixel_x:.3f} x"
             f" {stack.microns_per_pixel_y:.3f} um/px",
             f"  Objective: {stack.objective}",
-            f"  Laser: {stack.laser_wavelength:.0f} nm"
-            f" at {stack.laser_power:.1f} mW",
+            f"  Laser: {stack.laser_wavelength:.0f} nm at {stack.laser_power:.1f} mW",
             f"  Scan mode: {stack.scan_mode}",
         ]
         return "\n".join(lines)

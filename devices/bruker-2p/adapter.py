@@ -7,6 +7,7 @@ Control Modes:
 
 All three modes produce the same ImagingStack output.
 """
+
 from __future__ import annotations
 
 from pathlib import Path
@@ -105,9 +106,7 @@ class TwoPhotonAdapter(BaseAdapter):
             self._connected = False
             return False
         try:
-            self._prairie_link = win32com.client.Dispatch(
-                "PrairieLink64.Application"
-            )
+            self._prairie_link = win32com.client.Dispatch("PrairieLink64.Application")
             self._prairie_link.Connect(self._host, self._password)
             self._connected = True
             return True
@@ -140,12 +139,14 @@ class TwoPhotonAdapter(BaseAdapter):
             xml_files = list(child.glob("*.xml"))
             tiff_files = list({*child.glob("*.ome.tif"), *child.glob("*.tif")})
             if xml_files:
-                datasets.append({
-                    "path": str(child),
-                    "name": child.name,
-                    "xml_file": xml_files[0].name,
-                    "num_tiffs": len(tiff_files),
-                })
+                datasets.append(
+                    {
+                        "path": str(child),
+                        "name": child.name,
+                        "xml_file": xml_files[0].name,
+                        "num_tiffs": len(tiff_files),
+                    }
+                )
         return datasets
 
     def acquire(self, **kwargs: Any) -> Any:
@@ -239,9 +240,7 @@ class TwoPhotonAdapter(BaseAdapter):
             raise ValueError(f"Invalid axis '{axis}'. Must be 'x', 'y', or 'z'.")
         if self._prairie_link is None:
             raise RuntimeError("PrairieLink not connected")
-        self._prairie_link.SendScriptCommands(
-            f"-SetMotorPosition {pv_axis} {position}"
-        )
+        self._prairie_link.SendScriptCommands(f"-SetMotorPosition {pv_axis} {position}")
         return True
 
     def set_laser_wavelength(self, nm: float) -> bool:

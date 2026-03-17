@@ -3,6 +3,7 @@
 Implements BaseProcessor (load -> transform -> extract) while preserving
 the full nmrglue processing pipeline from the original device-use module.
 """
+
 from __future__ import annotations
 
 import contextlib

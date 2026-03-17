@@ -32,8 +32,8 @@ class Well(BaseModel):
 
     model_config = {"frozen": False}
 
-    row: str      # A-H for 96-well
-    col: int      # 1-12 for 96-well
+    row: str  # A-H for 96-well
+    col: int  # 1-12 for 96-well
     value: float = 0.0
     blank_corrected: float | None = None
 

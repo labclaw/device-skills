@@ -7,6 +7,7 @@ Control Modes:
 
 All three modes produce the same NMRSpectrum output.
 """
+
 from __future__ import annotations
 
 from pathlib import Path
@@ -183,7 +184,8 @@ class TopSpinAdapter(BaseAdapter):
         return self._process_via_nmrglue(dataset_path)
 
     def _read_processed_pdata(
-        self, dataset_path: str,
+        self,
+        dataset_path: str,
     ) -> NMRSpectrum:
         """Read already-processed pdata and pick peaks.
 
@@ -212,12 +214,8 @@ class TopSpinAdapter(BaseAdapter):
         title = ""
         title_path = pdata_dir / "title"
         if title_path.exists():
-            title = (
-                title_path.read_text().strip().split("\n")[0]
-            )
-        sample_name = (
-            path.parent.name if path.exists() else ""
-        )
+            title = title_path.read_text().strip().split("\n")[0]
+        sample_name = path.parent.name if path.exists() else ""
 
         spectrum = NMRSpectrum(
             data=np.real(data),
@@ -246,9 +244,9 @@ class TopSpinAdapter(BaseAdapter):
         offline pipeline is the fallback.
         """
         nmrdata = self._dp.getNMRData(dataset_path)
-        nmrdata.launch("efp")      # exponential multiply + FFT + phase
+        nmrdata.launch("efp")  # exponential multiply + FFT + phase
         nmrdata.launch("apbk -n")  # neural-net auto phase + baseline
-        nmrdata.launch("ppf")      # peak picking
+        nmrdata.launch("ppf")  # peak picking
         # Read back already-processed pdata (not raw FID)
         return self._read_processed_pdata(dataset_path)
 

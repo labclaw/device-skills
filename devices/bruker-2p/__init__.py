@@ -17,6 +17,7 @@ Public API::
     brain = TwoPhotonBrain()
     interpretation = brain.analyze({"stack": stack})
 """
+
 from __future__ import annotations
 
 # Guard against pytest importing this __init__.py directly without a package context.

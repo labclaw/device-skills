@@ -1,4 +1,5 @@
 """Visualization for this device's data."""
+
 from __future__ import annotations
 
 from typing import Any

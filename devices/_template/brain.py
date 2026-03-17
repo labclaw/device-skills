@@ -1,4 +1,5 @@
 """AI-powered analysis for this device."""
+
 from __future__ import annotations
 
 from typing import Any

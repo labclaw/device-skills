@@ -192,6 +192,7 @@ class TestGen5Adapter:
 
 # ── Processor tests ──────────────────────────────────────────────────────
 
+
 def _write_gen5_csv(tmp_path: Path, wells: dict[str, float], metadata: dict[str, str]) -> Path:
     """Helper: write a minimal Gen5-style CSV to a temp file."""
     p = tmp_path / "plate.csv"
@@ -211,9 +212,10 @@ def _write_gen5_csv(tmp_path: Path, wells: dict[str, float], metadata: dict[str,
 
 class TestGen5Processor:
     def test_load_parses_wells(self, tmp_path: Path) -> None:
-        wells = {f"{r}{c}": float(i) for i, (r, c) in enumerate(
-            (r, c) for r in "ABCDEFGH" for c in range(1, 13)
-        )}
+        wells = {
+            f"{r}{c}": float(i)
+            for i, (r, c) in enumerate((r, c) for r in "ABCDEFGH" for c in range(1, 13))
+        }
         csv_path = _write_gen5_csv(tmp_path, wells, {"Protocol": "Test", "Wavelength": "450nm"})
 
         processor = Gen5Processor()

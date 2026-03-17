@@ -19,6 +19,7 @@ Requires:
     - TopSpin 5.0.0 GUI running and visible on screen
     - anthropic Python SDK
 """
+
 from __future__ import annotations
 
 import base64

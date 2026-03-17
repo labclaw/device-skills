@@ -3,6 +3,7 @@
 This driver is consumed by labclaw's HardwareManager to connect,
 read data, and send commands to the device.
 """
+
 from __future__ import annotations
 
 from typing import Any

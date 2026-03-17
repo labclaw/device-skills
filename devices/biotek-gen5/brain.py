@@ -94,7 +94,6 @@ No significant edge effects detected. The blank wells (cols 11-12) show uniform 
 3. **Report in pg/mL**: Convert OD values to IL-6 concentrations using standard curve
 4. **Replicate**: Run in duplicate or triplicate for publication-quality data
 5. **Include positive control**: Add recombinant IL-6 spike-in for method validation""",
-
     "viability": """## Assay Overview
 
 | Parameter | Value |
@@ -161,6 +160,7 @@ class Gen5Brain(BaseBrain):
         self._use_api = _has_api_key()
         if self._use_api:
             from anthropic import Anthropic
+
             self.client = Anthropic()
         else:
             self.client = None
