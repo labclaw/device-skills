@@ -7,6 +7,7 @@ image frames from OME-TIFF files, and produces ImagingStack objects.
 
 from __future__ import annotations
 
+import io
 import logging
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -78,6 +79,13 @@ def _safe_float(value: Any) -> float:
 def _safe_int(value: Any) -> int:
     """Convert a value to int, handling dicts and errors."""
     return int(_safe_float(value))
+
+
+def _dtype_max(dtype: np.dtype) -> float:
+    """Return the maximum representable value for an integer numpy dtype."""
+    if np.issubdtype(dtype, np.integer):
+        return float(np.iinfo(dtype).max)
+    return 1.0  # fallback for float dtypes
 
 
 def _parse_prairie_xml(xml_path: Path) -> dict[str, Any]:
@@ -399,3 +407,139 @@ class TwoPhotonProcessor(BaseProcessor):
             f"  Scan mode: {stack.scan_mode}",
         ]
         return "\n".join(lines)
+
+    def compute_image_metrics(
+        self,
+        frames: list[CalciumFrame],
+        channel: int = 1,
+    ) -> dict[str, float]:
+        """Compute quantitative image quality metrics for the AI closed-loop.
+
+        Used by the $100 experiment orchestrator to give Claude concrete numbers
+        about image quality, enabling data-driven parameter optimization.
+
+        Args:
+            frames: List of CalciumFrame objects (from an ImagingStack).
+            channel: Channel number to analyze (default 1).
+
+        Returns:
+            dict with keys:
+                snr: Signal-to-noise ratio (mean_signal / std_background).
+                     Higher is better. Typical good: >5, excellent: >10.
+                mean_intensity: Mean pixel value across all frames.
+                std_intensity: Std dev of pixel values.
+                saturation_pct: Percentage of pixels at max value (65535 for uint16).
+                                Should be <1%. Above 5% = detector saturated.
+                dynamic_range_pct: Percentage of the bit depth actually used.
+                                   Low (<20%) = signal too weak. High (>80%) = good.
+                photobleach_pct: Signal decay from first to last frame as percentage.
+                                 0% = no bleaching. >10% = concerning. >30% = damaged.
+                                 Only computed if >=2 frames. Returns 0.0 for single.
+                frame_count: Number of frames analyzed (for context).
+        """
+        zero_result: dict[str, float] = {
+            "snr": 0.0,
+            "mean_intensity": 0.0,
+            "std_intensity": 0.0,
+            "saturation_pct": 0.0,
+            "dynamic_range_pct": 0.0,
+            "photobleach_pct": 0.0,
+            "frame_count": 0.0,
+        }
+
+        ch_frames = [f for f in frames if f.channel == channel]
+        if not ch_frames:
+            return zero_result
+
+        # Stack all frame data into a single array for aggregate stats
+        all_data = np.concatenate([f.data.ravel() for f in ch_frames])
+
+        # Determine dtype max
+        dtype_max = _dtype_max(all_data.dtype)
+
+        mean_intensity = _safe_float(np.mean(all_data))
+        std_intensity = _safe_float(np.std(all_data))
+
+        # Saturation: percentage of pixels at dtype max
+        num_saturated = int(np.sum(all_data == dtype_max))
+        saturation_pct = num_saturated / all_data.size * 100.0
+
+        # Dynamic range: (max - min) / dtype_max * 100
+        px_min = _safe_float(np.min(all_data))
+        px_max = _safe_float(np.max(all_data))
+        dynamic_range_pct = (px_max - px_min) / dtype_max * 100.0 if dtype_max > 0 else 0.0
+
+        # SNR: divide first frame into quadrants, dimmest = background, brightest = signal
+        ref_data = ch_frames[0].data.astype(np.float64)
+        h, w = ref_data.shape
+        mh, mw = h // 2, w // 2
+        quadrants = [
+            ref_data[:mh, :mw],
+            ref_data[:mh, mw:],
+            ref_data[mh:, :mw],
+            ref_data[mh:, mw:],
+        ]
+        q_means = [float(np.mean(q)) for q in quadrants]
+        bg_idx = int(np.argmin(q_means))
+        sig_idx = int(np.argmax(q_means))
+        bg_std = float(np.std(quadrants[bg_idx]))
+        if bg_std > 0:
+            snr = (q_means[sig_idx] - q_means[bg_idx]) / bg_std
+        else:
+            snr = 0.0
+
+        # Photobleaching: compare first vs last frame mean
+        photobleach_pct = 0.0
+        if len(ch_frames) >= 2:
+            first_mean = float(np.mean(ch_frames[0].data))
+            last_mean = float(np.mean(ch_frames[-1].data))
+            if first_mean > 0:
+                photobleach_pct = (first_mean - last_mean) / first_mean * 100.0
+
+        return {
+            "snr": _safe_float(snr),
+            "mean_intensity": mean_intensity,
+            "std_intensity": std_intensity,
+            "saturation_pct": _safe_float(saturation_pct),
+            "dynamic_range_pct": _safe_float(dynamic_range_pct),
+            "photobleach_pct": _safe_float(photobleach_pct),
+            "frame_count": float(len(ch_frames)),
+        }
+
+
+def tiff_to_png_bytes(frame_data: np.ndarray) -> bytes:
+    """Convert a 16-bit TIFF frame to 8-bit PNG bytes for Claude Vision API.
+
+    PrairieView outputs 16-bit OME-TIFF but Claude Vision only accepts
+    PNG/JPEG/GIF/WebP. This normalizes to 8-bit and encodes as PNG.
+
+    Uses contrast stretching (2nd to 98th percentile) for the 16-to-8-bit
+    conversion to avoid clipping bright outliers.
+
+    Args:
+        frame_data: 2D numpy array (typically uint16 from tifffile).
+
+    Returns:
+        PNG image as bytes, ready for base64 encoding.
+    """
+    from PIL import Image
+
+    img = frame_data.astype(np.float64)
+
+    # Contrast stretching: 2nd to 98th percentile
+    p2 = float(np.percentile(img, 2))
+    p98 = float(np.percentile(img, 98))
+
+    if p98 > p2:
+        img = (img - p2) / (p98 - p2)
+    else:
+        # Uniform image — just normalize to 0
+        img = img - p2 if p2 > 0 else img
+
+    img = np.clip(img, 0.0, 1.0) * 255.0
+    img_u8 = img.astype(np.uint8)
+
+    pil_img = Image.fromarray(img_u8, mode="L")
+    buf = io.BytesIO()
+    pil_img.save(buf, format="PNG")
+    return buf.getvalue()
