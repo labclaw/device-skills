@@ -81,6 +81,17 @@ def _safe_int(value: Any) -> int:
     return int(_safe_float(value))
 
 
+_ZERO_METRICS: dict[str, float] = {
+    "snr": 0.0,
+    "mean_intensity": 0.0,
+    "std_intensity": 0.0,
+    "saturation_pct": 0.0,
+    "dynamic_range_pct": 0.0,
+    "photobleach_pct": 0.0,
+    "frame_count": 0.0,
+}
+
+
 def _dtype_max(dtype: np.dtype) -> float:
     """Return the maximum representable value for an integer numpy dtype."""
     if np.issubdtype(dtype, np.integer):
@@ -437,40 +448,38 @@ class TwoPhotonProcessor(BaseProcessor):
                                  Only computed if >=2 frames. Returns 0.0 for single.
                 frame_count: Number of frames analyzed (for context).
         """
-        zero_result: dict[str, float] = {
-            "snr": 0.0,
-            "mean_intensity": 0.0,
-            "std_intensity": 0.0,
-            "saturation_pct": 0.0,
-            "dynamic_range_pct": 0.0,
-            "photobleach_pct": 0.0,
-            "frame_count": 0.0,
-        }
-
         ch_frames = [f for f in frames if f.channel == channel]
         if not ch_frames:
-            return zero_result
+            return dict(_ZERO_METRICS)
+
+        # Guard: metrics require integer pixel data for meaningful saturation/range
+        ref_frame = ch_frames[0].data
+        if ref_frame.ndim != 2:
+            raise ValueError(f"Expected 2D frame data, got {ref_frame.ndim}D")
+        if not np.issubdtype(ref_frame.dtype, np.integer):
+            raise TypeError(
+                f"Expected integer dtype, got {ref_frame.dtype}."
+                " Cast to uint16 before calling compute_image_metrics."
+            )
 
         # Stack all frame data into a single array for aggregate stats
         all_data = np.concatenate([f.data.ravel() for f in ch_frames])
-
-        # Determine dtype max
         dtype_max = _dtype_max(all_data.dtype)
 
-        mean_intensity = _safe_float(np.mean(all_data))
-        std_intensity = _safe_float(np.std(all_data))
+        mean_intensity = float(np.mean(all_data))
+        std_intensity = float(np.std(all_data))
 
         # Saturation: percentage of pixels at dtype max
         num_saturated = int(np.sum(all_data == dtype_max))
         saturation_pct = num_saturated / all_data.size * 100.0
 
         # Dynamic range: (max - min) / dtype_max * 100
-        px_min = _safe_float(np.min(all_data))
-        px_max = _safe_float(np.max(all_data))
+        px_min = float(np.min(all_data))
+        px_max = float(np.max(all_data))
         dynamic_range_pct = (px_max - px_min) / dtype_max * 100.0 if dtype_max > 0 else 0.0
 
         # SNR: divide first frame into quadrants, dimmest = background, brightest = signal
-        ref_data = ch_frames[0].data.astype(np.float64)
+        ref_data = ref_frame.astype(np.float64)
         h, w = ref_data.shape
         mh, mw = h // 2, w // 2
         quadrants = [
@@ -483,26 +492,23 @@ class TwoPhotonProcessor(BaseProcessor):
         bg_idx = int(np.argmin(q_means))
         sig_idx = int(np.argmax(q_means))
         bg_std = float(np.std(quadrants[bg_idx]))
-        if bg_std > 0:
-            snr = (q_means[sig_idx] - q_means[bg_idx]) / bg_std
-        else:
-            snr = 0.0
+        snr = (q_means[sig_idx] - q_means[bg_idx]) / bg_std if bg_std > 0 else 0.0
 
         # Photobleaching: compare first vs last frame mean
         photobleach_pct = 0.0
         if len(ch_frames) >= 2:
-            first_mean = float(np.mean(ch_frames[0].data))
+            first_mean = float(np.mean(ref_data))  # reuse already-loaded ref_data
             last_mean = float(np.mean(ch_frames[-1].data))
             if first_mean > 0:
                 photobleach_pct = (first_mean - last_mean) / first_mean * 100.0
 
         return {
-            "snr": _safe_float(snr),
+            "snr": snr,
             "mean_intensity": mean_intensity,
             "std_intensity": std_intensity,
-            "saturation_pct": _safe_float(saturation_pct),
-            "dynamic_range_pct": _safe_float(dynamic_range_pct),
-            "photobleach_pct": _safe_float(photobleach_pct),
+            "saturation_pct": saturation_pct,
+            "dynamic_range_pct": dynamic_range_pct,
+            "photobleach_pct": photobleach_pct,
             "frame_count": float(len(ch_frames)),
         }
 
@@ -524,17 +530,18 @@ def tiff_to_png_bytes(frame_data: np.ndarray) -> bytes:
     """
     from PIL import Image
 
-    img = frame_data.astype(np.float64)
+    if frame_data.ndim != 2:
+        raise ValueError(f"Expected 2D array, got {frame_data.ndim}D")
 
-    # Contrast stretching: 2nd to 98th percentile
-    p2 = float(np.percentile(img, 2))
-    p98 = float(np.percentile(img, 98))
+    img = frame_data.astype(np.float32)
+
+    # Contrast stretching: 2nd to 98th percentile (single pass)
+    p2, p98 = np.percentile(img, [2, 98])
 
     if p98 > p2:
         img = (img - p2) / (p98 - p2)
     else:
-        # Uniform image — just normalize to 0
-        img = img - p2 if p2 > 0 else img
+        img = np.zeros_like(img)
 
     img = np.clip(img, 0.0, 1.0) * 255.0
     img_u8 = img.astype(np.uint8)
