@@ -95,3 +95,6 @@ tag_format = "v$version"
 [tool.coverage.run]
 source = ["device_skills", "devices"]
 omit = ["*/tests/*", "*/_template/*"]
+
+[tool.coverage.report]
+fail_under = 100

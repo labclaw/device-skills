@@ -1,4 +1,5 @@
 """Tests for device skill loader."""
+
 from __future__ import annotations
 
 from pathlib import Path
@@ -68,6 +69,21 @@ def test_discover_skills(tmp_devices: Path):
 def test_discover_skills_empty(tmp_path: Path):
     skills = discover_skills(tmp_path)
     assert skills == []
+
+
+def test_discover_skills_nonexistent_dir(tmp_path: Path):
+    """discover_skills returns [] when devices_dir does not exist."""
+    skills = discover_skills(tmp_path / "no-such-dir")
+    assert skills == []
+
+
+def test_discover_skills_skips_dir_without_skill_yaml(tmp_devices: Path):
+    """Subdirectories without skill.yaml are silently skipped."""
+    no_yaml = tmp_devices / "no-manifest"
+    no_yaml.mkdir()
+    skills = discover_skills(tmp_devices)
+    # Only the two original valid devices, not the one missing skill.yaml
+    assert len(skills) == 2
 
 
 def test_discover_skills_skips_invalid(tmp_devices: Path):

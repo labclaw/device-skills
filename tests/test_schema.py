@@ -1,4 +1,5 @@
 """Tests for SkillManifest schema."""
+
 from __future__ import annotations
 
 import pytest
@@ -55,6 +56,12 @@ def test_full_manifest():
 def test_manifest_rejects_empty_name():
     with pytest.raises(ValueError):
         SkillManifest(name="", version="1.0", vendor="X", category="x")
+
+
+def test_manifest_rejects_whitespace_only_name():
+    """Whitespace-only name triggers the field_validator (not min_length)."""
+    with pytest.raises(ValueError, match="name must not be empty"):
+        SkillManifest(name="   ", version="1.0", vendor="X", category="x")
 
 
 def test_control_mode_values():
