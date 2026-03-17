@@ -3,6 +3,7 @@
 This driver is consumed by labclaw's HardwareManager to connect,
 read data, and send commands to the Bruker TopSpin NMR spectrometer.
 """
+
 from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any
@@ -116,10 +117,7 @@ class TopSpinDriver(BaseDriver):
         if not self._connected:
             return {"error": "Not connected"}
         if not self._last_spectrum:
-            return {
-                "error": "No spectrum data available"
-                " — call write() with process command first"
-            }
+            return {"error": "No spectrum data available — call write() with process command first"}
         return self._last_spectrum
 
     async def write(self, command: dict[str, Any]) -> bool:
@@ -152,9 +150,7 @@ class TopSpinDriver(BaseDriver):
                     "title": spectrum.title,
                     "sample_name": spectrum.sample_name,
                     "num_peaks": len(spectrum.peaks),
-                    "peaks": [
-                        {"ppm": p.ppm, "intensity": p.intensity} for p in spectrum.peaks
-                    ],
+                    "peaks": [{"ppm": p.ppm, "intensity": p.intensity} for p in spectrum.peaks],
                 }
                 return True
             except Exception:

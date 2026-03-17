@@ -3,6 +3,7 @@
 These ABCs define the standard interface that every device skill implements.
 Both labclaw and device-use consume these interfaces.
 """
+
 from __future__ import annotations
 
 from abc import ABC, abstractmethod

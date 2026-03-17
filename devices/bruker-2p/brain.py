@@ -3,6 +3,7 @@
 Implements BaseBrain (analyze, summarize) with cached demo fallback
 for offline mode when no API key is available.
 """
+
 from __future__ import annotations
 
 import logging
@@ -157,9 +158,7 @@ class TwoPhotonBrain(BaseBrain):
             self.client = Anthropic()
         else:
             self.client = None  # type: ignore[assignment]
-            logger.info(
-                "ANTHROPIC_API_KEY not set — 2P Brain will use cached demo responses"
-            )
+            logger.info("ANTHROPIC_API_KEY not set — 2P Brain will use cached demo responses")
         self.model = model
         self._processor = TwoPhotonProcessor()
 

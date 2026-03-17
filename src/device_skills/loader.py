@@ -3,6 +3,7 @@
 Each subdirectory with a valid skill.yaml is a device skill.
 Directories starting with _ (like _template) are skipped.
 """
+
 from __future__ import annotations
 
 import logging

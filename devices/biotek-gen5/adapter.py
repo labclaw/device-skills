@@ -26,6 +26,7 @@ logger = logging.getLogger(__name__)
 
 # ── Demo data for offline mode ────────────────────────────────────────────
 
+
 def _generate_demo_absorbance(wavelength: int = 450) -> PlateReading:
     """Generate realistic absorbance data for a 96-well ELISA plate.
 
@@ -131,6 +132,7 @@ _DEMO_DATASETS = [
 
 
 # ── Adapter ───────────────────────────────────────────────────────────────
+
 
 class Gen5Adapter(BaseAdapter):
     """BioTek Gen5 plate reader adapter.
@@ -240,11 +242,13 @@ class Gen5Adapter(BaseAdapter):
         output = io.StringIO()
         writer = csv.writer(output)
 
-        writer.writerow([
-            f"Protocol: {reading.protocol}",
-            f"Mode: {reading.mode.value}",
-            f"Wavelength: {reading.wavelength_nm}nm",
-        ])
+        writer.writerow(
+            [
+                f"Protocol: {reading.protocol}",
+                f"Mode: {reading.mode.value}",
+                f"Wavelength: {reading.wavelength_nm}nm",
+            ]
+        )
         writer.writerow([])
 
         rows_set = sorted(set(w.row for w in reading.plate.wells))
@@ -266,6 +270,4 @@ class Gen5Adapter(BaseAdapter):
     def _ensure_connected(self) -> None:
         if not self._connected:
             if not self.connect():
-                raise RuntimeError(
-                    f"Failed to connect Gen5 in {self._mode.value} mode"
-                )
+                raise RuntimeError(f"Failed to connect Gen5 in {self._mode.value} mode")

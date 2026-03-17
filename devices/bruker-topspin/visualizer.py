@@ -1,4 +1,5 @@
 """NMR spectrum visualization — publication-quality plots."""
+
 from __future__ import annotations
 
 from pathlib import Path
@@ -30,6 +31,7 @@ def plot_spectrum(
         Path to the saved image if output_path is given, or raw PNG bytes.
     """
     import matplotlib
+
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
 

@@ -3,6 +3,7 @@
 Implements BaseBrain (analyze, summarize) while preserving the full
 Claude API integration and cached demo fallback from the original module.
 """
+
 from __future__ import annotations
 
 import logging
@@ -22,7 +23,7 @@ logger = logging.getLogger(__name__)
 # Streaming simulation parameters (used when serving cached responses)
 # ---------------------------------------------------------------------------
 _STREAM_CHUNK_SIZE = 30  # characters per yielded chunk
-_STREAM_DELAY_S = 0.05   # seconds between chunks (50 ms)
+_STREAM_DELAY_S = 0.05  # seconds between chunks (50 ms)
 
 
 NMR_SYSTEM_PROMPT = (
@@ -109,9 +110,7 @@ class TopSpinBrain(BaseBrain):
             self.client = Anthropic()
         else:
             self.client = None  # type: ignore[assignment]
-            logger.info(
-                "ANTHROPIC_API_KEY not set — NMR Brain will use cached demo responses"
-            )
+            logger.info("ANTHROPIC_API_KEY not set — NMR Brain will use cached demo responses")
         self.model = model
         self._processor = TopSpinProcessor()
 
@@ -149,8 +148,7 @@ class TopSpinBrain(BaseBrain):
 
         combined = "\n\n---\n\n".join(findings)
         prompt = (
-            f"Summarize the following NMR analysis findings into a concise narrative:\n\n"
-            f"{combined}"
+            f"Summarize the following NMR analysis findings into a concise narrative:\n\n{combined}"
         )
 
         if not self._use_api:
@@ -176,9 +174,7 @@ class TopSpinBrain(BaseBrain):
         )
         return response.content[0].text
 
-    def _stream(
-        self, system: str, user_message: str, max_tokens: int = 2000
-    ) -> Generator[str]:
+    def _stream(self, system: str, user_message: str, max_tokens: int = 2000) -> Generator[str]:
         """Streaming API call — yields text chunks."""
         with self.client.messages.stream(
             model=self.model,
@@ -251,10 +247,7 @@ class TopSpinBrain(BaseBrain):
 
         summary = self._build_summary(spectrum)
 
-        user_message = (
-            f"Based on this NMR data, what experiment should I run next?\n\n"
-            f"{summary}"
-        )
+        user_message = f"Based on this NMR data, what experiment should I run next?\n\n{summary}"
         if hypothesis:
             user_message += f"\n\nCurrent hypothesis: {hypothesis}"
         user_message += (

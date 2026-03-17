@@ -29,6 +29,7 @@ def plot_plate_heatmap(
         PNG image bytes.
     """
     import matplotlib
+
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
 
@@ -81,6 +82,7 @@ def plot_plate_heatmap(
 
     if output_path:
         from pathlib import Path
+
         Path(output_path).parent.mkdir(parents=True, exist_ok=True)
         Path(output_path).write_bytes(png_bytes)
 

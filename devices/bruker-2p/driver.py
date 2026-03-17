@@ -4,6 +4,7 @@ This driver is consumed by labclaw's HardwareManager to connect,
 read data, and send commands to the Bruker Ultima Investigator
 two-photon fluorescence microscope.
 """
+
 from __future__ import annotations
 
 import logging
@@ -104,10 +105,7 @@ class TwoPhotonDriver(BaseDriver):
         if not self._connected:
             return {"error": "Not connected"}
         if not self._last_stack:
-            return {
-                "error": "No imaging data available"
-                " — call write() with process command first"
-            }
+            return {"error": "No imaging data available — call write() with process command first"}
         return self._last_stack
 
     async def write(self, command: dict[str, Any]) -> bool:
@@ -187,4 +185,3 @@ class TwoPhotonDriver(BaseDriver):
                 return False
 
         return False
-

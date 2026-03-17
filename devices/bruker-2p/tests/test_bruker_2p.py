@@ -3,6 +3,7 @@
 Given/When/Then naming convention. All external dependencies (tifffile,
 lxml, win32com) are mocked — tests run without real Prairie data or Windows.
 """
+
 from __future__ import annotations
 
 from pathlib import Path
@@ -73,13 +74,15 @@ def sample_rois() -> list[ROI]:
         trace[150:155] += 250
         mask = np.zeros((64, 64), dtype=bool)
         mask[20 + i * 10 : 25 + i * 10, 30 + i * 5 : 35 + i * 5] = True
-        rois.append(ROI(
-            id=i + 1,
-            x_center=32.0 + i * 5,
-            y_center=22.0 + i * 10,
-            mask=mask,
-            trace=trace,
-        ))
+        rois.append(
+            ROI(
+                id=i + 1,
+                x_center=32.0 + i * 5,
+                y_center=22.0 + i * 10,
+                mask=mask,
+                trace=trace,
+            )
+        )
     return rois
 
 
@@ -229,20 +232,27 @@ class TestTwoPhotonProcessor:
         raw = {
             "metadata": {
                 "version": "5.6",
-                "sequences": [{
-                    "type": "TSeries",
-                    "cycle": 1,
-                    "time": 0.0,
-                    "frames": [{
-                        "relative_time": 0.0,
-                        "absolute_time": 0.0,
-                        "index": 1,
-                        "files": [
-                            {"channel": "1", "channel_name": "Ch1",
-                             "filename": "frame.ome.tif"},
+                "sequences": [
+                    {
+                        "type": "TSeries",
+                        "cycle": 1,
+                        "time": 0.0,
+                        "frames": [
+                            {
+                                "relative_time": 0.0,
+                                "absolute_time": 0.0,
+                                "index": 1,
+                                "files": [
+                                    {
+                                        "channel": "1",
+                                        "channel_name": "Ch1",
+                                        "filename": "frame.ome.tif",
+                                    },
+                                ],
+                            }
                         ],
-                    }],
-                }],
+                    }
+                ],
             },
             "data_dir": data_dir,
             "tiff_files": [{"channel": "1", "filename": "frame.ome.tif"}],
@@ -379,10 +389,14 @@ class TestTwoPhotonAdapter:
 
         mock_stack = ImagingStack(frames=[], metadata={})
         load_rv = {
-            "metadata": {}, "data_dir": tmp_path, "tiff_files": [],
+            "metadata": {},
+            "data_dir": tmp_path,
+            "tiff_files": [],
         }
-        with patch.object(adapter.processor, "load", return_value=load_rv), \
-             patch.object(adapter.processor, "transform", return_value=mock_stack):
+        with (
+            patch.object(adapter.processor, "load", return_value=load_rv),
+            patch.object(adapter.processor, "transform", return_value=mock_stack),
+        ):
             result = adapter.process(str(tmp_path))
             assert isinstance(result, ImagingStack)
 
@@ -534,7 +548,8 @@ class TestTwoPhotonBrain:
             assert brain.client is None
 
     def test_brain_analyze_returns_interpretation(
-        self, sample_stack: ImagingStack,
+        self,
+        sample_stack: ImagingStack,
     ) -> None:
         """Given a stack, When analyze(), Then cached demo response is returned."""
         env = dict(**__import__("os").environ)
@@ -601,7 +616,9 @@ class TestTwoPhotonBrain:
             assert "registration" in result.lower()
 
     def test_brain_interpret_activity_with_rois(
-        self, sample_stack: ImagingStack, sample_rois: list[ROI],
+        self,
+        sample_stack: ImagingStack,
+        sample_rois: list[ROI],
     ) -> None:
         """Given stack + ROIs, When interpret_activity(), Then analysis returned."""
         env = dict(**__import__("os").environ)
@@ -620,7 +637,8 @@ class TestVisualizer:
     """Given visualizer functions, verify plot generation."""
 
     def test_plot_max_projection_creates_figure(
-        self, sample_stack: ImagingStack,
+        self,
+        sample_stack: ImagingStack,
     ) -> None:
         """Given a stack, When plot_max_projection(output_path=None), Then PNG bytes."""
         from devices.bruker_2p.visualizer import plot_max_projection
@@ -631,7 +649,9 @@ class TestVisualizer:
         assert result[:4] == b"\x89PNG"
 
     def test_plot_max_projection_saves_file(
-        self, sample_stack: ImagingStack, tmp_path: Path,
+        self,
+        sample_stack: ImagingStack,
+        tmp_path: Path,
     ) -> None:
         """Given output_path, When plot_max_projection(), Then file is saved."""
         from devices.bruker_2p.visualizer import plot_max_projection

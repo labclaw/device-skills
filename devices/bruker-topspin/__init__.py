@@ -17,6 +17,7 @@ Public API::
     brain = TopSpinBrain()
     interpretation = brain.interpret_spectrum(spectrum)
 """
+
 from __future__ import annotations
 
 # Guard against pytest importing this __init__.py directly without a package context.

@@ -1,4 +1,5 @@
 """Two-photon imaging visualization — max projections, FOV overlays, calcium traces."""
+
 from __future__ import annotations
 
 import io
@@ -31,6 +32,7 @@ def plot_max_projection(
         Path to saved image if output_path is given, or raw PNG bytes.
     """
     import matplotlib
+
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
 
@@ -84,15 +86,26 @@ def plot_max_projection(
         subtitle_parts.append(stack.scan_mode)
     if subtitle_parts:
         ax.text(
-            0.5, 1.01, " | ".join(subtitle_parts),
-            transform=ax.transAxes, ha="center", fontsize=10, color="#666666",
+            0.5,
+            1.01,
+            " | ".join(subtitle_parts),
+            transform=ax.transAxes,
+            ha="center",
+            fontsize=10,
+            color="#666666",
         )
 
     # Branding
     ax.text(
-        0.99, 0.01, "Bruker 2P | device-skills",
-        transform=ax.transAxes, ha="right", va="bottom",
-        fontsize=8, color="#999999", style="italic",
+        0.99,
+        0.01,
+        "Bruker 2P | device-skills",
+        transform=ax.transAxes,
+        ha="right",
+        va="bottom",
+        fontsize=8,
+        color="#999999",
+        style="italic",
     )
 
     fig.patch.set_facecolor("black")
@@ -131,6 +144,7 @@ def plot_fov_overlay(
         Path to saved image if output_path is given, or raw PNG bytes.
     """
     import matplotlib
+
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
 
@@ -196,6 +210,7 @@ def plot_calcium_traces(
         Path to saved image if output_path is given, or raw PNG bytes.
     """
     import matplotlib
+
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
 
@@ -211,8 +226,16 @@ def plot_calcium_traces(
     if n_rois == 0:
         # Empty plot
         fig, ax = plt.subplots(1, 1, figsize=(12, 4))
-        ax.text(0.5, 0.5, "No ROI traces to display", ha="center", va="center",
-                fontsize=14, color="#666666", transform=ax.transAxes)
+        ax.text(
+            0.5,
+            0.5,
+            "No ROI traces to display",
+            ha="center",
+            va="center",
+            fontsize=14,
+            color="#666666",
+            transform=ax.transAxes,
+        )
         ax.set_axis_off()
     else:
         fig, axes = plt.subplots(n_rois, 1, figsize=(12, 2 * n_rois), sharex=True)

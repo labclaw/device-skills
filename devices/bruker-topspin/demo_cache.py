@@ -13,6 +13,7 @@ Matching logic in TopSpinBrain tries (in order):
 This means TopSpin datasets whose title or sample_name contains
 "alpha ionone" or "strychnine" will hit the cache automatically.
 """
+
 from __future__ import annotations
 
 DEMO_RESPONSES: dict[str, dict[str, str]] = {

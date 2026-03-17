@@ -1,4 +1,5 @@
 """Instrument adapter for device-use."""
+
 from __future__ import annotations
 
 from typing import Any
