@@ -5,13 +5,13 @@ what the device is, what it can do, and how to interact with it.
 """
 from __future__ import annotations
 
-from enum import Enum
+from enum import StrEnum
 from pathlib import Path
 
 from pydantic import BaseModel, Field, field_validator
 
 
-class ControlMode(str, Enum):
+class ControlMode(StrEnum):
     """How the system talks to the instrument."""
 
     API = "api"
@@ -19,7 +19,7 @@ class ControlMode(str, Enum):
     OFFLINE = "offline"
 
 
-class InterfaceType(str, Enum):
+class InterfaceType(StrEnum):
     """Physical/logical interface to the device."""
 
     FILE_BASED = "file_based"
@@ -30,7 +30,7 @@ class InterfaceType(str, Enum):
     GUI = "gui"
 
 
-class SafetyLevel(str, Enum):
+class SafetyLevel(StrEnum):
     """Safety classification for device operations."""
 
     NORMAL = "normal"
