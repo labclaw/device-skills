@@ -14,8 +14,7 @@ processing pipelines in CI and local development.
 
 and biotech research groups.
 
-Immediate product focus is narrower than the full roadmap. See
-`PHASE1_SHORTLIST.md` for the current "suitable first devices" list.
+Immediate product focus is narrower than the full roadmap.
 
 ## P0: Phase 1 Product Focus
 
