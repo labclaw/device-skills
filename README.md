@@ -39,14 +39,9 @@ Copy `devices/_template/` → `devices/your-device/`, fill in the files, add tes
 
 ## Roadmap
 
-See [ROADMAP.md](ROADMAP.md) for the simulation-first imaging expansion plan and
-[TODO.md](TODO.md) for the active worklist. See
-[PHASE1_SHORTLIST.md](PHASE1_SHORTLIST.md) for the narrow first-wave set that is
-actually suitable for immediate `labclaw` focus. See
+See [TODO.md](TODO.md) for the active worklist and
 [MICROMANAGER_DEMO.md](MICROMANAGER_DEMO.md) for the detailed plan for a
-TopSpin-like complete Micro-Manager demo. See
-[PLAN_CLOSEOUT.md](PLAN_CLOSEOUT.md) for the project-level planning wrap-up and
-implementation handoff checklist.
+TopSpin-like complete Micro-Manager demo.
 
 ## How It Fits Together
 
