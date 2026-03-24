@@ -12,14 +12,10 @@ optical control software, priority goes to platforms with an official or
 well-supported simulation path that lets us exercise acquisition, metadata, and
 processing pipelines in CI and local development.
 
-Commercially, Greater Boston is the first expansion region. We should favor
-software skills that are common across Boston-area academic labs, hospital cores,
 and biotech research groups.
 
 Immediate product focus is narrower than the full roadmap. See
 `PHASE1_SHORTLIST.md` for the current "suitable first devices" list.
-See `PLAN_CLOSEOUT.md` for the project-level closeout checklist that should be
-used to end planning cleanly before implementation.
 
 ## P0: Phase 1 Product Focus
 
@@ -87,28 +83,6 @@ Acceptance criteria:
 - Saved output can be parsed into stable structured metadata.
 - The skill is useful as a development surrogate for the real `bruker-2p`
   integration, not just as a separate demo.
-
-## P0.5: Greater Boston Beachhead Mapping
-
-- [ ] Build a list of target Boston-area research cores, hospitals, institutes,
-      and biotech clusters where microscopy software choice can influence many
-      downstream labs.
-- [ ] Map each target site to likely software ecosystems:
-      `Micro-Manager`, `ScanImage`, `ZEN`, `NIS-Elements`, `TopSpin`, and other
-      recurring platforms.
-- [ ] Identify which software choices maximize reachable labs in:
-      Cambridge / Kendall, Longwood, Allston, Charlestown, and South Boston.
-- [ ] Mark which targets are shared core facilities versus single-lab installs.
-- [ ] Use this map to reorder expansion work after `Micro-Manager` and
-      `ScanImage`.
-
-Definition of done:
-
-- We have a Boston-first target account list.
-- We know which software platforms recur often enough to justify first-class
-  support.
-- Roadmap prioritization reflects reachable customer density, not just technical
-  preference.
 
 ## P1: Architecture Follow-Through
 
