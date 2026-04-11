@@ -29,18 +29,18 @@ dependencies = [
 
 [project.optional-dependencies]
 biotek-gen5 = [
-    "matplotlib>=3.7",
+    "matplotlib>=3.10.8",
     "numpy>=1.24",
 ]
 bruker-topspin = [
     "nmrglue>=0.9",
     "numpy>=1.24",
-    "matplotlib>=3.7",
+    "matplotlib>=3.10.8",
 ]
 bruker-2p = [
     "tifffile>=2023.0",
     "numpy>=1.24",
-    "matplotlib>=3.7",
+    "matplotlib>=3.10.8",
     "scikit-image>=0.21",
     "lxml>=4.9",
 ]
