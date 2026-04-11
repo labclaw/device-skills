@@ -33,7 +33,7 @@ biotek-gen5 = [
     "numpy>=1.24",
 ]
 bruker-topspin = [
-    "nmrglue>=0.9",
+    "nmrglue>=0.11",
     "numpy>=1.24",
     "matplotlib>=3.7",
 ]
