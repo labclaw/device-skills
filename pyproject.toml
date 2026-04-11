@@ -38,7 +38,7 @@ bruker-topspin = [
     "matplotlib>=3.7",
 ]
 bruker-2p = [
-    "tifffile>=2023.0",
+    "tifffile>=2026.3.3",
     "numpy>=1.24",
     "matplotlib>=3.7",
     "scikit-image>=0.21",
